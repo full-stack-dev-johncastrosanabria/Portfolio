@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">JC brand mark</title>
+  <desc id="desc">Modern monogram logo for John Castro portfolio</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#03111f"/>
+  <circle cx="34" cy="38" r="10" fill="#22c55e"/>
+  <path fill="url(#g)" d="M40 36h18v36c0 10 4 16 14 16 6 0 12-2 17-6l7 14c-7 6-17 10-29 10-20 0-27-12-27-31V36zm46 0h19v56c0 5-1 10-3 14s-5 8-9 11c-4 3-8 5-13 6l-6-14c4-1 7-3 9-6 2-2 3-6 3-11V36z"/>
+</svg>

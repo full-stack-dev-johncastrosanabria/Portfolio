@@ -1,0 +1,369 @@
+import{n as e}from"./rolldown-runtime-DF2fYuay.js";import{a as t,c as n,i as r,l as i,n as a,o,r as s,s as c,t as l,u}from"./react-vendor-VeJG9e5c.js";import{a as d,c as f,i as p,n as m,o as h,r as g,s as _,t as v}from"./vendor-Z7ylu0Wr.js";(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var y=e(u(),1),b=e(i(),1),x={author:`John Castro Sanabria`,role:`Full Stack Developer | .NET & React`,email:`castrosanabriajohn2@gmail.com`,headline:`Desarrollador Full Stack especializado en .NET, React y arquitectura limpia. Construyo soluciones escalables y mantenibles.`,description:`Portafolio profesional de John Castro Sanabria. Full Stack Developer con experiencia en .NET Core, React, SQL Server, Azure y arquitectura limpia. Especializado en APIs REST, microservicios y aplicaciones web modernas.`,ctaPrimary:`Ver proyectos`,ctaSecondary:`Leer blog técnico`,socialLinks:[{label:`Correo`,href:`mailto:castrosanabriajohn2@gmail.com`,icon:`mail`},{label:`GitHub`,href:`https://github.com/full-stack-dev-johncastrosanabria`,icon:`github`},{label:`LinkedIn`,href:`https://www.linkedin.com/in/john-castro-sanabria/`,icon:`linkedin`}],keywords:[`.NET`,`React`,`Full Stack`,`Clean Architecture`,`API REST`,`SQL Server`,`Azure`,`JavaScript`,`C#`,`Web Development`]},S=l(),C=[{to:`/`,label:`Inicio`},{to:`/blog`,label:`Blog`}];function w(){return(0,S.jsx)(`header`,{className:`site-header`,children:(0,S.jsxs)(`div`,{className:`container nav-wrapper`,children:[(0,S.jsxs)(r,{className:`brand`,to:`/`,children:[(0,S.jsx)(`span`,{className:`brand-mark brand-avatar`,children:(0,S.jsx)(`img`,{src:`/profile-john.png`,alt:`Foto de John Castro`})}),(0,S.jsxs)(`span`,{children:[(0,S.jsx)(`strong`,{children:x.author}),(0,S.jsx)(`span`,{className:`brand-subtitle`,children:x.role})]})]}),(0,S.jsx)(`nav`,{className:`nav-links`,"aria-label":`Principal`,children:C.map(e=>(0,S.jsx)(r,{to:e.to,className:({isActive:e})=>e?`nav-link nav-link-active`:`nav-link`,children:e.label},e.to))})]})})}function T(){return(0,S.jsx)(`footer`,{className:`site-footer`,children:(0,S.jsxs)(`div`,{className:`container footer-grid`,children:[(0,S.jsxs)(`div`,{className:`footer-brand`,children:[(0,S.jsx)(`img`,{className:`footer-brand-mark`,src:`/brand-mark.svg`,alt:`Logo personal de John Castro`}),(0,S.jsxs)(`div`,{children:[(0,S.jsx)(`p`,{className:`footer-title`,children:x.author}),(0,S.jsx)(`p`,{className:`footer-copy`,children:x.description})]})]}),(0,S.jsx)(`div`,{className:`footer-links`,children:x.socialLinks.map(e=>(0,S.jsx)(`a`,{href:e.href,target:`_blank`,rel:`noreferrer`,children:e.label},e.label))})]})})}function ee(){return(0,S.jsxs)(`div`,{className:`app-shell`,children:[(0,S.jsx)(w,{}),(0,S.jsx)(`main`,{className:`main-content`,children:(0,S.jsx)(t,{})}),(0,S.jsx)(T,{})]})}var E=[{id:`reactivities`,title:`Reactivities - Red Social Full Stack`,category:`Full Stack`,description:`Plataforma de red social completa con .NET 8 backend y React frontend. Arquitectura limpia con CQRS, MediatR y Entity Framework Core.`,highlights:[`Autenticación JWT y autorización basada en roles`,`Real-time updates con SignalR`,`Gestión de actividades, comentarios y followers`,`Interfaz moderna con React 19 y Tailwind CSS`],technologies:[`.NET 8`,`React 19`,`SignalR`,`Entity Framework`,`PostgreSQL`,`JWT`],featured:!0},{id:`etickets`,title:`eTickets - Plataforma Cinematográfica`,category:`Full Stack Web`,description:`Sistema de venta de entradas para cines con ASP.NET Core MVC. Gestión de películas, cines, funciones y compra de boletos.`,highlights:[`Arquitectura MVC con Entity Framework Core`,`Carrito de compras y procesamiento de pagos`,`Panel administrativo para gestión de contenido`,`Autenticación con Identity Framework`],technologies:[`ASP.NET Core MVC`,`Entity Framework`,`SQL Server`,`Bootstrap`,`Stripe`],featured:!0},{id:`clean-api`,title:`Interview Clean API - Arquitectura Limpia`,category:`Backend`,description:`API REST implementando Clean Architecture con separación clara de capas, SOLID principles y patrones de diseño avanzados.`,highlights:[`Arquitectura en capas: Presentation, Application, Domain, Infrastructure`,`Validación con FluentValidation`,`Logging y manejo de excepciones centralizado`,`Documentación con Swagger/OpenAPI`],technologies:[`.NET Core`,`Clean Architecture`,`FluentValidation`,`AutoMapper`,`Swagger`]},{id:`propflow`,title:`PropFlow - Landing Page Inmobiliaria`,category:`Frontend`,description:`Landing page moderna para plataforma inmobiliaria. Diseño responsivo con animaciones fluidas y optimización SEO.`,highlights:[`Diseño responsive y mobile-first`,`Animaciones con Framer Motion`,`Optimización de Core Web Vitals`,`Integración con formularios de contacto`],technologies:[`React`,`Tailwind CSS`,`Framer Motion`,`Next.js`,`Vercel`]},{id:`admin-dashboard`,title:`Admin Dashboard - React`,category:`Frontend`,description:`Dashboard administrativo completo con gráficos, tablas interactivas y gestión de datos en tiempo real.`,highlights:[`Gráficos con Chart.js y Recharts`,`Tablas con paginación y filtrado`,`Tema oscuro/claro`,`Responsive design`],technologies:[`React 19`,`Tailwind CSS`,`Recharts`,`React Router`,`Context API`],liveDemo:`https://johns-admin-dashboard-react.netlify.app/`,featured:!1},{id:`criadero-pastores`,title:`Criadero Pastores - E-commerce`,category:`Full Stack`,description:`Plataforma e-commerce para venta de perros de raza. Gestión de inventario, carrito de compras y sistema de pedidos.`,highlights:[`Catálogo de productos con filtros avanzados`,`Carrito de compras persistente`,`Sistema de órdenes y seguimiento`,`Integración con pasarela de pagos`],technologies:[`React`,`Node.js`,`MongoDB`,`Stripe`,`Netlify`],liveDemo:`https://canesbarvae.netlify.app/`,featured:!1},{id:`meals-to-go`,title:`MealsToGo - Uber Eats Clone`,category:`Mobile`,description:`Aplicación móvil híbrida que replica la funcionalidad de Uber Eats. Búsqueda de restaurantes, menús y pedidos.`,highlights:[`Geolocalización en tiempo real`,`Búsqueda y filtrado de restaurantes`,`Carrito de compras persistente`,`Integración con Google Maps`],technologies:[`React Native`,`Expo`,`Firebase`,`Google Maps API`,`Redux`]},{id:`expo-amplify-demo`,title:`Expo Amplify Demo - Mobile + AWS`,category:`Mobile`,description:`Aplicación móvil con React Native y AWS Amplify. Autenticación, base de datos en tiempo real y almacenamiento en la nube.`,highlights:[`Autenticación con Cognito`,`Base de datos DynamoDB`,`Almacenamiento S3`,`API GraphQL con AppSync`],technologies:[`React Native`,`Expo`,`AWS Amplify`,`GraphQL`,`DynamoDB`]},{id:`spring-demo`,title:`Spring Demo - Backend Java`,category:`Backend`,description:`API REST con Spring Boot. Demostración de patrones de diseño, inyección de dependencias y buenas prácticas en Java.`,highlights:[`Spring Boot con Spring Data JPA`,`Validación con Bean Validation`,`Manejo de excepciones global`,`Documentación con Springdoc OpenAPI`],technologies:[`Spring Boot`,`Spring Data JPA`,`PostgreSQL`,`Maven`,`Docker`]},{id:`vue-project`,title:`Vue Project - Frontend Framework`,category:`Frontend`,description:`Proyecto educativo con Vue.js. Componentes reutilizables, state management con Pinia y routing avanzado.`,highlights:[`Componentes Vue 3 con Composition API`,`State management con Pinia`,`Routing con Vue Router`,`Estilos con Tailwind CSS`],technologies:[`Vue 3`,`Pinia`,`Vue Router`,`Tailwind CSS`,`Vite`]},{id:`smartgym-api`,title:`SmartGym API - Proyecto Universitario`,category:`Backend`,description:`API para gestión de gimnasios. Gestión de miembros, clases, entrenadores y seguimiento de progreso.`,highlights:[`Autenticación y autorización`,`Gestión de membresías`,`Programación de clases`,`Reportes de progreso`],technologies:[`PHP`,`Laravel`,`MySQL`,`REST API`,`JWT`]},{id:`webapi-matricula`,title:`WebAPI Matrícula - Proyecto Universitario .NET`,category:`Backend`,description:`Sistema de matrícula universitaria. Gestión de estudiantes, cursos, calificaciones y reportes académicos.`,highlights:[`Gestión de estudiantes y cursos`,`Cálculo de calificaciones`,`Generación de reportes`,`Autenticación de usuarios`],technologies:[`.NET Framework`,`SQL Server`,`Entity Framework`,`Web API`,`LINQ`]},{id:`wcf-tarjetas`,title:`WCF Servicio Tarjetas - Proyecto Universitario`,category:`Backend`,description:`Servicio WCF para gestión de tarjetas de crédito. Validación, procesamiento y seguridad de transacciones.`,highlights:[`Servicio WCF distribuido`,`Validación de tarjetas`,`Procesamiento de transacciones`,`Seguridad y encriptación`],technologies:[`WCF`,`.NET Framework`,`SOAP`,`SQL Server`,`Encryption`]},{id:`basic-business-app`,title:`BasicBusinessApp - Clean Architecture .NET`,category:`Backend`,description:`Aplicación empresarial con arquitectura limpia. Demostración de SOLID principles, patrones de diseño y testing.`,highlights:[`Arquitectura limpia en capas`,`SOLID principles aplicados`,`Unit testing con xUnit`,`Inyección de dependencias`],technologies:[`.NET Core`,`Clean Architecture`,`xUnit`,`Moq`,`AutoMapper`]}],D=[{title:`Backend .NET`,description:`Diseño e implementación de APIs y servicios orientados a mantenibilidad, seguridad y escalabilidad.`,items:[`C#`,`.NET`,`ASP.NET Core`,`REST APIs`,`JWT`,`Dependency Injection`]},{title:`Arquitectura y calidad`,description:`Buenas prácticas para construir soluciones empresariales limpias y fáciles de evolucionar.`,items:[`Clean Architecture`,`DDD`,`Patrones de diseño`,`Microservicios`,`SOLID`,`Testing mindset`]},{title:`Frontend y experiencia`,description:`Capacidad para construir interfaces modernas y conectar la UI con servicios backend de forma ordenada.`,items:[`React`,`JavaScript`,`TypeScript`,`Vue`,`Blazor`,`Responsive UI`]},{title:`Datos, nube y DevOps`,description:`Experiencia desplegando, integrando y automatizando software sobre stack Microsoft.`,items:[`SQL Server`,`Oracle`,`Azure`,`Azure DevOps`,`CI/CD`,`Git`]}],O=[{value:`3+ años`,label:`Experiencia en desarrollo`,detail:`Construyendo backend, APIs y soluciones full stack para entornos empresariales.`},{value:`.NET + React`,label:`Perfil híbrido`,detail:`Capacidad para entregar tanto lógica de negocio como interfaces modernas.`},{value:`Azure DevOps`,label:`Entrega continua`,detail:`Automatización de despliegues y trazabilidad del ciclo de vida del software.`}];function k({eyebrow:e,title:t,description:n}){return(0,S.jsxs)(`div`,{className:`section-heading`,children:[e?(0,S.jsx)(`p`,{className:`section-eyebrow`,children:e}):null,(0,S.jsx)(`h2`,{children:t}),n?(0,S.jsx)(`p`,{className:`section-description`,children:n}):null]})}var A=[{company:`Innovative`,role:`Software Development Intern`,period:`May 2022 - Aug 2022`,startDate:`2022-05-01`,endDate:`2022-08-31`,duration:`4 months`,summary:`Participación en el desarrollo de una solución web y móvil con backend .NET, componentes frontend y soporte de despliegue. Experiencia inicial en arquitectura full stack y integración de servicios.`,description:`Durante mi internship en Innovative, trabajé en un proyecto de transformación digital que incluía una solución integral con backend robusto, interfaces web modernas y aplicación móvil nativa. Colaboré con un equipo multidisciplinario en la implementación de características, optimización de performance y despliegue en múltiples plataformas.`,achievements:[`Contribuí al desarrollo del backend con .NET Core, implementando APIs REST para una solución interna de gestión de trámites.`,`Participé en el desarrollo frontend con Vue.js para la interfaz web y React Native para la aplicación móvil.`,`Implementé integraciones de analítica y monitoreo con Firebase Analytics y Crashlytics para tracking de errores.`,`Colaboré en el proceso de despliegue y publicación de la aplicación móvil en App Store e Google Play.`,`Aprendí sobre CI/CD, versionamiento y buenas prácticas de desarrollo en equipo.`],stack:[`.NET Core`,`C#`,`Vue.js`,`React Native`,`Firebase`,`JavaScript`,`Git`],highlights:[`Full Stack Development`,`Mobile Deployment`,`Firebase Integration`]},{company:`Innovative S.A.`,role:`Software Engineer I (Full Stack)`,period:`Oct 2022 - Sep 2025`,startDate:`2022-10-03`,endDate:`2025-09-30`,duration:`2 years 11 months`,summary:`Desarrollo de APIs REST empresariales y soluciones full stack para el sector financiero con foco en mantenibilidad, seguridad e integración. Liderazgo técnico en arquitectura limpia y optimización de bases de datos.`,description:`Como Software Engineer I en Innovative, fui responsable del diseño e implementación de soluciones backend escalables para clientes del sector financiero. Trabajé en la modernización de sistemas legacy, implementación de arquitectura limpia y optimización de performance en bases de datos empresariales. Colaboré con equipos de infraestructura en la automatización de despliegues y monitoreo de aplicaciones en producción.`,achievements:[`Desarrollé más de 50 APIs REST con ASP.NET Core y C# siguiendo principios SOLID y Clean Architecture.`,`Implementé patrones de diseño avanzados: CQRS, MediatR, Repository Pattern y Dependency Injection.`,`Optimicé consultas SQL en SQL Server y Oracle, mejorando performance en 40-60% en operaciones críticas.`,`Diseñé y ejecuté procedimientos almacenados complejos para reportes y procesamiento de datos.`,`Automaticé despliegues a múltiples ambientes (DEV, QA, PROD) mediante pipelines CI/CD en Azure DevOps.`,`Implementé estrategias de versionamiento, rollback y monitoreo de aplicaciones en producción.`,`Mentoricé a desarrolladores junior en arquitectura y mejores prácticas de código.`],stack:[`C#`,`.NET Core`,`.NET Framework`,`ASP.NET Core`,`SQL Server`,`Oracle`,`T-SQL`,`PL/SQL`,`Azure DevOps`,`Git`,`Entity Framework`],highlights:[`Clean Architecture`,`Database Optimization`,`CI/CD Pipelines`,`Mentoring`]},{company:`Novacomp S.A.`,role:`SDR Técnico | Microsoft Cloud`,period:`Aug 2025 - Feb 2026`,startDate:`2025-08-01`,endDate:`2026-02-28`,duration:`7 months`,summary:`Rol técnico-comercial que fortaleció mi visión de arquitectura, discovery y traducción de necesidades de negocio a soluciones técnicas. Experiencia en preventa, PoCs y modernización cloud.`,description:`En Novacomp, trabajé como SDR Técnico en el equipo de Microsoft Cloud, combinando responsabilidades técnicas con actividades comerciales. Participé en el descubrimiento de necesidades de clientes, diseño de soluciones cloud y demostración de tecnologías Microsoft. Esta experiencia me permitió desarrollar habilidades de comunicación técnica y entender mejor cómo traducir requisitos de negocio a arquitecturas de soluciones.`,achievements:[`Realicé discovery técnico-funcional con líderes de TI y CIOs para identificar oportunidades de modernización cloud.`,`Colaboré con arquitectos de soluciones en el diseño de PoCs (Proof of Concepts) para validar tecnologías Microsoft.`,`Participé en demos técnicas, workshops y presentaciones a stakeholders de alto nivel.`,`Documenté arquitecturas de referencia para migración a Azure y modernización de aplicaciones legacy.`,`Fortalecí mi capacidad para comunicar decisiones técnicas complejas a audiencias no técnicas.`,`Aprendí sobre gobernanza cloud, seguridad y compliance en entornos empresariales.`],stack:[`Azure`,`Azure DevOps`,`Microsoft Fabric`,`Azure SQL`,`Azure App Service`,`Azure Functions`,`Power BI`,`Discovery`,`Solution Architecture`],highlights:[`Cloud Architecture`,`Technical Sales`,`PoC Development`,`Stakeholder Communication`]}];function j({children:e}){return(0,S.jsx)(`span`,{className:`tag`,children:e})}var M=[...A].sort((e,t)=>new Date(t.startDate).getTime()-new Date(e.startDate).getTime());function N(){return(0,S.jsx)(`div`,{className:`timeline`,children:M.map(e=>(0,S.jsxs)(`article`,{className:`timeline-card`,children:[(0,S.jsx)(`div`,{className:`timeline-meta`,children:(0,S.jsx)(`p`,{className:`timeline-period`,children:e.period})}),(0,S.jsxs)(`div`,{className:`timeline-body`,children:[(0,S.jsxs)(`div`,{className:`timeline-title`,children:[(0,S.jsx)(`div`,{className:`timeline-dot`}),(0,S.jsx)(`h3`,{children:e.role})]}),(0,S.jsx)(`p`,{className:`timeline-company`,children:e.company}),(0,S.jsx)(`p`,{className:`muted`,children:e.summary}),(0,S.jsx)(`ul`,{className:`bullet-list`,children:e.achievements.map(e=>(0,S.jsx)(`li`,{children:e},e))}),(0,S.jsx)(`div`,{className:`tag-group`,children:e.stack.map(e=>(0,S.jsx)(j,{children:e},e))})]})]},`${e.company}-${e.role}`))})}function P({project:e}){return(0,S.jsxs)(`article`,{className:`project-card`,children:[(0,S.jsx)(`p`,{className:`project-category`,children:e.category}),(0,S.jsx)(`h3`,{children:e.title}),(0,S.jsx)(`p`,{className:`muted`,children:e.description}),(0,S.jsx)(`ul`,{className:`bullet-list`,children:e.highlights.map(e=>(0,S.jsx)(`li`,{children:e},e))}),(0,S.jsx)(`div`,{className:`tag-group`,children:e.technologies.map(e=>(0,S.jsx)(j,{children:e},e))}),e.liveDemo&&(0,S.jsx)(`div`,{className:`project-links`,children:(0,S.jsx)(`a`,{className:`button button-primary`,href:e.liveDemo,target:`_blank`,rel:`noopener noreferrer`,title:`Ver sitio en vivo`,children:`Ver Sitio`})})]})}function F({title:e,description:t,items:n}){return(0,S.jsxs)(`article`,{className:`skill-card`,children:[(0,S.jsx)(`h3`,{children:e}),(0,S.jsx)(`p`,{className:`muted`,children:t}),(0,S.jsx)(`div`,{className:`tag-group`,children:n.map(e=>(0,S.jsx)(j,{children:e},e))})]})}function I({value:e,label:t,detail:n}){return(0,S.jsxs)(`article`,{className:`stat-card`,children:[(0,S.jsx)(`p`,{className:`stat-value`,children:e}),(0,S.jsx)(`p`,{className:`stat-label`,children:t}),(0,S.jsx)(`p`,{className:`muted`,children:n})]})}function L(e,t=` | John Castro Sanabria`){(0,y.useEffect)(()=>{let n=e?`${e}${t}`:`John Castro Sanabria - Full Stack Developer`;document.title=n;let r=document.querySelector(`meta[property="og:title"]`);r&&r.setAttribute(`content`,n)},[e,t])}function R(){return L(`Portafolio | Full Stack .NET Developer`),(0,S.jsxs)(S.Fragment,{children:[(0,S.jsx)(`section`,{className:`hero-section`,children:(0,S.jsxs)(`div`,{className:`container hero-grid`,children:[(0,S.jsxs)(`div`,{children:[(0,S.jsx)(`p`,{className:`section-eyebrow`,children:`Portafolio Full Stack .NET`}),(0,S.jsx)(`h1`,{children:x.author}),(0,S.jsx)(`p`,{className:`hero-role`,children:x.role}),(0,S.jsx)(`p`,{className:`hero-copy`,children:x.headline}),(0,S.jsxs)(`div`,{className:`hero-actions`,children:[(0,S.jsx)(`a`,{className:`button`,href:`#proyectos`,children:x.ctaPrimary}),(0,S.jsx)(s,{className:`button button-secondary`,to:`/blog`,children:x.ctaSecondary})]})]}),(0,S.jsxs)(`aside`,{className:`hero-card hero-profile-card`,children:[(0,S.jsx)(`div`,{className:`hero-profile-media`,children:(0,S.jsx)(`img`,{src:`/profile-john.png`,alt:`John Castro en oficina`})}),(0,S.jsxs)(`div`,{className:`hero-profile-copy`,children:[(0,S.jsx)(`p`,{className:`hero-card-label`,children:`Perfil`}),(0,S.jsx)(`h2`,{children:`Backend sólido, frontend moderno y delivery continuo`}),(0,S.jsx)(`p`,{className:`hero-profile-text`,children:`Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, React, Vue, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración.`}),(0,S.jsxs)(`ul`,{className:`bullet-list hero-bullet-list`,children:[(0,S.jsx)(`li`,{children:`APIs REST y seguridad con JWT`}),(0,S.jsx)(`li`,{children:`Frontend con React, Vue y Blazor`}),(0,S.jsx)(`li`,{children:`SQL Server, Oracle e integraciones`}),(0,S.jsx)(`li`,{children:`CI/CD y despliegues con Azure DevOps`})]})]})]})]})}),(0,S.jsx)(`section`,{className:`section section-tight-top`,children:(0,S.jsx)(`div`,{className:`container stats-grid`,children:O.map(e=>(0,S.jsx)(I,{value:e.value,label:e.label,detail:e.detail},e.label))})}),(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container`,children:[(0,S.jsx)(k,{eyebrow:`Stack principal`,title:`Tecnologías y fortalezas con las que construyo`,description:`Mi perfil está orientado a desarrollo de software empresarial, desde la capa backend hasta la interfaz y la entrega continua.`}),(0,S.jsx)(`div`,{className:`skills-grid`,children:D.map(e=>(0,S.jsx)(F,{...e},e.title))})]})}),(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container`,children:[(0,S.jsx)(k,{eyebrow:`Experiencia`,title:`Trayectoria en orden cronológico`,description:`El recorrido muestra cómo evolucionó mi perfil desde desarrollo y prácticas técnicas hasta software engineering full stack y visión de arquitectura aplicada al negocio.`}),(0,S.jsx)(N,{})]})}),(0,S.jsx)(`section`,{className:`section`,id:`proyectos`,children:(0,S.jsxs)(`div`,{className:`container`,children:[(0,S.jsx)(k,{eyebrow:`Proyectos`,title:`Trabajo representativo en backend, full stack y DevOps`,description:`Casos que refuerzan mi perfil como desarrollador .NET con visión integral de arquitectura, frontend, datos y delivery.`}),(0,S.jsx)(`div`,{className:`card-grid`,children:E.map(e=>(0,S.jsx)(P,{project:e},e.id))})]})}),(0,S.jsx)(`section`,{className:`section section-accent`,children:(0,S.jsxs)(`div`,{className:`container cta-panel`,children:[(0,S.jsxs)(`div`,{children:[(0,S.jsx)(`p`,{className:`section-eyebrow`,children:`Blog técnico`}),(0,S.jsx)(`h2`,{children:`Notas sobre .NET, arquitectura y desarrollo full stack`}),(0,S.jsx)(`p`,{className:`section-description`,children:`Mantén el blog como soporte a tu marca técnica: artículos breves sobre APIs, Clean Architecture, React y DevOps ayudan a reforzar tu perfil frente a reclutadores.`})]}),(0,S.jsx)(s,{className:`button`,to:`/blog`,children:`Ir al blog`})]})})]})}function z(e){return new Intl.DateTimeFormat(`es-ES`,{day:`2-digit`,month:`long`,year:`numeric`}).format(new Date(e))}function B(e,t){return e.slug===t}function V({post:e}){return(0,S.jsxs)(`article`,{className:`blog-card`,children:[(0,S.jsxs)(`div`,{className:`blog-card-top`,children:[(0,S.jsxs)(`p`,{className:`blog-meta`,children:[(0,S.jsx)(`span`,{children:z(e.publishedAt)}),(0,S.jsx)(`span`,{children:`•`}),(0,S.jsx)(`span`,{children:e.readingTime}),(0,S.jsx)(`span`,{children:`•`}),(0,S.jsx)(`span`,{children:e.source===`firebase`?`Firebase`:`Local`})]}),(0,S.jsx)(`h3`,{children:e.title}),(0,S.jsx)(`p`,{className:`muted`,children:e.excerpt})]}),(0,S.jsx)(`div`,{className:`tag-group`,children:e.tags.map(e=>(0,S.jsx)(j,{children:e},e))}),(0,S.jsx)(s,{className:`button button-secondary`,to:`/blog/${e.slug}`,children:`Leer artículo`})]})}function H({search:e,onSearchChange:t,selectedTag:n,onTagChange:r,availableTags:i}){return(0,S.jsxs)(`div`,{className:`filters-panel`,children:[(0,S.jsxs)(`label`,{className:`field`,children:[(0,S.jsx)(`span`,{children:`Buscar`}),(0,S.jsx)(`input`,{type:`search`,value:e,onChange:e=>t(e.target.value),placeholder:`Ej. ASP.NET Core, React, Clean Architecture...`})]}),(0,S.jsxs)(`label`,{className:`field`,children:[(0,S.jsx)(`span`,{children:`Etiqueta`}),(0,S.jsxs)(`select`,{value:n,onChange:e=>r(e.target.value),children:[(0,S.jsx)(`option`,{value:`all`,children:`Todas`}),i.map(e=>(0,S.jsx)(`option`,{value:e,children:e},e))]})]})]})}function U({title:e,description:t}){return(0,S.jsxs)(`div`,{className:`empty-state`,children:[(0,S.jsx)(`h3`,{children:e}),(0,S.jsx)(`p`,{children:t})]})}function W({label:e=`Cargando contenido...`}){return(0,S.jsxs)(`div`,{className:`loader`,role:`status`,"aria-live":`polite`,children:[(0,S.jsx)(`span`,{className:`loader-dot`}),(0,S.jsx)(`p`,{children:e})]})}var G={apiKey:void 0,authDomain:void 0,projectId:void 0,storageBucket:void 0,messagingSenderId:void 0,appId:void 0,measurementId:void 0},K=[`apiKey`,`authDomain`,`projectId`,`appId`].every(e=>!!G[e]),q=K?_().length?h():f(G):null,J=q?g(q):null,Y=[{id:`1`,slug:`net-10-features-2026`,title:`.NET 10: Nuevas características y mejoras de performance`,excerpt:`.NET 10 trae mejoras significativas en performance, seguridad y herramientas de desarrollo. Descubre las características clave que debes conocer.`,content:`
+## .NET 10: Nuevas características y mejoras de performance
+
+.NET 10 representa un salto importante en la evolución de la plataforma. Con enfoque en performance, seguridad y experiencia del desarrollador, esta versión consolida a .NET como la opción preferida para aplicaciones empresariales modernas.
+
+### Mejoras de Performance
+
+#### Compilación AOT mejorada
+La compilación Ahead-of-Time (AOT) ahora es más eficiente, reduciendo el tamaño de los binarios hasta un 40% en comparación con versiones anteriores. Esto es crítico para aplicaciones en contenedores y edge computing.
+
+#### Optimizaciones de GC
+El recolector de basura ha sido optimizado para reducir pausas y mejorar la throughput en aplicaciones de alta concurrencia.
+
+### Seguridad Mejorada
+
+#### Encriptación por defecto
+Las conexiones a bases de datos ahora usan encriptación TLS por defecto, mejorando la seguridad sin configuración adicional.
+
+#### Validación de dependencias
+Herramientas mejoradas para detectar vulnerabilidades en dependencias durante el build.
+
+### Herramientas de Desarrollo
+
+#### Mejoras en Visual Studio 2026
+- IntelliSense más inteligente con IA
+- Debugging mejorado con snapshots
+- Profiling integrado para performance
+
+#### CLI mejorada
+Nuevos comandos para scaffolding, testing y deployment.
+
+### Recomendaciones
+
+Para proyectos nuevos, .NET 10 es la opción recomendada. Para proyectos existentes, evalúa la migración considerando los beneficios de performance y seguridad.
+    `,tags:[`.NET`,`Performance`,`C#`,`Tendencias`],publishedAt:`2026-04-20`,readingTime:`8 min`,source:`local`},{id:`2`,slug:`clean-architecture-2026`,title:`Clean Architecture en .NET: Guía práctica 2026`,excerpt:`Implementa Clean Architecture en tus proyectos .NET. Aprende cómo estructurar tu código para máxima mantenibilidad y escalabilidad.`,content:`
+## Clean Architecture en .NET: Guía práctica 2026
+
+Clean Architecture es más relevante que nunca en 2026. Con la complejidad creciente de las aplicaciones, una arquitectura bien definida es esencial.
+
+### Estructura de Capas
+
+#### 1. Domain Layer
+Contiene las entidades y lógica de negocio pura. Sin dependencias externas.
+
+\`\`\`csharp
+public class User
+{
+    public int Id { get; set; }
+    public string Email { get; set; }
+    public string PasswordHash { get; set; }
+    
+    public bool ValidatePassword(string password) => 
+        BCrypt.Net.BCrypt.Verify(password, PasswordHash);
+}
+\`\`\`
+
+#### 2. Application Layer
+Casos de uso y orquestación. Usa MediatR para CQRS.
+
+\`\`\`csharp
+public class CreateUserCommand : IRequest<UserDto>
+{
+    public string Email { get; set; }
+    public string Password { get; set; }
+}
+
+public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, UserDto>
+{
+    public async Task<UserDto> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+    {
+        // Lógica de creación
+    }
+}
+\`\`\`
+
+#### 3. Infrastructure Layer
+Implementaciones de repositorios, servicios externos, etc.
+
+#### 4. Presentation Layer
+Controllers, DTOs, validación de entrada.
+
+### Beneficios
+
+- **Testabilidad**: Cada capa es independiente y fácil de testear
+- **Mantenibilidad**: Cambios en una capa no afectan otras
+- **Escalabilidad**: Fácil agregar nuevas funcionalidades
+- **Independencia de frameworks**: Lógica de negocio no depende de tecnologías específicas
+
+### Herramientas Recomendadas
+
+- **MediatR**: Para CQRS
+- **FluentValidation**: Para validación
+- **AutoMapper**: Para mapeo de DTOs
+- **Entity Framework Core**: Para acceso a datos
+    `,tags:[`Clean Architecture`,`SOLID`,`Design Patterns`,`.NET`],publishedAt:`2026-04-15`,readingTime:`12 min`,source:`local`},{id:`3`,slug:`microservices-net-2026`,title:`Microservicios en .NET: Patrones y prácticas`,excerpt:`Diseña y despliega microservicios escalables con .NET. Aprende sobre comunicación, resiliencia y orquestación.`,content:`
+## Microservicios en .NET: Patrones y prácticas
+
+Los microservicios son la arquitectura preferida para aplicaciones empresariales complejas. .NET ofrece excelentes herramientas para implementarlos.
+
+### Comunicación entre Servicios
+
+#### Síncrona: gRPC
+Más eficiente que REST para comunicación interna.
+
+\`\`\`csharp
+// Definición del servicio
+service UserService {
+  rpc GetUser (GetUserRequest) returns (UserResponse);
+}
+\`\`\`
+
+#### Asíncrona: Message Queues
+RabbitMQ, Azure Service Bus para desacoplamiento.
+
+### Resiliencia
+
+#### Polly
+Implementa reintentos, circuit breakers y timeouts.
+
+\`\`\`csharp
+var policy = Policy
+    .Handle<HttpRequestException>()
+    .Or<TimeoutRejectedException>()
+    .WaitAndRetryAsync(3, retryAttempt => 
+        TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+\`\`\`
+
+### Observabilidad
+
+- **Logging**: Serilog con contexto distribuido
+- **Tracing**: OpenTelemetry
+- **Métricas**: Prometheus
+
+### Deployment
+
+Usa Kubernetes o Azure Container Instances para orquestación.
+    `,tags:[`Microservices`,`gRPC`,`Kubernetes`,`.NET`],publishedAt:`2026-04-10`,readingTime:`10 min`,source:`local`},{id:`4`,slug:`async-await-best-practices`,title:`Async/Await: Mejores prácticas en .NET`,excerpt:`Domina la programación asíncrona en .NET. Evita deadlocks, memory leaks y otros problemas comunes.`,content:`
+## Async/Await: Mejores prácticas en .NET
+
+La programación asíncrona es fundamental en .NET moderno. Aquí están las mejores prácticas para evitar problemas comunes.
+
+### Regla de Oro: Async All The Way
+
+Nunca bloquees en código asíncrono:
+
+\`\`\`csharp
+// ❌ MALO
+public async Task<User> GetUser(int id)
+{
+    var result = _userService.GetUserAsync(id).Result; // DEADLOCK!
+    return result;
+}
+
+// ✅ BUENO
+public async Task<User> GetUser(int id)
+{
+    return await _userService.GetUserAsync(id);
+}
+\`\`\`
+
+### ConfigureAwait(false)
+
+En librerías, siempre usa ConfigureAwait(false):
+
+\`\`\`csharp
+public async Task<Data> FetchDataAsync()
+{
+    var response = await _httpClient.GetAsync(url).ConfigureAwait(false);
+    return await response.Content.ReadAsAsync<Data>().ConfigureAwait(false);
+}
+\`\`\`
+
+### Manejo de Excepciones
+
+\`\`\`csharp
+try
+{
+    await Task.WhenAll(tasks);
+}
+catch (Exception ex)
+{
+    // Maneja AggregateException correctamente
+    _logger.LogError(ex, "Error en operaciones paralelas");
+}
+\`\`\`
+
+### ValueTask vs Task
+
+Usa ValueTask para métodos que frecuentemente completan sincrónicamente:
+
+\`\`\`csharp
+public ValueTask<int> GetCachedValueAsync(string key)
+{
+    if (_cache.TryGetValue(key, out var value))
+        return new ValueTask<int>(value);
+    
+    return new ValueTask<int>(FetchFromDatabaseAsync(key));
+}
+\`\`\`
+    `,tags:[`Async`,`Performance`,`C#`,`Concurrency`],publishedAt:`2026-04-05`,readingTime:`9 min`,source:`local`},{id:`5`,slug:`entity-framework-core-2026`,title:`Entity Framework Core 10: Guía completa`,excerpt:`Domina Entity Framework Core 10. Aprende sobre queries optimizadas, lazy loading y mejores prácticas de ORM.`,content:`
+## Entity Framework Core 10: Guía completa
+
+Entity Framework Core 10 trae mejoras significativas en performance y funcionalidad.
+
+### Queries Optimizadas
+
+#### LINQ to SQL Translation
+EF Core ahora traduce más operaciones LINQ directamente a SQL:
+
+\`\`\`csharp
+// Esto se traduce directamente a SQL
+var users = await _context.Users
+    .Where(u => u.Email.Contains("@example.com"))
+    .OrderBy(u => u.CreatedAt)
+    .Take(10)
+    .ToListAsync();
+\`\`\`
+
+#### Compiled Queries
+Para queries frecuentes, compílalas:
+
+\`\`\`csharp
+private static readonly Func<AppDbContext, int, Task<User>> GetUserById =
+    EF.CompileAsyncQuery((AppDbContext ctx, int id) =>
+        ctx.Users.FirstOrDefault(u => u.Id == id));
+
+public async Task<User> GetUser(int id)
+{
+    return await GetUserById(_context, id);
+}
+\`\`\`
+
+#### Lazy Loading Seguro
+
+\`\`\`csharp
+public class User
+{
+    public int Id { get; set; }
+    public virtual ICollection<Post> Posts { get; set; } // Lazy loaded
+}
+
+// En Startup
+services.AddDbContext<AppDbContext>(options =>
+    options.UseLazyLoadingProxies());
+\`\`\`
+
+#### Bulk Operations
+
+\`\`\`csharp
+await _context.Users
+    .Where(u => u.IsInactive)
+    .ExecuteDeleteAsync();
+\`\`\`
+    `,tags:[`Entity Framework`,`ORM`,`SQL`,`.NET`],publishedAt:`2026-03-30`,readingTime:`11 min`,source:`local`},{id:`6`,slug:`testing-net-2026`,title:`Testing en .NET: Unit, Integration y E2E`,excerpt:`Implementa una estrategia de testing completa. Aprende sobre xUnit, Moq, TestContainers y más.`,content:`
+## Testing en .NET: Unit, Integration y E2E
+
+Una buena cobertura de tests es esencial para código de calidad. Aquí está la guía completa.
+
+### Unit Testing con xUnit
+
+\`\`\`csharp
+public class UserServiceTests
+{
+    private readonly UserService _service;
+    private readonly Mock<IUserRepository> _repositoryMock;
+    
+    public UserServiceTests()
+    {
+        _repositoryMock = new Mock<IUserRepository>();
+        _service = new UserService(_repositoryMock.Object);
+    }
+    
+    [Fact]
+    public async Task CreateUser_WithValidData_ReturnsUser()
+    {
+        // Arrange
+        var command = new CreateUserCommand { Email = "test@example.com" };
+        
+        // Act
+        var result = await _service.CreateUserAsync(command);
+        
+        // Assert
+        Assert.NotNull(result);
+        Assert.Equal("test@example.com", result.Email);
+    }
+}
+\`\`\`
+
+### Integration Testing con TestContainers
+
+\`\`\`csharp
+[Collection("Database collection")]
+public class UserRepositoryTests : IAsyncLifetime
+{
+    private readonly PostgreSqlContainer _container = 
+        new PostgreSqlBuilder().Build();
+    
+    public async Task InitializeAsync()
+    {
+        await _container.StartAsync();
+    }
+    
+    public async Task DisposeAsync()
+    {
+        await _container.StopAsync();
+    }
+    
+    [Fact]
+    public async Task GetUser_WithValidId_ReturnsUser()
+    {
+        // Test con base de datos real
+    }
+}
+\`\`\`
+
+### E2E Testing
+
+Usa Playwright o Selenium para tests de interfaz.
+
+### Cobertura de Tests
+
+Apunta a 80%+ de cobertura en código crítico.
+    `,tags:[`xUnit`,`Testing`,`Moq`,`Quality Assurance`],publishedAt:`2026-03-25`,readingTime:`10 min`,source:`local`},{id:`7`,slug:`como-estructuro-apis-rest-en-aspnet-core`,title:`Cómo estructuro APIs REST en ASP.NET Core`,excerpt:`Mi enfoque para organizar una API mantenible usando separación por capas, servicios claros y foco en evolución.`,content:`
+## Qué busco al diseñar una API
+
+Una API empresarial no solo debe funcionar. También debe ser fácil de mantener, probar y extender cuando cambian los requerimientos.
+
+## Mi enfoque
+
+1. Separar dominio, aplicación e infraestructura.
+2. Mantener controladores delgados.
+3. Llevar la lógica de negocio a servicios y casos de uso.
+4. Cuidar validaciones, contratos y manejo de errores.
+
+## Resultado
+
+Esto facilita que el proyecto escale sin convertirse en una base de código difícil de entender.
+    `,tags:[`ASP.NET Core`,`REST API`,`Arquitectura`],publishedAt:`2026-04-01`,readingTime:`4 min`,source:`local`},{id:`8`,slug:`clean-architecture-en-proyectos-net-reales`,title:`Clean Architecture en proyectos .NET reales`,excerpt:`Más que teoría: cómo aporta orden, mantenibilidad y claridad cuando el sistema empieza a crecer.`,content:`
+## Por qué la uso
+
+Cuando una solución empieza a crecer, mezclar acceso a datos, reglas de negocio y detalles de framework complica todo.
+
+## Beneficios prácticos
+
+- Aísla reglas de negocio.
+- Facilita pruebas y cambios.
+- Reduce acoplamiento con infraestructura.
+- Hace más clara la responsabilidad de cada capa.
+
+## Dónde aporta más
+
+Especialmente en sistemas con integraciones, reglas complejas y varios ambientes de despliegue.
+    `,tags:[`Clean Architecture`,`.NET`,`Buenas prácticas`],publishedAt:`2026-03-22`,readingTime:`5 min`,source:`local`},{id:`9`,slug:`react-como-capa-frontend-para-soluciones-full-stack-net`,title:`React como capa frontend para soluciones full stack .NET`,excerpt:`Por qué React encaja bien como interfaz moderna cuando el backend vive en ASP.NET Core.`,content:`
+## Una combinación práctica
+
+ASP.NET Core permite construir APIs robustas y React aporta flexibilidad para crear interfaces rápidas y modulares.
+
+## Qué valoro de esta combinación
+
+- Separación clara entre frontend y backend.
+- Escalabilidad para equipos y módulos.
+- Mejor experiencia de usuario.
+- Facilidad para consumir APIs y evolucionar la UI.
+
+## En resumen
+
+Es una combinación muy útil para construir productos empresariales modernos sin perder orden técnico.
+    `,tags:[`React`,`Full Stack`,`.NET`],publishedAt:`2026-03-10`,readingTime:`4 min`,source:`local`}];function X(e,t=`local`){if(`data`in e){let n=e.data();return{id:e.id,slug:n.slug,title:n.title,excerpt:n.excerpt,content:n.content,tags:n.tags??[],publishedAt:n.publishedAt??new Date().toISOString(),readingTime:n.readingTime??`4 min`,source:t}}return{...e,source:t}}function Z(){let[e,t]=(0,y.useState)(Y.map(e=>X(e))),[n,r]=(0,y.useState)(K),[i,a]=(0,y.useState)(``);return(0,y.useEffect)(()=>{async function e(){if(!K||!J){r(!1);return}try{let e=await m(d(v(J,`posts`),p(`publishedAt`,`desc`)));e.empty||t(e.docs.map(e=>X(e,`firebase`)))}catch(e){console.warn(`No se pudieron cargar los posts desde Firebase. Se usarán los locales.`,e),a(`No se pudo conectar con Firebase. Se cargaron artículos locales.`)}finally{r(!1)}}e()},[]),{posts:(0,y.useMemo)(()=>[...e].sort((e,t)=>new Date(t.publishedAt).getTime()-new Date(e.publishedAt).getTime()),[e]),isLoading:n,error:i}}function Q(){L(`Portafolio | Blog técnico .NET`);let{posts:e,isLoading:t,error:r}=Z(),[i,a]=n(),o=i.get(`search`)??``,s=i.get(`tag`)??`all`,c=(0,y.useMemo)(()=>[...new Set(e.flatMap(e=>e.tags))].sort((e,t)=>e.localeCompare(t,`es`)),[e]),l=(0,y.useMemo)(()=>e.filter(e=>{let t=!o||[e.title,e.excerpt,e.content,e.tags.join(` `)].join(` `).toLowerCase().includes(o.toLowerCase()),n=s===`all`||e.tags.includes(s);return t&&n}),[e,o,s]);function u(e){let t=new URLSearchParams(i);Object.entries(e).forEach(([e,n])=>{!n||n===`all`?t.delete(e):t.set(e,n)}),a(t)}return(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container`,children:[(0,S.jsx)(k,{eyebrow:`Blog técnico`,title:`Contenido pensado para reforzar tu marca como desarrollador .NET`,description:`Publica artículos breves sobre arquitectura, APIs, frontend y prácticas de entrega para mostrar criterio técnico, no solo herramientas.`}),(0,S.jsx)(H,{search:o,onSearchChange:e=>u({search:e}),selectedTag:s,onTagChange:e=>u({tag:e}),availableTags:c}),r?(0,S.jsx)(`p`,{className:`helper-text`,children:r}):null,t?(0,S.jsx)(W,{label:`Cargando artículos...`}):null,!t&&l.length===0?(0,S.jsx)(U,{title:`No hay artículos para este filtro`,description:`Cambia la búsqueda o etiqueta para ver más resultados.`}):null,(0,S.jsx)(`div`,{className:`card-grid blog-grid`,children:l.map(e=>(0,S.jsx)(V,{post:e},e.id))})]})})}function te(e){return e.trim().split(`
+`).filter(Boolean).map((e,t)=>e.startsWith(`## `)?(0,S.jsx)(`h2`,{children:e.replace(`## `,``)},`${e}-${t}`):e.startsWith(`- `)?(0,S.jsx)(`li`,{children:e.replace(`- `,``)},`${e}-${t}`):/^\d+\.\s/.test(e)?(0,S.jsx)(`li`,{children:e.replace(/^\d+\.\s/,``)},`${e}-${t}`):(0,S.jsx)(`p`,{children:e},`${e}-${t}`))}function ne(){let{slug:e}=c(),{posts:t,isLoading:n}=Z(),r=t.find(t=>B(t,e));if(L(r?`Portafolio | ${r.title}`:`Portafolio | Artículo`),n)return(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsx)(`div`,{className:`container`,children:(0,S.jsx)(`p`,{children:`Cargando artículo...`})})});if(!r)return(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container`,children:[(0,S.jsx)(U,{title:`Artículo no encontrado`,description:`El contenido que buscas no existe o fue movido.`}),(0,S.jsx)(s,{className:`button`,to:`/blog`,children:`Volver al blog`})]})});let i=te(r.content),a=[],o=[];return i.forEach((e,t)=>{if(e.type===`li`){a.push(e);let n=i[t+1];(!n||n.type!==`li`)&&o.push((0,S.jsx)(`ul`,{className:`bullet-list article-list`,children:a.splice(0,a.length)},`list-group-${t}`))}else o.push(e)}),(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container article-container`,children:[(0,S.jsx)(s,{className:`text-link`,to:`/blog`,children:`← Volver al blog`}),(0,S.jsxs)(`article`,{className:`article-card`,children:[(0,S.jsxs)(`p`,{className:`blog-meta`,children:[(0,S.jsx)(`span`,{children:z(r.publishedAt)}),(0,S.jsx)(`span`,{children:`•`}),(0,S.jsx)(`span`,{children:r.readingTime})]}),(0,S.jsx)(`h1`,{children:r.title}),(0,S.jsx)(`p`,{className:`article-lead`,children:r.excerpt}),(0,S.jsx)(`div`,{className:`tag-group`,children:r.tags.map(e=>(0,S.jsx)(j,{children:e},e))}),(0,S.jsx)(`div`,{className:`article-content`,children:o})]})]})})}function $(){return L(`Portafolio | Página no encontrada`),(0,S.jsx)(`section`,{className:`section`,children:(0,S.jsxs)(`div`,{className:`container empty-state`,children:[(0,S.jsx)(`h1`,{children:`404`}),(0,S.jsx)(`p`,{children:`La página que buscas no existe.`}),(0,S.jsx)(s,{className:`button`,to:`/`,children:`Volver al inicio`})]})})}var re=`/Portfolio/`.replace(/\/$/,``)||`/`,ie=o([{path:`/`,element:(0,S.jsx)(ee,{}),errorElement:(0,S.jsx)($,{}),children:[{index:!0,element:(0,S.jsx)(R,{})},{path:`blog`,element:(0,S.jsx)(Q,{})},{path:`blog/:slug`,element:(0,S.jsx)(ne,{})},{path:`*`,element:(0,S.jsx)($,{})}]}],{basename:re});b.createRoot(document.getElementById(`root`)).render((0,S.jsx)(y.StrictMode,{children:(0,S.jsx)(a,{router:ie})}));
