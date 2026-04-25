@@ -8,6 +8,7 @@ import { ProjectCard } from '@/components/projects/ProjectCard';
 import { SkillGroupCard } from '@/components/home/SkillGroupCard';
 import { StatCard } from '@/components/home/StatCard';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { publicAsset } from '@/lib/assets';
 
 export function HomePage() {
   useDocumentTitle('Portafolio | Full Stack .NET Developer');
@@ -34,7 +35,7 @@ export function HomePage() {
 
           <aside className="hero-card hero-profile-card">
             <div className="hero-profile-media">
-              <img src="/profile-john.png" alt="John Castro en oficina" />
+              <img src={publicAsset('profile-john.png')} alt="John Castro en oficina" />
             </div>
 
             <div className="hero-profile-copy">

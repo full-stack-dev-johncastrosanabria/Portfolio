@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { siteConfig } from '@/config/site';
+import { publicAsset } from '@/lib/assets';
 
 const navigationLinks = [
   { to: '/', label: 'Inicio' },
@@ -12,7 +13,7 @@ export function Header() {
       <div className="container nav-wrapper">
         <NavLink className="brand" to="/">
           <span className="brand-mark brand-avatar">
-            <img src="/profile-john.png" alt="Foto de John Castro" />
+            <img src={publicAsset('profile-john.png')} alt="Foto de John Castro" />
           </span>
           <span>
             <strong>{siteConfig.author}</strong>
