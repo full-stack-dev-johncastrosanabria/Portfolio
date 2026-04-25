@@ -42,6 +42,7 @@ export const projects = [
       'Documentación con Swagger/OpenAPI',
     ],
     technologies: ['.NET Core', 'Clean Architecture', 'FluentValidation', 'AutoMapper', 'Swagger'],
+    githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/InterviewCleanApi',
   },
   {
     id: 'propflow',
@@ -56,6 +57,7 @@ export const projects = [
       'Integración con formularios de contacto',
     ],
     technologies: ['React', 'Tailwind CSS', 'Framer Motion', 'Next.js', 'Vercel'],
+    githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PropFlow',
   },
   {
     id: 'admin-dashboard',
@@ -130,6 +132,7 @@ export const projects = [
       'Documentación con Springdoc OpenAPI',
     ],
     technologies: ['Spring Boot', 'Spring Data JPA', 'PostgreSQL', 'Maven', 'Docker'],
+    githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/spring-demo',
   },
   {
     id: 'vue-project',
