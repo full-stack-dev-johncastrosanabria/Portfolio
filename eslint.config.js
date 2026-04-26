@@ -2,14 +2,16 @@ import js from '@eslint/js';
 import globals from 'globals';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import tseslint from 'typescript-eslint';
 
 export default [
   {
     ignores: ['dist', 'node_modules', '.vscode', '.git'],
   },
   js.configs.recommended,
+  ...tseslint.configs.recommended,
   {
-    files: ['**/*.{js,jsx}'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -34,7 +36,8 @@ export default [
         { allowConstantExport: true },
       ],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
-      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       'no-var': 'error',
       'prefer-const': 'warn',
       'prefer-arrow-callback': 'warn',
@@ -42,6 +45,12 @@ export default [
       'no-implicit-coercion': 'warn',
       'no-nested-ternary': 'warn',
       'no-unneeded-ternary': 'warn',
+    },
+  },
+  {
+    files: ['*.config.js', 'tailwind.config.js', 'postcss.config.js'],
+    rules: {
+      '@typescript-eslint/no-require-imports': 'off',
     },
   },
 ];

@@ -2,7 +2,29 @@
  * SEO utilities for meta tags and structured data
  */
 
-export const generateMetaTags = (config) => {
+interface MetaConfig {
+  title?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  type?: string;
+}
+
+interface StructuredDataConfig {
+  name?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  email?: string;
+  sameAs?: string[];
+}
+
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+export const generateMetaTags = (config: MetaConfig) => {
   const {
     title = 'John Castro Sanabria - Full Stack Developer',
     description = 'Full Stack Developer especializado en .NET, React y arquitectura limpia',
@@ -33,7 +55,7 @@ export const generateMetaTags = (config) => {
   };
 };
 
-export const generateStructuredData = (config) => {
+export const generateStructuredData = (config: StructuredDataConfig) => {
   const {
     name = 'John Castro Sanabria',
     description = 'Full Stack Developer',
@@ -57,7 +79,7 @@ export const generateStructuredData = (config) => {
   };
 };
 
-export const generateBreadcrumbs = (items) => {
+export const generateBreadcrumbs = (items: BreadcrumbItem[]) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',

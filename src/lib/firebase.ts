@@ -1,7 +1,7 @@
 import { initializeApp, getApp, getApps } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 
-const firebaseConfig = {
+const firebaseConfig: Record<string, string | undefined> = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
@@ -15,11 +15,15 @@ const requiredFirebaseKeys = ['apiKey', 'authDomain', 'projectId', 'appId'];
 
 const isFirebaseConfigured = requiredFirebaseKeys.every((key) => Boolean(firebaseConfig[key]));
 
-export const firebaseApp = isFirebaseConfigured
-  ? getApps().length
-    ? getApp()
-    : initializeApp(firebaseConfig)
-  : null;
+function createFirebaseApp() {
+  if (!isFirebaseConfigured) {
+    return null;
+  }
+
+  return getApps().length ? getApp() : initializeApp(firebaseConfig);
+}
+
+export const firebaseApp = createFirebaseApp();
 
 export const db = firebaseApp ? getFirestore(firebaseApp) : null;
 

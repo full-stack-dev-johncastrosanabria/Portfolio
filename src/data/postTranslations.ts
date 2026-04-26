@@ -1,4 +1,11 @@
-export const postTranslations = {
+export type PostTranslation = {
+  title: string;
+  excerpt: string;
+  content: string;
+  tags: string[];
+};
+
+export const postTranslations: Partial<Record<'es' | 'en', Record<string, PostTranslation>>> = {
   en: {
     '1': {
       title: '.NET 10: New features and performance improvements',

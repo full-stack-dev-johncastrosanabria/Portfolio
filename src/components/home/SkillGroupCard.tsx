@@ -1,6 +1,7 @@
 import { Tag } from '@/components/common/Tag';
+import type { SkillGroup } from '@/types';
 
-export function SkillGroupCard({ title, description, items }) {
+export function SkillGroupCard({ title, description, items }: SkillGroup) {
   return (
     <article className="skill-card">
       <h3>{title}</h3>

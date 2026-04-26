@@ -1,4 +1,6 @@
-export const experience = [
+import type { ExperienceItem } from '@/types';
+
+export const experience: ExperienceItem[] = [
   {
     company: 'Innovative',
     role: 'Software Development Intern',
@@ -66,4 +68,3 @@ export const experience = [
     highlights: ['Cloud Architecture', 'Technical Sales', 'PoC Development', 'Stakeholder Communication'],
   },
 ];
-

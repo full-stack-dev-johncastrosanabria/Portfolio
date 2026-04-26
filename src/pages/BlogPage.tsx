@@ -10,6 +10,11 @@ import { useBlogPosts } from '@/hooks/useBlogPosts';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { getLocalizedPost } from '@/lib/localizedPost';
 
+type BlogFiltersState = {
+  search?: string;
+  tag?: string;
+};
+
 export function BlogPage() {
   useDocumentTitle('Portafolio | Blog técnico .NET');
   const { t, i18n } = useTranslation();
@@ -48,7 +53,7 @@ export function BlogPage() {
     });
   }, [localizedPosts, search, selectedTag]);
 
-  function updateFilters(nextFilters) {
+  function updateFilters(nextFilters: BlogFiltersState) {
     const nextParams = new URLSearchParams(searchParams);
 
     Object.entries(nextFilters).forEach(([key, value]) => {

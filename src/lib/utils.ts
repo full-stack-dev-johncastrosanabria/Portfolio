@@ -1,7 +1,7 @@
 /**
  * Formatea una fecha al formato español
  */
-export function formatDate(dateString) {
+export function formatDate(dateString: string) {
   return new Intl.DateTimeFormat('es-ES', {
     day: '2-digit',
     month: 'long',
@@ -12,14 +12,14 @@ export function formatDate(dateString) {
 /**
  * Compara un post con un slug
  */
-export function slugMatches(post, slug) {
+export function slugMatches(post: { slug: string }, slug?: string) {
   return post.slug === slug;
 }
 
 /**
  * Convierte un string a slug
  */
-export function stringToSlug(str) {
+export function stringToSlug(str: string) {
   return str
     .toLowerCase()
     .trim()
@@ -31,7 +31,7 @@ export function stringToSlug(str) {
 /**
  * Calcula el tiempo de lectura estimado
  */
-export function calculateReadingTime(text) {
+export function calculateReadingTime(text: string) {
   const wordsPerMinute = 200;
   const words = text.trim().split(/\s+/).length;
   const minutes = Math.ceil(words / wordsPerMinute);
@@ -41,7 +41,7 @@ export function calculateReadingTime(text) {
 /**
  * Trunca un texto a una longitud específica
  */
-export function truncateText(text, length = 150) {
+export function truncateText(text: string, length = 150) {
   if (text.length <= length) return text;
   return text.substring(0, length).trim() + '...';
 }
@@ -49,7 +49,7 @@ export function truncateText(text, length = 150) {
 /**
  * Valida un email
  */
-export function isValidEmail(email) {
+export function isValidEmail(email: string) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
@@ -57,7 +57,7 @@ export function isValidEmail(email) {
 /**
  * Copia texto al portapapeles
  */
-export async function copyToClipboard(text) {
+export async function copyToClipboard(text: string) {
   try {
     await navigator.clipboard.writeText(text);
     return true;
@@ -70,7 +70,7 @@ export async function copyToClipboard(text) {
 /**
  * Obtiene el color de una categoría
  */
-export function getCategoryColor(category) {
+export function getCategoryColor(category: string) {
   const colors = {
     'Backend': 'bg-blue-500',
     'Frontend': 'bg-purple-500',
@@ -82,27 +82,31 @@ export function getCategoryColor(category) {
     'Architecture': 'bg-indigo-500',
     'Best Practices': 'bg-yellow-500',
   };
-  return colors[category] || 'bg-gray-500';
+  return colors[category as keyof typeof colors] || 'bg-gray-500';
 }
 
 /**
  * Agrupa items por una propiedad
  */
-export function groupBy(items, key) {
+export function groupBy<T extends Record<string, PropertyKey>>(items: T[], key: keyof T) {
   return items.reduce((acc, item) => {
-    const group = item[key];
+    const group = String(item[key]);
     if (!acc[group]) {
       acc[group] = [];
     }
     acc[group].push(item);
     return acc;
-  }, {});
+  }, {} as Record<string, T[]>);
 }
 
 /**
  * Ordena items por una propiedad
  */
-export function sortBy(items, key, order = 'asc') {
+export function sortBy<T extends Record<string, string | number | Date>>(
+  items: T[],
+  key: keyof T,
+  order: 'asc' | 'desc' = 'asc',
+) {
   return [...items].sort((a, b) => {
     if (a[key] < b[key]) return order === 'asc' ? -1 : 1;
     if (a[key] > b[key]) return order === 'asc' ? 1 : -1;
@@ -113,14 +117,15 @@ export function sortBy(items, key, order = 'asc') {
 /**
  * Filtra items por múltiples criterios
  */
-export function filterItems(items, filters) {
+export function filterItems<T extends Record<string, unknown>>(items: T[], filters: Partial<Record<keyof T, string>>) {
   return items.filter(item => {
     return Object.entries(filters).every(([key, value]) => {
       if (!value) return true;
-      if (Array.isArray(item[key])) {
-        return item[key].some(v => v.toLowerCase().includes(value.toLowerCase()));
+      const itemValue = item[key as keyof T];
+      if (Array.isArray(itemValue)) {
+        return itemValue.some((v) => String(v).toLowerCase().includes(value.toLowerCase()));
       }
-      return item[key].toString().toLowerCase().includes(value.toLowerCase());
+      return String(itemValue).toLowerCase().includes(value.toLowerCase());
     });
   });
 }

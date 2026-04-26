@@ -16,6 +16,7 @@ export function HomePage() {
   useDocumentTitle('Portafolio | Full Stack .NET Developer');
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage || i18n.language;
+  const heroBullets = t('hero.bullets', { returnObjects: true }) as string[];
 
   return (
     <>
@@ -48,7 +49,7 @@ export function HomePage() {
               <p className="hero-profile-text">{t('hero.profileText')}</p>
 
               <ul className="bullet-list hero-bullet-list">
-                {t('hero.bullets', { returnObjects: true }).map((item) => (
+                {heroBullets.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>

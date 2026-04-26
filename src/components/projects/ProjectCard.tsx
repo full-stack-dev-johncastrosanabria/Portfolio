@@ -1,8 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import { Tag } from '@/components/common/Tag';
 import { localizedValue } from '@/lib/localized';
+import type { Project } from '@/types';
 
-export function ProjectCard({ project, language: languageOverride }) {
+interface ProjectCardProps {
+  project: Project;
+  language?: string;
+}
+
+export function ProjectCard({ project, language: languageOverride }: ProjectCardProps) {
   const { t, i18n } = useTranslation();
   const language = languageOverride || i18n.resolvedLanguage || i18n.language;
   const links = project.links ?? [];

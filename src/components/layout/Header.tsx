@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { siteConfig } from '@/config/site';
+import { useTheme } from '@/hooks/useTheme';
 import { publicAsset } from '@/lib/assets';
 import { localizedValue } from '@/lib/localized';
 
 export function Header() {
   const { t, i18n } = useTranslation();
+  const { theme, toggleTheme } = useTheme();
   const language = i18n.resolvedLanguage || i18n.language;
   const navigationLinks = [
     { to: '/', label: t('nav.home') },
@@ -52,6 +54,15 @@ export function Header() {
             title={t('nav.language')}
           >
             {language === 'es' ? 'EN' : 'ES'}
+          </button>
+          <button
+            className="icon-toggle"
+            type="button"
+            onClick={toggleTheme}
+            aria-label={t('nav.theme')}
+            title={t('nav.theme')}
+          >
+            <span aria-hidden="true">{theme === 'dark' ? '☀' : '☾'}</span>
           </button>
         </nav>
       </div>

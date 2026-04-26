@@ -2,8 +2,13 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Tag } from '@/components/common/Tag';
 import { formatDate } from '@/lib/utils';
+import type { LocalizedBlogPost } from '@/types';
 
-export function BlogCard({ post }) {
+interface BlogCardProps {
+  post: LocalizedBlogPost;
+}
+
+export function BlogCard({ post }: BlogCardProps) {
   const { t } = useTranslation();
 
   return (

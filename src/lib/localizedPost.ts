@@ -1,8 +1,11 @@
 import { postTranslations } from '@/data/postTranslations';
+import type { PostTranslation } from '@/data/postTranslations';
 import { localizedValue } from '@/lib/localized';
+import type { BlogPost, Language, LocalizedBlogPost } from '@/types';
 
-export function getLocalizedPost(post, language = 'es') {
-  const translation = postTranslations[language]?.[post.id] ?? {};
+export function getLocalizedPost(post: BlogPost, language: string = 'es'): LocalizedBlogPost {
+  const normalizedLanguage: Language = language === 'en' ? 'en' : 'es';
+  const translation: Partial<PostTranslation> = postTranslations[normalizedLanguage]?.[post.id] ?? {};
 
   return {
     ...post,

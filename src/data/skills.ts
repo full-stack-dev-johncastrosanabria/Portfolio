@@ -1,4 +1,6 @@
-export const skillGroups = [
+import type { ProfileStat, SkillGroup } from '@/types';
+
+export const skillGroups: SkillGroup[] = [
   {
     title: 'Backend .NET',
     description:
@@ -25,7 +27,7 @@ export const skillGroups = [
   },
 ];
 
-export const profileStats = [
+export const profileStats: ProfileStat[] = [
   {
     value: '3+ años',
     label: 'Experiencia en desarrollo',

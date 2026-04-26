@@ -12,6 +12,7 @@ const resources = {
         home: 'Inicio',
         blog: 'Blog',
         language: 'Cambiar idioma',
+        theme: 'Cambiar tema',
       },
       hero: {
         eyebrow: 'Portafolio Full Stack .NET',
@@ -80,6 +81,7 @@ const resources = {
         home: 'Home',
         blog: 'Blog',
         language: 'Change language',
+        theme: 'Change theme',
       },
       hero: {
         eyebrow: 'Full Stack .NET Portfolio',

@@ -6,8 +6,9 @@ import { useBlogPosts } from '@/hooks/useBlogPosts';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { getLocalizedPost } from '@/lib/localizedPost';
 import { formatDate, slugMatches } from '@/lib/utils';
+import type { ReactElement } from 'react';
 
-function renderMarkdownLikeContent(content) {
+function renderMarkdownLikeContent(content: string): ReactElement[] {
   return content
     .trim()
     .split('\n')
@@ -75,8 +76,8 @@ export function PostDetailPage() {
   }
 
   const blocks = renderMarkdownLikeContent(post.content);
-  const listBuffer = [];
-  const normalizedBlocks = [];
+  const listBuffer: ReactElement[] = [];
+  const normalizedBlocks: ReactElement[] = [];
 
   blocks.forEach((block, index) => {
     if (block.type === 'li') {

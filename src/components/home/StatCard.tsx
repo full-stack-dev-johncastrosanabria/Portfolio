@@ -1,4 +1,6 @@
-export function StatCard({ value, label, detail }) {
+import type { ProfileStat } from '@/types';
+
+export function StatCard({ value, label, detail }: ProfileStat) {
   return (
     <article className="stat-card">
       <p className="stat-value">{value}</p>

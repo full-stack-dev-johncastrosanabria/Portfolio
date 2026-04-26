@@ -1,17 +1,21 @@
 import { useEffect, useMemo, useState } from 'react';
 import { collection, getDocs, orderBy, query } from 'firebase/firestore';
+import type { QueryDocumentSnapshot } from 'firebase/firestore';
 import { db, isFirebaseConfigured } from '@/lib/firebase';
 import { mockPosts } from '@/data/posts';
+import type { BlogPost } from '@/types';
 
-function normalizePost(docOrObject, source = 'local') {
+type FirestorePostData = Omit<BlogPost, 'id' | 'source'>;
+
+function normalizePost(docOrObject: QueryDocumentSnapshot | BlogPost, source: BlogPost['source'] = 'local'): BlogPost {
   if ('data' in docOrObject) {
-    const data = docOrObject.data();
+    const data = docOrObject.data() as Partial<FirestorePostData>;
     return {
       id: docOrObject.id,
-      slug: data.slug,
-      title: data.title,
-      excerpt: data.excerpt,
-      content: data.content,
+      slug: data.slug ?? docOrObject.id,
+      title: data.title ?? '',
+      excerpt: data.excerpt ?? '',
+      content: data.content ?? '',
       tags: data.tags ?? [],
       publishedAt: data.publishedAt ?? new Date().toISOString(),
       readingTime: data.readingTime ?? '4 min',

@@ -1,12 +1,20 @@
 import { useTranslation } from 'react-i18next';
 
+interface BlogFiltersProps {
+  search: string;
+  onSearchChange: (value: string) => void;
+  selectedTag: string;
+  onTagChange: (value: string) => void;
+  availableTags: string[];
+}
+
 export function BlogFilters({
   search,
   onSearchChange,
   selectedTag,
   onTagChange,
   availableTags,
-}) {
+}: BlogFiltersProps) {
   const { t } = useTranslation();
 
   return (

@@ -1,9 +1,16 @@
 import { useEffect } from 'react';
 
+interface MetaTagsConfig {
+  description?: string;
+  image?: string;
+  url?: string;
+  type?: string;
+}
+
 /**
  * Hook para actualizar el título del documento
  */
-export function useDocumentTitle(title, suffix = ' | John Castro Sanabria') {
+export function useDocumentTitle(title: string, suffix = ' | John Castro Sanabria') {
   useEffect(() => {
     const fullTitle = title ? `${title}${suffix}` : 'John Castro Sanabria - Full Stack Developer';
     document.title = fullTitle;
@@ -19,7 +26,7 @@ export function useDocumentTitle(title, suffix = ' | John Castro Sanabria') {
 /**
  * Hook para actualizar meta tags
  */
-export function useMetaTags(config = {}) {
+export function useMetaTags(config: MetaTagsConfig = {}) {
   useEffect(() => {
     const {
       description,
@@ -86,7 +93,7 @@ export function useMetaTags(config = {}) {
 /**
  * Hook para agregar structured data (JSON-LD)
  */
-export function useStructuredData(data) {
+export function useStructuredData(data: unknown) {
   useEffect(() => {
     if (!data) return;
 

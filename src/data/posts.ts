@@ -1,4 +1,6 @@
-export const mockPosts = [
+import type { BlogPost } from '@/types';
+
+export const mockPosts: BlogPost[] = [
   {
     id: '1',
     slug: 'net-10-features-2026',
