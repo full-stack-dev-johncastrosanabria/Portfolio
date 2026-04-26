@@ -63,6 +63,10 @@ const resources = {
         emptyTitle: 'No hay artículos para este filtro',
         emptyDescription: 'Cambia la búsqueda o etiqueta para ver más resultados.',
         readArticle: 'Leer artículo',
+        backToBlog: 'Volver al blog',
+        loadingArticle: 'Cargando artículo...',
+        articleNotFoundTitle: 'Artículo no encontrado',
+        articleNotFoundDescription: 'El contenido que buscas no existe o fue movido.',
       },
       notFound: {
         description: 'La página que buscas no existe.',
@@ -127,6 +131,10 @@ const resources = {
         emptyTitle: 'No articles match this filter',
         emptyDescription: 'Change the search term or tag to see more results.',
         readArticle: 'Read article',
+        backToBlog: 'Back to blog',
+        loadingArticle: 'Loading article...',
+        articleNotFoundTitle: 'Article not found',
+        articleNotFoundDescription: 'The content you are looking for does not exist or was moved.',
       },
       notFound: {
         description: 'The page you are looking for does not exist.',

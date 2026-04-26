@@ -1,8 +1,10 @@
 import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { EmptyState } from '@/components/common/EmptyState';
 import { Tag } from '@/components/common/Tag';
 import { useBlogPosts } from '@/hooks/useBlogPosts';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
+import { getLocalizedPost } from '@/lib/localizedPost';
 import { formatDate, slugMatches } from '@/lib/utils';
 
 function renderMarkdownLikeContent(content) {
@@ -37,9 +39,12 @@ function renderMarkdownLikeContent(content) {
 
 export function PostDetailPage() {
   const { slug } = useParams();
+  const { t, i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || i18n.language;
   const { posts, isLoading } = useBlogPosts();
 
-  const post = posts.find((currentPost) => slugMatches(currentPost, slug));
+  const rawPost = posts.find((currentPost) => slugMatches(currentPost, slug));
+  const post = rawPost ? getLocalizedPost(rawPost, language) : null;
 
   useDocumentTitle(post ? `Portafolio | ${post.title}` : 'Portafolio | Artículo');
 
@@ -47,7 +52,7 @@ export function PostDetailPage() {
     return (
       <section className="section">
         <div className="container">
-          <p>Cargando artículo...</p>
+          <p>{t('blog.loadingArticle')}</p>
         </div>
       </section>
     );
@@ -58,11 +63,11 @@ export function PostDetailPage() {
       <section className="section">
         <div className="container">
           <EmptyState
-            title="Artículo no encontrado"
-            description="El contenido que buscas no existe o fue movido."
+            title={t('blog.articleNotFoundTitle')}
+            description={t('blog.articleNotFoundDescription')}
           />
           <Link className="button" to="/blog">
-            Volver al blog
+            {t('blog.backToBlog')}
           </Link>
         </div>
       </section>
@@ -93,7 +98,7 @@ export function PostDetailPage() {
     <section className="section">
       <div className="container article-container">
         <Link className="text-link" to="/blog">
-          ← Volver al blog
+          {'<'} {t('blog.backToBlog')}
         </Link>
 
         <article className="article-card">
