@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { siteConfig } from '@/config/site';
 import { projects } from '@/data/projects';
 import { profileStats, skillGroups } from '@/data/skills';
@@ -9,26 +10,29 @@ import { SkillGroupCard } from '@/components/home/SkillGroupCard';
 import { StatCard } from '@/components/home/StatCard';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { publicAsset } from '@/lib/assets';
+import { localizedValue } from '@/lib/localized';
 
 export function HomePage() {
   useDocumentTitle('Portafolio | Full Stack .NET Developer');
+  const { t, i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || i18n.language;
 
   return (
     <>
       <section className="hero-section">
         <div className="container hero-grid">
           <div>
-            <p className="section-eyebrow">Portafolio Full Stack .NET</p>
+            <p className="section-eyebrow">{t('hero.eyebrow')}</p>
             <h1>{siteConfig.author}</h1>
-            <p className="hero-role">{siteConfig.role}</p>
-            <p className="hero-copy">{siteConfig.headline}</p>
+            <p className="hero-role">{localizedValue(siteConfig.roleLocalized, language)}</p>
+            <p className="hero-copy">{localizedValue(siteConfig.headlineLocalized, language)}</p>
 
             <div className="hero-actions">
               <a className="button" href="#proyectos">
-                {siteConfig.ctaPrimary}
+                {localizedValue(siteConfig.ctaPrimaryLocalized, language)}
               </a>
               <Link className="button button-secondary" to="/blog">
-                {siteConfig.ctaSecondary}
+                {localizedValue(siteConfig.ctaSecondaryLocalized, language)}
               </Link>
             </div>
           </div>
@@ -39,19 +43,14 @@ export function HomePage() {
             </div>
 
             <div className="hero-profile-copy">
-              <p className="hero-card-label">Perfil</p>
-              <h2>Backend sólido, frontend moderno y delivery continuo</h2>
-              <p className="hero-profile-text">
-                Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, React,
-                Vue, SQL Server y Azure DevOps, con enfoque en arquitectura limpia,
-                mantenibilidad e integración.
-              </p>
+              <p className="hero-card-label">{t('hero.profile')}</p>
+              <h2>{t('hero.profileTitle')}</h2>
+              <p className="hero-profile-text">{t('hero.profileText')}</p>
 
               <ul className="bullet-list hero-bullet-list">
-                <li>APIs REST y seguridad con JWT</li>
-                <li>Frontend con React, Vue y Blazor</li>
-                <li>SQL Server, Oracle e integraciones</li>
-                <li>CI/CD y despliegues con Azure DevOps</li>
+                {t('hero.bullets', { returnObjects: true }).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
           </aside>
@@ -69,9 +68,9 @@ export function HomePage() {
       <section className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Stack principal"
-            title="Tecnologías y fortalezas con las que construyo"
-            description="Mi perfil está orientado a desarrollo de software empresarial, desde la capa backend hasta la interfaz y la entrega continua."
+            eyebrow={t('sections.stackEyebrow')}
+            title={t('sections.stackTitle')}
+            description={t('sections.stackDescription')}
           />
 
           <div className="skills-grid">
@@ -85,9 +84,9 @@ export function HomePage() {
       <section className="section">
         <div className="container">
           <SectionTitle
-            eyebrow="Experiencia"
-            title="Trayectoria en orden cronológico"
-            description="El recorrido muestra cómo evolucionó mi perfil desde desarrollo y prácticas técnicas hasta software engineering full stack y visión de arquitectura aplicada al negocio."
+            eyebrow={t('sections.experienceEyebrow')}
+            title={t('sections.experienceTitle')}
+            description={t('sections.experienceDescription')}
           />
           <ExperienceTimeline />
         </div>
@@ -96,14 +95,14 @@ export function HomePage() {
       <section className="section" id="proyectos">
         <div className="container">
           <SectionTitle
-            eyebrow="Proyectos"
-            title="Trabajo representativo en backend, full stack y DevOps"
-            description="Casos que refuerzan mi perfil como desarrollador .NET con visión integral de arquitectura, frontend, datos y delivery."
+            eyebrow={t('sections.projectsEyebrow')}
+            title={t('sections.projectsTitle')}
+            description={t('sections.projectsDescription')}
           />
 
           <div className="card-grid">
             {projects.map((project) => (
-              <ProjectCard key={project.id} project={project} />
+              <ProjectCard key={project.id} project={project} language={language} />
             ))}
           </div>
         </div>
@@ -112,15 +111,13 @@ export function HomePage() {
       <section className="section section-accent">
         <div className="container cta-panel">
           <div>
-            <p className="section-eyebrow">Blog técnico</p>
-            <h2>Notas sobre .NET, arquitectura y desarrollo full stack</h2>
-            <p className="section-description">
-              Mantén el blog como soporte a tu marca técnica: artículos breves sobre APIs, Clean Architecture, React y DevOps ayudan a reforzar tu perfil frente a reclutadores.
-            </p>
+            <p className="section-eyebrow">{t('sections.blogEyebrow')}</p>
+            <h2>{t('sections.blogTitle')}</h2>
+            <p className="section-description">{t('sections.blogDescription')}</p>
           </div>
 
           <Link className="button" to="/blog">
-            Ir al blog
+            {t('sections.blogButton')}
           </Link>
         </div>
       </section>

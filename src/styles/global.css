@@ -54,6 +54,10 @@ select {
   font: inherit;
 }
 
+button {
+  cursor: pointer;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -155,6 +159,22 @@ img {
 .nav-link-active {
   color: var(--text);
   background: rgba(56, 189, 248, 0.12);
+}
+
+.language-toggle {
+  min-width: 44px;
+  min-height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(15, 23, 42, 0.74);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.language-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .hero-section,

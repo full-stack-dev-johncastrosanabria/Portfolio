@@ -1,7 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import { siteConfig } from '@/config/site';
 import { publicAsset } from '@/lib/assets';
+import { localizedValue } from '@/lib/localized';
 
 export function Footer() {
+  const { i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || i18n.language;
+
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
@@ -13,7 +18,9 @@ export function Footer() {
           />
           <div>
             <p className="footer-title">{siteConfig.author}</p>
-            <p className="footer-copy">{siteConfig.description}</p>
+            <p className="footer-copy">
+              {localizedValue(siteConfig.descriptionLocalized, language)}
+            </p>
           </div>
         </div>
 

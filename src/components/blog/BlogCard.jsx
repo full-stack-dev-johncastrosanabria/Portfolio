@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Tag } from '@/components/common/Tag';
 import { formatDate } from '@/lib/utils';
 
 export function BlogCard({ post }) {
+  const { t } = useTranslation();
+
   return (
     <article className="blog-card">
       <div className="blog-card-top">
@@ -24,7 +27,7 @@ export function BlogCard({ post }) {
       </div>
 
       <Link className="button button-secondary" to={`/blog/${post.slug}`}>
-        Leer artículo
+        {t('blog.readArticle')}
       </Link>
     </article>
   );

@@ -17,6 +17,80 @@ export const projects = [
     featured: true,
   },
   {
+    id: 'nova-expediente-novacomp',
+    title: {
+      es: 'NovaExpediente / Novacomp - App corporativa de empleados',
+      en: 'NovaExpediente / Novacomp - Corporate employee app',
+    },
+    category: {
+      es: 'Mobile híbrido',
+      en: 'Hybrid mobile',
+    },
+    description: {
+      es: 'Aplicación oficial para colaboradores de Novacomp, publicada como NovaExpediente en Android y Novacomp en App Store. Centraliza servicios internos, noticias importantes, denuncias o sugerencias, permisos y trámites empresariales como vacaciones.',
+      en: 'Official Novacomp employee app, published as NovaExpediente on Android and Novacomp on the App Store. It centralizes internal services, important news, complaints or suggestions, permissions and business requests such as vacations.',
+    },
+    highlights: {
+      es: [
+        'App híbrida para iOS y Android con una base de código React Native',
+        'Módulos para servicios de empleados, noticias, permisos y trámites internos',
+        'Experiencia móvil orientada a autoservicio corporativo y comunicación interna',
+        'Publicación en App Store y Google Play con soporte a versiones productivas',
+      ],
+      en: [
+        'Hybrid iOS and Android app from one React Native codebase',
+        'Modules for employee services, news, permissions and internal workflows',
+        'Mobile experience focused on corporate self-service and internal communication',
+        'Published on App Store and Google Play with production release support',
+      ],
+    },
+    technologies: ['React Native', 'TypeScript', 'React Query', 'Expo', 'iOS', 'Android'],
+    links: [
+      {
+        label: {
+          es: 'App Store',
+          en: 'App Store',
+        },
+        href: 'https://apps.apple.com/us/app/novacomp/id1621800757',
+        primary: true,
+      },
+      {
+        label: {
+          es: 'Google Play',
+          en: 'Google Play',
+        },
+        href: 'https://play.google.com/store/apps/details?id=com.nova.NovaExpediente',
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: 'business-ai-analytics',
+    title: 'BusinessAI Analytics - Plataforma BI con IA',
+    category: 'Full Stack AI',
+    description: {
+      es: 'Plataforma local de business intelligence para administrar datos, visualizar dashboards, pronosticar rendimiento con IA y consultar insights mediante chatbot sobre bases de datos y documentos.',
+      en: 'Local business intelligence platform to manage data, visualize dashboards, forecast performance with AI and query insights through a chatbot over databases and documents.',
+    },
+    highlights: {
+      es: [
+        'Arquitectura de microservicios con Spring Boot y Spring Cloud Gateway',
+        'Servicio de IA en FastAPI con modelos LSTM para pronósticos',
+        'Frontend SPA en React TypeScript para dashboards e interacción analítica',
+        'Persistencia en MySQL y módulos separados para productos, clientes, ventas, analítica y documentos',
+      ],
+      en: [
+        'Microservices architecture with Spring Boot and Spring Cloud Gateway',
+        'FastAPI AI service with LSTM models for forecasting',
+        'React TypeScript SPA for dashboards and analytics interaction',
+        'MySQL persistence and separated modules for products, customers, sales, analytics and documents',
+      ],
+    },
+    technologies: ['Spring Boot', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
+    githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/BusinessAI-Analytics',
+    featured: true,
+  },
+  {
     id: 'reactivities',
     title: 'Reactivities - Red Social Full Stack',
     category: 'Full Stack',

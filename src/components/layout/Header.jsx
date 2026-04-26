@@ -1,13 +1,24 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { siteConfig } from '@/config/site';
 import { publicAsset } from '@/lib/assets';
-
-const navigationLinks = [
-  { to: '/', label: 'Inicio' },
-  { to: '/blog', label: 'Blog' },
-];
+import { localizedValue } from '@/lib/localized';
 
 export function Header() {
+  const { t, i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || i18n.language;
+  const navigationLinks = [
+    { to: '/', label: t('nav.home') },
+    { to: '/blog', label: t('nav.blog') },
+  ];
+
+  function toggleLanguage() {
+    const nextLanguage = language === 'es' ? 'en' : 'es';
+    i18n.changeLanguage(nextLanguage);
+    localStorage.setItem('portfolio-language', nextLanguage);
+    document.documentElement.lang = nextLanguage;
+  }
+
   return (
     <header className="site-header">
       <div className="container nav-wrapper">
@@ -17,7 +28,9 @@ export function Header() {
           </span>
           <span>
             <strong>{siteConfig.author}</strong>
-            <span className="brand-subtitle">{siteConfig.role}</span>
+            <span className="brand-subtitle">
+              {localizedValue(siteConfig.roleLocalized, language)}
+            </span>
           </span>
         </NavLink>
 
@@ -31,6 +44,15 @@ export function Header() {
               {item.label}
             </NavLink>
           ))}
+          <button
+            className="language-toggle"
+            type="button"
+            onClick={toggleLanguage}
+            aria-label={t('nav.language')}
+            title={t('nav.language')}
+          >
+            {language === 'es' ? 'EN' : 'ES'}
+          </button>
         </nav>
       </div>
     </header>

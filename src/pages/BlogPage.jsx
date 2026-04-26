@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useSearchParams } from 'react-router-dom';
 import { BlogCard } from '@/components/blog/BlogCard';
 import { BlogFilters } from '@/components/blog/BlogFilters';
@@ -10,6 +11,7 @@ import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 
 export function BlogPage() {
   useDocumentTitle('Portafolio | Blog técnico .NET');
+  const { t } = useTranslation();
 
   const { posts, isLoading, error } = useBlogPosts();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -58,9 +60,9 @@ export function BlogPage() {
     <section className="section">
       <div className="container">
         <SectionTitle
-          eyebrow="Blog técnico"
-          title="Contenido pensado para reforzar tu marca como desarrollador .NET"
-          description="Publica artículos breves sobre arquitectura, APIs, frontend y prácticas de entrega para mostrar criterio técnico, no solo herramientas."
+          eyebrow={t('sections.blogEyebrow')}
+          title={t('blog.title')}
+          description={t('blog.description')}
         />
 
         <BlogFilters
@@ -73,12 +75,12 @@ export function BlogPage() {
 
         {error ? <p className="helper-text">{error}</p> : null}
 
-        {isLoading ? <Loader label="Cargando artículos..." /> : null}
+        {isLoading ? <Loader label={t('blog.loading')} /> : null}
 
         {!isLoading && filteredPosts.length === 0 ? (
           <EmptyState
-            title="No hay artículos para este filtro"
-            description="Cambia la búsqueda o etiqueta para ver más resultados."
+            title={t('blog.emptyTitle')}
+            description={t('blog.emptyDescription')}
           />
         ) : null}
 
