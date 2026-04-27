@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Tag } from '@/components/common/Tag';
+import { projectTranslations } from '@/data/projectTranslations';
 import { localizedValue } from '@/lib/localized';
 import type { Project } from '@/types';
 
@@ -12,15 +13,20 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
   const { t, i18n } = useTranslation();
   const language = languageOverride || i18n.resolvedLanguage || i18n.language;
   const links = project.links ?? [];
+  const translation = language === 'en' ? projectTranslations[project.id] : undefined;
+  const title = translation?.title ?? project.title;
+  const category = translation?.category ?? project.category;
+  const description = translation?.description ?? project.description;
+  const highlights = translation?.highlights ?? project.highlights;
 
   return (
     <article className="project-card">
-      <p className="project-category">{localizedValue(project.category, language)}</p>
-      <h3>{localizedValue(project.title, language)}</h3>
-      <p className="muted">{localizedValue(project.description, language)}</p>
+      <p className="project-category">{localizedValue(category, language)}</p>
+      <h3>{localizedValue(title, language)}</h3>
+      <p className="muted">{localizedValue(description, language)}</p>
 
       <ul className="bullet-list">
-        {localizedValue(project.highlights, language).map((highlight) => (
+        {localizedValue(highlights, language).map((highlight) => (
           <li key={highlight}>{highlight}</li>
         ))}
       </ul>
@@ -39,7 +45,7 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
-              title="Ver sitio en vivo"
+              title={t('projectLinks.live')}
             >
               {t('projectLinks.live')}
             </a>
@@ -51,7 +57,7 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              title="Ver código en GitHub"
+              title={t('projectLinks.code')}
             >
               {t('projectLinks.code')}
             </a>
