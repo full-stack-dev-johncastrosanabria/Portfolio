@@ -455,6 +455,13 @@ img {
   color: #cbeeff;
   border: 1px solid rgba(56, 189, 248, 0.18);
   font-size: 0.85rem;
+  font-weight: 650;
+}
+
+:root[data-theme='light'] .tag {
+  background: rgba(3, 105, 161, 0.1);
+  color: #075985;
+  border-color: rgba(3, 105, 161, 0.32);
 }
 
 .section-accent {
