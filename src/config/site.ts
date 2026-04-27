@@ -5,7 +5,7 @@ export const siteConfig = {
     es: 'Full Stack Developer | .NET & React',
     en: 'Full Stack Developer | .NET & React',
   },
-  email: 'castrosanabriajohn2@gmail.com',
+  email: 'castrosanabriajohn@gmail.com',
   headline:
     'Desarrollador Full Stack especializado en .NET, React y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
   headlineLocalized: {
@@ -31,7 +31,7 @@ export const siteConfig = {
   socialLinks: [
     {
       label: 'Correo',
-      href: 'mailto:castrosanabriajohn2@gmail.com',
+      href: 'mailto:castrosanabriajohn@gmail.com',
       icon: 'mail',
     },
     {
