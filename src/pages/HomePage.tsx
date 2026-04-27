@@ -61,7 +61,13 @@ export function HomePage() {
       <section className="section section-tight-top">
         <div className="container stats-grid">
           {profileStats.map((item) => (
-            <StatCard key={item.label} value={item.value} label={item.label} detail={item.detail} />
+            <StatCard
+              key={localizedValue(item.label, 'es')}
+              value={item.value}
+              label={item.label}
+              detail={item.detail}
+              language={language}
+            />
           ))}
         </div>
       </section>
@@ -76,7 +82,7 @@ export function HomePage() {
 
           <div className="skills-grid">
             {skillGroups.map((group) => (
-              <SkillGroupCard key={group.title} {...group} />
+              <SkillGroupCard key={localizedValue(group.title, 'es')} {...group} language={language} />
             ))}
           </div>
         </div>

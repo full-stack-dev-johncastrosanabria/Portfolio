@@ -3,44 +3,85 @@ import type { ProfileStat, SkillGroup } from '@/types';
 export const skillGroups: SkillGroup[] = [
   {
     title: 'Backend .NET',
-    description:
-      'Diseño e implementación de APIs y servicios orientados a mantenibilidad, seguridad y escalabilidad.',
+    description: {
+      es: 'Diseño e implementación de APIs y servicios orientados a mantenibilidad, seguridad y escalabilidad.',
+      en: 'Design and implementation of APIs and services focused on maintainability, security and scalability.',
+    },
     items: ['C#', '.NET', 'ASP.NET Core', 'REST APIs', 'JWT', 'Dependency Injection'],
   },
   {
-    title: 'Arquitectura y calidad',
-    description:
-      'Buenas prácticas para construir soluciones empresariales limpias y fáciles de evolucionar.',
-    items: ['Clean Architecture', 'DDD', 'Patrones de diseño', 'Microservicios', 'SOLID', 'Testing mindset'],
+    title: {
+      es: 'Arquitectura y calidad',
+      en: 'Architecture and quality',
+    },
+    description: {
+      es: 'Buenas prácticas para construir soluciones empresariales limpias y fáciles de evolucionar.',
+      en: 'Best practices for building clean enterprise solutions that are easier to evolve.',
+    },
+    items: {
+      es: ['Clean Architecture', 'DDD', 'Patrones de diseño', 'Microservicios', 'SOLID', 'Testing mindset'],
+      en: ['Clean Architecture', 'DDD', 'Design patterns', 'Microservices', 'SOLID', 'Testing mindset'],
+    },
   },
   {
-    title: 'Frontend y experiencia',
-    description:
-      'Capacidad para construir interfaces modernas y conectar la UI con servicios backend de forma ordenada.',
+    title: {
+      es: 'Frontend y experiencia',
+      en: 'Frontend and user experience',
+    },
+    description: {
+      es: 'Capacidad para construir interfaces modernas y conectar la UI con servicios backend de forma ordenada.',
+      en: 'Ability to build modern interfaces and connect the UI with backend services in an organized way.',
+    },
     items: ['React', 'JavaScript', 'TypeScript', 'Vue', 'Blazor', 'Responsive UI'],
   },
   {
-    title: 'Datos, nube y DevOps',
-    description:
-      'Experiencia desplegando, integrando y automatizando software sobre stack Microsoft.',
+    title: {
+      es: 'Datos, nube y DevOps',
+      en: 'Data, cloud and DevOps',
+    },
+    description: {
+      es: 'Experiencia desplegando, integrando y automatizando software sobre stack Microsoft.',
+      en: 'Experience deploying, integrating and automating software on the Microsoft stack.',
+    },
     items: ['SQL Server', 'Oracle', 'Azure', 'Azure DevOps', 'CI/CD', 'Git'],
   },
 ];
 
 export const profileStats: ProfileStat[] = [
   {
-    value: '3+ años',
-    label: 'Experiencia en desarrollo',
-    detail: 'Construyendo backend, APIs y soluciones full stack para entornos empresariales.',
+    value: {
+      es: '3+ años',
+      en: '3+ years',
+    },
+    label: {
+      es: 'Experiencia en desarrollo',
+      en: 'Development experience',
+    },
+    detail: {
+      es: 'Construyendo backend, APIs y soluciones full stack para entornos empresariales.',
+      en: 'Building backend, APIs and full stack solutions for enterprise environments.',
+    },
   },
   {
     value: '.NET + React',
-    label: 'Perfil híbrido',
-    detail: 'Capacidad para entregar tanto lógica de negocio como interfaces modernas.',
+    label: {
+      es: 'Perfil híbrido',
+      en: 'Hybrid profile',
+    },
+    detail: {
+      es: 'Capacidad para entregar tanto lógica de negocio como interfaces modernas.',
+      en: 'Ability to deliver both business logic and modern interfaces.',
+    },
   },
   {
     value: 'Azure DevOps',
-    label: 'Entrega continua',
-    detail: 'Automatización de despliegues y trazabilidad del ciclo de vida del software.',
+    label: {
+      es: 'Entrega continua',
+      en: 'Continuous delivery',
+    },
+    detail: {
+      es: 'Automatización de despliegues y trazabilidad del ciclo de vida del software.',
+      en: 'Deployment automation and traceability across the software delivery lifecycle.',
+    },
   },
 ];

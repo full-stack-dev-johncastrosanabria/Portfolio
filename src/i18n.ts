@@ -68,6 +68,8 @@ const resources = {
         loadingArticle: 'Cargando artículo...',
         articleNotFoundTitle: 'Artículo no encontrado',
         articleNotFoundDescription: 'El contenido que buscas no existe o fue movido.',
+        sourceLocal: 'Local',
+        firebaseFallback: 'No se pudo conectar con Firebase. Se cargaron artículos locales.',
       },
       notFound: {
         description: 'La página que buscas no existe.',
@@ -137,6 +139,8 @@ const resources = {
         loadingArticle: 'Loading article...',
         articleNotFoundTitle: 'Article not found',
         articleNotFoundDescription: 'The content you are looking for does not exist or was moved.',
+        sourceLocal: 'Local',
+        firebaseFallback: 'Could not connect to Firebase. Local articles were loaded.',
       },
       notFound: {
         description: 'The page you are looking for does not exist.',

@@ -104,7 +104,7 @@ export function PostDetailPage() {
 
         <article className="article-card">
           <p className="blog-meta">
-            <span>{formatDate(post.publishedAt)}</span>
+            <span>{formatDate(post.publishedAt, language)}</span>
             <span>•</span>
             <span>{post.readingTime}</span>
           </p>

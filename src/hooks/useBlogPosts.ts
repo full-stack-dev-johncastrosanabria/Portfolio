@@ -49,7 +49,7 @@ export function useBlogPosts() {
         }
       } catch (firebaseError) {
         console.warn('No se pudieron cargar los posts desde Firebase. Se usarán los locales.', firebaseError);
-        setError('No se pudo conectar con Firebase. Se cargaron artículos locales.');
+        setError('blog.firebaseFallback');
       } finally {
         setIsLoading(false);
       }

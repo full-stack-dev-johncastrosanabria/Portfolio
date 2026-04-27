@@ -9,17 +9,18 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const language = i18n.resolvedLanguage || i18n.language;
 
   return (
     <article className="blog-card">
       <div className="blog-card-top">
         <p className="blog-meta">
-          <span>{formatDate(post.publishedAt)}</span>
+          <span>{formatDate(post.publishedAt, language)}</span>
           <span>•</span>
           <span>{post.readingTime}</span>
           <span>•</span>
-          <span>{post.source === 'firebase' ? 'Firebase' : 'Local'}</span>
+          <span>{post.source === 'firebase' ? 'Firebase' : t('blog.sourceLocal')}</span>
         </p>
         <h3>{post.title}</h3>
         <p className="muted">{post.excerpt}</p>

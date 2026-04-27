@@ -1,11 +1,16 @@
 import type { ProfileStat } from '@/types';
+import { localizedValue } from '@/lib/localized';
 
-export function StatCard({ value, label, detail }: ProfileStat) {
+interface StatCardProps extends ProfileStat {
+  language: string;
+}
+
+export function StatCard({ value, label, detail, language }: StatCardProps) {
   return (
     <article className="stat-card">
-      <p className="stat-value">{value}</p>
-      <p className="stat-label">{label}</p>
-      <p className="muted">{detail}</p>
+      <p className="stat-value">{localizedValue(value, language)}</p>
+      <p className="stat-label">{localizedValue(label, language)}</p>
+      <p className="muted">{localizedValue(detail, language)}</p>
     </article>
   );
 }

@@ -1,8 +1,8 @@
 /**
  * Formatea una fecha al formato español
  */
-export function formatDate(dateString: string) {
-  return new Intl.DateTimeFormat('es-ES', {
+export function formatDate(dateString: string, language = 'es') {
+  return new Intl.DateTimeFormat(language === 'en' ? 'en-US' : 'es-ES', {
     day: '2-digit',
     month: 'long',
     year: 'numeric',

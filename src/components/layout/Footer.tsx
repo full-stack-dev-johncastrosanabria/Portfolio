@@ -26,8 +26,8 @@ export function Footer() {
 
         <div className="footer-links">
           {siteConfig.socialLinks.map((item) => (
-            <a key={item.label} href={item.href} target="_blank" rel="noreferrer">
-              {item.label}
+            <a key={item.href} href={item.href} target="_blank" rel="noreferrer">
+              {localizedValue(item.label, language)}
             </a>
           ))}
         </div>

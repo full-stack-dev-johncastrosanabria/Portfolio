@@ -45,27 +45,27 @@ export interface LocalizedBlogPost extends Omit<BlogPost, 'title' | 'excerpt' | 
 }
 
 export interface SkillGroup {
-  title: string;
-  description: string;
-  items: string[];
+  title: LocalizedString;
+  description: LocalizedString;
+  items: LocalizedStringArray;
 }
 
 export interface ProfileStat {
-  value: string;
-  label: string;
-  detail: string;
+  value: LocalizedString;
+  label: LocalizedString;
+  detail: LocalizedString;
 }
 
 export interface ExperienceItem {
   company: string;
-  role: string;
-  period: string;
+  role: LocalizedString;
+  period: LocalizedString;
   startDate: string;
   endDate: string;
-  duration: string;
-  summary: string;
-  description: string;
-  achievements: string[];
+  duration: LocalizedString;
+  summary: LocalizedString;
+  description: LocalizedString;
+  achievements: LocalizedStringArray;
   stack: string[];
   highlights: string[];
 }
@@ -73,4 +73,3 @@ export interface ExperienceItem {
 export interface WithChildren {
   children: ReactNode;
 }
-

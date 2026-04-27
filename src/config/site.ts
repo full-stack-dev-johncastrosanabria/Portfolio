@@ -30,7 +30,10 @@ export const siteConfig = {
   },
   socialLinks: [
     {
-      label: 'Correo',
+      label: {
+        es: 'Correo',
+        en: 'Email',
+      },
       href: 'mailto:castrosanabriajohn@gmail.com',
       icon: 'mail',
     },

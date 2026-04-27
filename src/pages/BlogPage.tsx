@@ -84,7 +84,7 @@ export function BlogPage() {
           availableTags={availableTags}
         />
 
-        {error ? <p className="helper-text">{error}</p> : null}
+        {error ? <p className="helper-text">{t(error)}</p> : null}
 
         {isLoading ? <Loader label={t('blog.loading')} /> : null}
 
