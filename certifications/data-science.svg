@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Certificado del programa Data Science</title>
+  <desc id="desc">Representacion visual profesional del certificado de Data Science emitido por Mundos E y Universidad Nacional de Cordoba.</desc>
+  <rect width="1200" height="760" rx="28" fill="#fbfae9"/>
+  <rect x="28" y="28" width="1144" height="704" rx="14" fill="none" stroke="#d1a04e" stroke-width="8"/>
+  <rect x="58" y="58" width="1084" height="644" rx="8" fill="none" stroke="#d1a04e" stroke-width="2" stroke-dasharray="8 8"/>
+  <text x="116" y="134" fill="#202124" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="900">mundos<tspan fill="#2d2d2d">E</tspan></text>
+  <text x="118" y="174" fill="#515151" font-family="Inter, Arial, sans-serif" font-size="22" letter-spacing="5">PEOPLE &amp; BUSINESS SCHOOL</text>
+  <rect x="514" y="48" width="172" height="190" fill="#d7e478"/>
+  <path d="M514 238 L600 198 L686 238" fill="#d7e478"/>
+  <text x="990" y="135" text-anchor="middle" fill="#2e567c" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900">UNC</text>
+  <text x="990" y="174" text-anchor="middle" fill="#507a63" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800">FCEFyN</text>
+  <text x="600" y="296" text-anchor="middle" fill="#50545b" font-family="Inter, Arial, sans-serif" font-size="30">La Facultad de Ciencias Exactas, Físicas y Naturales</text>
+  <text x="600" y="340" text-anchor="middle" fill="#50545b" font-family="Inter, Arial, sans-serif" font-size="28">de la Universidad Nacional de Córdoba certifica que</text>
+  <text x="600" y="430" text-anchor="middle" fill="#050505" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900">John Benjamín Castro Sanabria</text>
+  <line x1="226" y1="452" x2="974" y2="452" stroke="#9da0a4" stroke-width="3"/>
+  <text x="600" y="510" text-anchor="middle" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="900">Data Science</text>
+  <line x1="276" y1="530" x2="924" y2="530" stroke="#9da0a4" stroke-width="2"/>
+  <text x="600" y="578" text-anchor="middle" fill="#50545b" font-family="Inter, Arial, sans-serif" font-size="30">181 horas de duración</text>
+  <text x="600" y="636" text-anchor="middle" fill="#50545b" font-family="Inter, Arial, sans-serif" font-size="27">Córdoba, Argentina · 11 de agosto de 2022</text>
+  <line x1="216" y1="688" x2="416" y2="688" stroke="#d1a04e" stroke-width="3"/>
+  <line x1="784" y1="688" x2="984" y2="688" stroke="#d1a04e" stroke-width="3"/>
+</svg>
