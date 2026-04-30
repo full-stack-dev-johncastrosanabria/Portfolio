@@ -32,6 +32,10 @@ const resources = {
         stackTitle: 'Tecnologías y fortalezas con las que construyo',
         stackDescription:
           'Mi perfil está orientado a desarrollo de software empresarial, desde la capa backend hasta la interfaz y la entrega continua.',
+        certificationsEyebrow: 'Certificaciones',
+        certificationsTitle: 'Credenciales profesionales y formación continua',
+        certificationsDescription:
+          'Certificaciones Microsoft y formación complementaria que respaldan mi perfil en cloud, Microsoft 365, datos y preventa técnica.',
         experienceEyebrow: 'Experiencia',
         experienceTitle: 'Trayectoria en orden cronológico',
         experienceDescription:
@@ -103,6 +107,10 @@ const resources = {
         stackTitle: 'Technologies and strengths I build with',
         stackDescription:
           'My profile focuses on enterprise software development, from backend services to user interfaces and continuous delivery.',
+        certificationsEyebrow: 'Certifications',
+        certificationsTitle: 'Professional credentials and continuous learning',
+        certificationsDescription:
+          'Microsoft certifications and complementary training that support my profile across cloud, Microsoft 365, data and technical pre-sales.',
         experienceEyebrow: 'Experience',
         experienceTitle: 'Career path in chronological order',
         experienceDescription:

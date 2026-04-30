@@ -57,6 +57,20 @@ export interface ProfileStat {
   detail: LocalizedString;
 }
 
+export interface Certification {
+  id: string;
+  title: LocalizedString;
+  issuer: string;
+  issuedAt: LocalizedString;
+  category: LocalizedString;
+  credentialId?: string;
+  certificationNumber?: string;
+  status?: LocalizedString;
+  hours?: string;
+  image?: string;
+  featured?: boolean;
+}
+
 export interface ExperienceItem {
   company: string;
   role: LocalizedString;

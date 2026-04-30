@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { siteConfig } from '@/config/site';
+import { certifications } from '@/data/certifications';
 import { projects } from '@/data/projects';
 import { profileStats, skillGroups } from '@/data/skills';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { ExperienceTimeline } from '@/components/experience/ExperienceTimeline';
+import { CertificationCard } from '@/components/home/CertificationCard';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { SkillGroupCard } from '@/components/home/SkillGroupCard';
 import { StatCard } from '@/components/home/StatCard';
@@ -106,6 +108,26 @@ export function HomePage() {
           <div className="skills-grid">
             {skillGroups.map((group) => (
               <SkillGroupCard key={localizedValue(group.title, 'es')} {...group} language={language} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <SectionTitle
+            eyebrow={t('sections.certificationsEyebrow')}
+            title={t('sections.certificationsTitle')}
+            description={t('sections.certificationsDescription')}
+          />
+
+          <div className="certifications-grid">
+            {certifications.map((certification) => (
+              <CertificationCard
+                key={certification.id}
+                certification={certification}
+                language={language}
+              />
             ))}
           </div>
         </div>
