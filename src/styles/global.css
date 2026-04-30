@@ -60,6 +60,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  background: var(--bg);
 }
 
 a {
@@ -90,10 +91,140 @@ img {
 .app-shell {
   display: flex;
   flex-direction: column;
+  position: relative;
+  isolation: isolate;
 }
 
 .main-content {
   flex: 1;
+}
+
+.animated-background {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(2, 6, 23, 0.18), rgba(7, 17, 31, 0.68)),
+    var(--bg);
+}
+
+.liquid-field {
+  position: absolute;
+  inset: -28%;
+  filter: blur(46px) saturate(145%);
+  opacity: 0.78;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.liquid-field-primary {
+  background:
+    conic-gradient(
+      from 142deg at 50% 50%,
+      transparent 0deg,
+      rgba(56, 189, 248, 0.36) 34deg,
+      rgba(14, 165, 233, 0.1) 78deg,
+      transparent 122deg,
+      rgba(34, 197, 94, 0.18) 174deg,
+      rgba(56, 189, 248, 0.34) 226deg,
+      transparent 292deg,
+      rgba(14, 165, 233, 0.2) 330deg,
+      transparent 360deg
+    );
+  animation: liquid-drift 26s ease-in-out infinite alternate;
+}
+
+.liquid-field-secondary {
+  inset: -18%;
+  background:
+    linear-gradient(118deg, transparent 8%, rgba(59, 130, 246, 0.2) 28%, transparent 46%),
+    linear-gradient(238deg, transparent 18%, rgba(45, 212, 191, 0.16) 42%, transparent 64%),
+    conic-gradient(
+      from 260deg at 52% 48%,
+      rgba(2, 6, 23, 0) 0deg,
+      rgba(125, 211, 252, 0.24) 54deg,
+      rgba(2, 6, 23, 0) 118deg,
+      rgba(34, 197, 94, 0.14) 190deg,
+      rgba(2, 6, 23, 0) 266deg,
+      rgba(56, 189, 248, 0.22) 318deg,
+      rgba(2, 6, 23, 0) 360deg
+    );
+  opacity: 0.55;
+  animation: liquid-breathe 34s ease-in-out infinite alternate;
+}
+
+.liquid-mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(148, 163, 184, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 82%);
+  opacity: 0.34;
+}
+
+:root[data-theme='light'] .animated-background {
+  background:
+    linear-gradient(180deg, rgba(248, 250, 252, 0.74), rgba(237, 242, 248, 0.9)),
+    var(--bg);
+}
+
+:root[data-theme='light'] .liquid-field-primary {
+  opacity: 0.42;
+  filter: blur(54px) saturate(122%);
+}
+
+:root[data-theme='light'] .liquid-field-secondary {
+  opacity: 0.34;
+  filter: blur(58px) saturate(112%);
+}
+
+:root[data-theme='light'] .liquid-mesh {
+  background:
+    linear-gradient(rgba(71, 85, 105, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(71, 85, 105, 0.05) 1px, transparent 1px);
+  opacity: 0.26;
+}
+
+@keyframes liquid-drift {
+  0% {
+    transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1.05, 0.92);
+  }
+
+  45% {
+    transform: translate3d(3%, 2%, 0) rotate(34deg) scale(0.95, 1.08);
+  }
+
+  100% {
+    transform: translate3d(5%, -3%, 0) rotate(76deg) scale(1.12, 0.98);
+  }
+}
+
+@keyframes liquid-breathe {
+  0% {
+    transform: translate3d(4%, 3%, 0) rotate(0deg) scale(1.06);
+    opacity: 0.38;
+  }
+
+  50% {
+    transform: translate3d(-3%, -2%, 0) rotate(-24deg) scale(1.18);
+    opacity: 0.62;
+  }
+
+  100% {
+    transform: translate3d(1%, 4%, 0) rotate(-58deg) scale(1.04);
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-field-primary,
+  .liquid-field-secondary {
+    animation: none;
+  }
 }
 
 .container {
