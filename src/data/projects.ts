@@ -113,6 +113,10 @@ const projectItems: Project[] = [
     },
     technologies: ['Spring Boot', 'Spring Cloud Gateway', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
     liveDemo: 'https://youtu.be/i_TPjHsoOHE',
+    liveDemoLabel: {
+      es: 'Ver Demo',
+      en: 'View Demo',
+    },
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/BusinessAI-Analytics',
     featured: true,
   },

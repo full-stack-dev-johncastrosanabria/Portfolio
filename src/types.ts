@@ -20,6 +20,7 @@ export interface Project {
   highlights: LocalizedStringArray;
   technologies: string[];
   liveDemo?: string;
+  liveDemoLabel?: LocalizedString;
   githubUrl?: string;
   links?: ProjectLink[];
   featured?: boolean;

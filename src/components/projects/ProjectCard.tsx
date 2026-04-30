@@ -18,6 +18,9 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
   const category = translation?.category ?? project.category;
   const description = translation?.description ?? project.description;
   const highlights = translation?.highlights ?? project.highlights;
+  const liveDemoLabel = project.liveDemoLabel
+    ? localizedValue(project.liveDemoLabel, language)
+    : t('projectLinks.live');
 
   return (
     <article className="project-card">
@@ -45,9 +48,9 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"
-              title={t('projectLinks.live')}
+              title={liveDemoLabel}
             >
-              {t('projectLinks.live')}
+              {liveDemoLabel}
             </a>
           )}
 
