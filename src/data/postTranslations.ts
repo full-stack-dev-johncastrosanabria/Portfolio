@@ -437,5 +437,151 @@ It is a very useful combination for building modern enterprise products without 
       `,
       tags: ['React', 'Full Stack', '.NET'],
     },
+    '10': {
+      title: 'TypeScript for maintainable frontends',
+      excerpt:
+        'How TypeScript helps build safer, more predictable interfaces that are easier to evolve in React projects.',
+      content: `
+## Why TypeScript matters so much in frontend
+
+In a modern interface, the hard part is not only rendering components. Complexity appears when state, forms, routes, permissions, API responses and UI rules start to grow.
+
+TypeScript turns those decisions into clear contracts. If the backend changes a response, a component receives incomplete props or a flow misses a state, the error appears before production.
+
+## Where I use it intentionally
+
+- Types for API responses and DTOs.
+- Explicit props in reusable components.
+- Discriminated states for loading, success and error.
+- Typed helpers for forms, filters and tables.
+- Shared domain models when it makes sense.
+
+## Good practices
+
+It is not about overtyping everything. The key is to type what protects important decisions: external contracts, business states and highly reused components.
+
+## In summary
+
+TypeScript improves frontend work because it forces better contracts. That reduces bugs, makes refactoring safer and helps teams move faster with less uncertainty.
+      `,
+      tags: ['TypeScript', 'React', 'Frontend', 'Best practices'],
+    },
+    '11': {
+      title: 'Python in data and AI solutions',
+      excerpt:
+        'Why Python remains practical for automation, analytics, AI APIs and data prototypes.',
+      content: `
+## Python as a productivity tool
+
+Python stands out because it helps move quickly from an idea to a working solution. In data, automation and AI, that speed matters.
+
+In modern projects, Python can live as an independent service, a processing script, a data pipeline or a specialized API that complements the main backend.
+
+## Where it adds value
+
+- Data processing and cleaning.
+- Automation of repetitive tasks.
+- Forecasting and analytics models.
+- FastAPI services that expose AI capabilities.
+- Integrations with files, databases and external services.
+
+## Technical judgment
+
+Python is flexible, but that flexibility needs structure. Clear modules, validation, tests and input/output contracts matter.
+
+## In summary
+
+Python fits very well when solving data, AI or automation problems without overloading the main system. Used with architecture, it becomes a strong part of full stack solutions.
+      `,
+      tags: ['Python', 'FastAPI', 'Data', 'AI'],
+    },
+    '12': {
+      title: 'Java and Spring Boot for enterprise backends',
+      excerpt:
+        'A practical look at Java and Spring Boot as a foundation for APIs, microservices and robust enterprise systems.',
+      content: `
+## Java remains strong in enterprise
+
+Java keeps a strong position in enterprise systems because it offers stability, performance, a mature ecosystem and good practices for large projects.
+
+Spring Boot simplifies API and service development while keeping important capabilities such as security, dependency injection, environment configuration and observability.
+
+## What I value in Spring Boot
+
+- Productive and well-structured REST APIs.
+- Database and JPA integration.
+- Security with Spring Security.
+- Strong support for microservices.
+- A broad ecosystem for testing, messaging and deployment.
+
+## When I would choose it
+
+Spring Boot fits well when a system needs to grow, integrate with other services and remain stable for years.
+
+## In summary
+
+Java and Spring Boot are a strong combination for enterprise backends. They are not only useful for building quickly, but also for sustaining complex systems with order and consistency.
+      `,
+      tags: ['Java', 'Spring Boot', 'Backend', 'Microservices'],
+    },
+    '13': {
+      title: 'Integrating APIs with modern frontends',
+      excerpt:
+        'Practical patterns for connecting React frontends with REST APIs in a clear, resilient and maintainable way.',
+      content: `
+## Integration defines much of the experience
+
+A frontend can look good, but if it consumes APIs poorly, the experience becomes slow, fragile or inconsistent.
+
+The integration between frontend and backend should be treated as a contract: what data arrives, when it arrives, how it is validated and what happens when something fails.
+
+## Patterns I use
+
+- Centralized HTTP clients.
+- Types for requests and responses.
+- Consistent error handling.
+- Clear loading, empty and failure states.
+- Cache and synchronization with tools like React Query.
+- Separation between visual components and data logic.
+
+## Good contract design
+
+Endpoints should return consistent responses. The frontend should avoid depending on accidental backend details and work with clear models.
+
+## In summary
+
+Integrating APIs with modern frontends is not just making fetch calls. It is designing a stable boundary between systems so the UI can grow without becoming fragile.
+      `,
+      tags: ['APIs', 'React', 'Frontend', 'React Query'],
+    },
+    '14': {
+      title: 'Frontend and backend: contracts that improve user experience',
+      excerpt:
+        'How good contracts between API and UI reduce errors, improve response times and create more reliable products.',
+      content: `
+## The contract is also part of the product
+
+User experience does not depend only on visual design. It also depends on how clear the contract between frontend and backend is.
+
+When an API returns predictable structures, useful errors and data ready for the interface, the frontend can provide a faster and more stable experience.
+
+## Decisions that help
+
+- Consistent success and error responses.
+- Pagination, filtering and sorting designed with the UI in mind.
+- Actionable validation messages.
+- Versioning when the contract changes.
+- Minimal but useful documentation.
+
+## Impact on the team
+
+A clear contract reduces discussion, avoids assumptions and allows parallel work. Backend and frontend stop blocking each other over ambiguous details.
+
+## In summary
+
+Good integrations come from good contracts. When the API and frontend understand each other well, the product feels faster, more reliable and more professional.
+      `,
+      tags: ['API Design', 'UX', 'Frontend', 'Backend'],
+    },
   },
 };

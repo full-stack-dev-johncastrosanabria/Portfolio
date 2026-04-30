@@ -111,7 +111,7 @@ const projectItems: Project[] = [
         'MySQL persistence and separated modules for products, customers, sales, analytics and documents',
       ],
     },
-    technologies: ['Spring Boot', 'Spring Cloud Gateway', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
+    technologies: ['Spring Boot', 'Spring Cloud Gateway', 'FastAPI', 'Python', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
     liveDemo: 'https://youtu.be/i_TPjHsoOHE',
     liveDemoLabel: {
       es: 'Ver Demo',

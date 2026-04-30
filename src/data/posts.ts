@@ -476,4 +476,175 @@ Es una combinación muy útil para construir productos empresariales modernos si
     readingTime: '4 min',
     source: 'local',
   },
+  {
+    id: '10',
+    slug: 'typescript-para-frontends-mantenibles',
+    title: 'TypeScript para frontends mantenibles',
+    excerpt:
+      'Cómo TypeScript ayuda a construir interfaces más seguras, predecibles y fáciles de evolucionar en proyectos React.',
+    content: `
+## Por qué TypeScript aporta tanto en frontend
+
+En una interfaz moderna, el problema no suele ser pintar componentes. El reto real aparece cuando crecen los estados, formularios, rutas, permisos, respuestas de APIs y reglas visuales.
+
+TypeScript ayuda a convertir esas decisiones en contratos claros. Si el backend cambia una respuesta, si un componente recibe una propiedad incompleta o si un flujo no contempla un estado, el error aparece antes de llegar a producción.
+
+## Dónde lo uso con más intención
+
+- Tipos para respuestas de APIs y DTOs.
+- Props explícitas en componentes reutilizables.
+- Estados discriminados para loading, success y error.
+- Helpers tipados para formularios, filtros y tablas.
+- Modelos compartidos cuando el dominio lo permite.
+
+## Buenas prácticas
+
+No se trata de tipar todo de forma excesiva. La clave es tipar lo que protege decisiones importantes: contratos externos, estados de negocio y componentes que se reutilizan mucho.
+
+## En resumen
+
+TypeScript mejora el frontend porque obliga a pensar en contratos. Eso reduce bugs, facilita refactors y hace que el equipo pueda moverse más rápido con menos incertidumbre.
+    `,
+    tags: ['TypeScript', 'React', 'Frontend', 'Buenas prácticas'],
+    publishedAt: '2026-04-30',
+    readingTime: '5 min',
+    source: 'local',
+  },
+  {
+    id: '11',
+    slug: 'python-en-soluciones-de-datos-e-ia',
+    title: 'Python en soluciones de datos e IA',
+    excerpt:
+      'Por qué Python sigue siendo una herramienta práctica para automatización, analítica, APIs de IA y prototipos de datos.',
+    content: `
+## Python como herramienta de productividad
+
+Python destaca porque permite pasar rápido de una idea a una solución funcional. Para datos, automatización e IA, esa velocidad importa mucho.
+
+En proyectos modernos, Python puede vivir como servicio independiente, script de procesamiento, pipeline de datos o API especializada que complementa un backend principal.
+
+## Casos donde aporta valor
+
+- Procesamiento y limpieza de datos.
+- Automatización de tareas repetitivas.
+- Modelos de predicción y análisis.
+- Servicios con FastAPI para exponer capacidades de IA.
+- Integraciones con archivos, bases de datos y servicios externos.
+
+## Buen criterio técnico
+
+Python es muy flexible, pero esa flexibilidad necesita orden. Conviene definir estructuras claras, validaciones, pruebas y contratos de entrada y salida.
+
+## En resumen
+
+Python encaja muy bien cuando se necesita resolver problemas de datos, IA o automatización sin sobrecargar el sistema principal. Usado con arquitectura, se convierte en una pieza fuerte dentro de soluciones full stack.
+    `,
+    tags: ['Python', 'FastAPI', 'Data', 'AI'],
+    publishedAt: '2026-04-28',
+    readingTime: '5 min',
+    source: 'local',
+  },
+  {
+    id: '12',
+    slug: 'java-y-spring-boot-para-backends-empresariales',
+    title: 'Java y Spring Boot para backends empresariales',
+    excerpt:
+      'Una mirada práctica a Java y Spring Boot como base para construir APIs, microservicios y sistemas empresariales robustos.',
+    content: `
+## Java sigue siendo fuerte en enterprise
+
+Java mantiene una presencia muy sólida en sistemas empresariales porque ofrece estabilidad, rendimiento, ecosistema maduro y buenas prácticas para proyectos grandes.
+
+Spring Boot simplifica mucho la creación de APIs y servicios, sin perder capacidades importantes como seguridad, inyección de dependencias, configuración por ambientes y observabilidad.
+
+## Qué valoro de Spring Boot
+
+- APIs REST productivas y bien estructuradas.
+- Integración con bases de datos y JPA.
+- Seguridad con Spring Security.
+- Buen soporte para microservicios.
+- Ecosistema amplio para testing, mensajería y despliegue.
+
+## Cuándo lo elegiría
+
+Spring Boot encaja muy bien cuando el sistema necesita crecer, integrarse con otros servicios y mantenerse estable durante años.
+
+## En resumen
+
+Java y Spring Boot son una combinación sólida para backends empresariales. No solo sirven para construir rápido, también para sostener sistemas complejos con orden y consistencia.
+    `,
+    tags: ['Java', 'Spring Boot', 'Backend', 'Microservicios'],
+    publishedAt: '2026-04-26',
+    readingTime: '5 min',
+    source: 'local',
+  },
+  {
+    id: '13',
+    slug: 'integracion-de-apis-con-frontends-modernos',
+    title: 'Integración de APIs con frontends modernos',
+    excerpt:
+      'Patrones prácticos para conectar frontends React con APIs REST de forma clara, resiliente y mantenible.',
+    content: `
+## La integración define gran parte de la experiencia
+
+Un frontend puede verse bien, pero si consume mal las APIs la experiencia se vuelve lenta, frágil o inconsistente.
+
+La integración entre frontend y backend debe pensarse como un contrato: qué datos llegan, cuándo llegan, cómo se validan y qué ocurre cuando algo falla.
+
+## Patrones que uso
+
+- Clientes HTTP centralizados.
+- Tipos para requests y responses.
+- Manejo consistente de errores.
+- Estados claros de carga, vacío y fallo.
+- Cache y sincronización con herramientas como React Query.
+- Separación entre componentes visuales y lógica de datos.
+
+## Buen diseño de contratos
+
+Los endpoints deben entregar respuestas consistentes. El frontend debe evitar depender de detalles accidentales del backend y trabajar con modelos claros.
+
+## En resumen
+
+Integrar APIs con frontends modernos no es solo hacer fetch. Es diseñar una frontera estable entre sistemas para que la UI pueda crecer sin volverse frágil.
+    `,
+    tags: ['APIs', 'React', 'Frontend', 'React Query'],
+    publishedAt: '2026-04-24',
+    readingTime: '6 min',
+    source: 'local',
+  },
+  {
+    id: '14',
+    slug: 'frontend-backend-contratos-y-experiencia-de-usuario',
+    title: 'Frontend y backend: contratos que mejoran la experiencia de usuario',
+    excerpt:
+      'Cómo buenos contratos entre API y UI ayudan a reducir errores, mejorar tiempos de respuesta y construir productos más confiables.',
+    content: `
+## El contrato también es parte del producto
+
+La experiencia de usuario no depende solo del diseño visual. También depende de qué tan claro sea el contrato entre frontend y backend.
+
+Cuando una API responde con estructuras previsibles, errores útiles y datos listos para la interfaz, el frontend puede ofrecer una experiencia más rápida y estable.
+
+## Decisiones que ayudan
+
+- Respuestas consistentes para éxito y error.
+- Paginación, filtros y ordenamiento pensados para la UI.
+- Mensajes de validación accionables.
+- Versionado cuando el contrato cambia.
+- Documentación mínima pero útil.
+
+## Impacto en el equipo
+
+Un contrato claro reduce discusiones, evita supuestos y permite trabajar en paralelo. Backend y frontend dejan de bloquearse por detalles ambiguos.
+
+## En resumen
+
+Buenas integraciones nacen de buenos contratos. Cuando la API y el frontend se entienden bien, el producto se siente más rápido, confiable y profesional.
+    `,
+    tags: ['API Design', 'UX', 'Frontend', 'Backend'],
+    publishedAt: '2026-04-22',
+    readingTime: '5 min',
+    source: 'local',
+  },
 ];
