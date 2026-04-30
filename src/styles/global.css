@@ -1187,6 +1187,116 @@ img {
   }
 }
 
+@keyframes backend-grid-drift {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 52px 52px;
+  }
+}
+
+@keyframes blueprint-drift {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+    transform: scale(1);
+  }
+
+  to {
+    background-position: 0 0, 48px 24px, -54px 32px;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes frontend-ribbon {
+  0%,
+  100% {
+    transform: translateX(-34%) skewX(-8deg);
+    opacity: 0.26;
+  }
+
+  50% {
+    transform: translateX(34%) skewX(-8deg);
+    opacity: 0.62;
+  }
+}
+
+@keyframes cloud-particles {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+
+  35% {
+    transform: translate3d(10px, -8px, 0) scale(1.04);
+    filter: blur(0.2px);
+  }
+
+  70% {
+    transform: translate3d(-8px, 10px, 0) scale(1.02);
+    filter: blur(0);
+  }
+}
+
+@keyframes backend-chip-scan {
+  0% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+
+  45% {
+    transform: translateX(3px);
+    filter: brightness(1.22);
+  }
+
+  100% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+}
+
+@keyframes architecture-chip-lock {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+
+  35% {
+    transform: rotate(-1deg) scale(1.035);
+  }
+
+  70% {
+    transform: rotate(1deg) scale(1.02);
+  }
+
+  100% {
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes frontend-chip-bounce {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  45% {
+    transform: translateY(-5px) scale(1.06);
+  }
+}
+
+@keyframes cloud-chip-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
 @keyframes header-drop {
   from {
     opacity: 0;
@@ -1639,6 +1749,17 @@ img {
     box-shadow 220ms ease;
 }
 
+.skill-card::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  z-index: 0;
+  border-radius: calc(var(--radius) - 1px);
+  opacity: 0.34;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+
 .skill-card:nth-child(2) {
   animation-delay: 90ms;
 }
@@ -1649,6 +1770,42 @@ img {
 
 .skill-card:nth-child(4) {
   animation-delay: 270ms;
+}
+
+.skill-card:nth-child(1)::after {
+  background:
+    linear-gradient(90deg, rgba(56, 189, 248, 0.13) 1px, transparent 1px),
+    linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: linear-gradient(120deg, transparent 8%, #000 35%, #000 68%, transparent 94%);
+  animation: backend-grid-drift 11s linear infinite;
+}
+
+.skill-card:nth-child(2)::after {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(34, 197, 94, 0.22), transparent 24%),
+    linear-gradient(135deg, transparent 0 42%, rgba(125, 211, 252, 0.13) 42% 43%, transparent 43% 100%),
+    linear-gradient(45deg, transparent 0 48%, rgba(34, 197, 94, 0.12) 48% 49%, transparent 49% 100%);
+  background-size: auto, 48px 48px, 54px 54px;
+  animation: blueprint-drift 13s ease-in-out infinite alternate;
+}
+
+.skill-card:nth-child(3)::after {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(244, 114, 182, 0.14), transparent 28%),
+    radial-gradient(circle at 82% 68%, rgba(56, 189, 248, 0.18), transparent 28%),
+    linear-gradient(115deg, transparent 8%, rgba(255, 255, 255, 0.12) 42%, transparent 60%);
+  transform: translateX(-30%);
+  animation: frontend-ribbon 7.2s ease-in-out infinite;
+}
+
+.skill-card:nth-child(4)::after {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(34, 197, 94, 0.22), transparent 14%),
+    radial-gradient(circle at 72% 26%, rgba(56, 189, 248, 0.2), transparent 14%),
+    radial-gradient(circle at 52% 78%, rgba(168, 85, 247, 0.16), transparent 16%),
+    linear-gradient(135deg, transparent, rgba(56, 189, 248, 0.08));
+  animation: cloud-particles 6.8s ease-in-out infinite;
 }
 
 .skill-card::before {
@@ -1665,7 +1822,7 @@ img {
 }
 
 .skill-card:hover {
-  transform: translateY(-8px) rotateX(2deg);
+  transform: translateY(-10px) rotateX(2deg) rotateY(-1deg);
   border-color: rgba(56, 189, 248, 0.34);
   box-shadow:
     0 24px 52px rgba(2, 6, 23, 0.32),
@@ -1675,6 +1832,39 @@ img {
 .skill-card:hover::before {
   opacity: 1;
   transform: translateX(0);
+}
+
+.skill-card:hover::after {
+  opacity: 0.74;
+}
+
+.skill-card:nth-child(1):hover {
+  box-shadow:
+    0 26px 54px rgba(14, 165, 233, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.skill-card:nth-child(2):hover {
+  transform: translateY(-10px) rotateX(1.5deg) rotateY(1deg);
+  box-shadow:
+    0 26px 54px rgba(34, 197, 94, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.skill-card:nth-child(3):hover {
+  transform: translateY(-10px) rotateX(2deg) rotateZ(-0.35deg);
+  box-shadow:
+    0 26px 54px rgba(56, 189, 248, 0.16),
+    0 0 36px rgba(244, 114, 182, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.skill-card:nth-child(4):hover {
+  transform: translateY(-10px) rotateX(1.5deg) rotateY(-1.2deg);
+  box-shadow:
+    0 26px 54px rgba(20, 184, 166, 0.18),
+    0 0 36px rgba(168, 85, 247, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
 .stat-value {
@@ -1700,6 +1890,22 @@ img {
 .skill-card .tag-group {
   position: relative;
   z-index: 1;
+}
+
+.skill-card:nth-child(1):hover .tag {
+  animation-name: backend-chip-scan;
+}
+
+.skill-card:nth-child(2):hover .tag {
+  animation-name: architecture-chip-lock;
+}
+
+.skill-card:nth-child(3):hover .tag {
+  animation-name: frontend-chip-bounce;
+}
+
+.skill-card:nth-child(4):hover .tag {
+  animation-name: cloud-chip-float;
 }
 
 .cert-card {
