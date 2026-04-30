@@ -15,16 +15,16 @@ const resources = {
         theme: 'Cambiar tema',
       },
       hero: {
-        eyebrow: 'Portafolio Full Stack .NET',
+        eyebrow: 'Portafolio de ingeniería full-stack',
         profile: 'Perfil',
-        profileTitle: 'Backend sólido, frontend moderno y delivery continuo',
+        profileTitle: 'Backend sólido, frontend moderno y delivery con Azure DevOps',
         profileText:
-          'Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, React, Vue, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración.',
+          'Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, React, TypeScript, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración. Certificado AZ-900 y MS-900.',
         bullets: [
           'APIs REST y seguridad con JWT',
-          'Frontend con React, Vue y Blazor',
+          'Frontend con React, TypeScript, Vue y Blazor',
           'SQL Server, Oracle e integraciones',
-          'CI/CD y despliegues con Azure DevOps',
+          'CI/CD, Azure DevOps y fundamentos Microsoft Cloud',
         ],
       },
       sections: {
@@ -86,16 +86,16 @@ const resources = {
         theme: 'Change theme',
       },
       hero: {
-        eyebrow: 'Full Stack .NET Portfolio',
+        eyebrow: 'Full-stack engineering portfolio',
         profile: 'Profile',
-        profileTitle: 'Strong backend, modern frontend and continuous delivery',
+        profileTitle: 'Strong backend, modern frontend and Azure DevOps delivery',
         profileText:
-          'Experience building enterprise solutions with C#, ASP.NET Core, React, Vue, SQL Server and Azure DevOps, focused on clean architecture, maintainability and integrations.',
+          'Experience building enterprise solutions with C#, ASP.NET Core, React, TypeScript, SQL Server and Azure DevOps, focused on clean architecture, maintainability and integrations. AZ-900 and MS-900 certified.',
         bullets: [
           'REST APIs and JWT security',
-          'Frontend with React, Vue and Blazor',
+          'Frontend with React, TypeScript, Vue and Blazor',
           'SQL Server, Oracle and integrations',
-          'CI/CD and deployments with Azure DevOps',
+          'CI/CD, Azure DevOps and Microsoft Cloud fundamentals',
         ],
       },
       sections: {

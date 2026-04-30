@@ -12,7 +12,7 @@ interface MetaTagsConfig {
  */
 export function useDocumentTitle(title: string, suffix = ' | John Castro Sanabria') {
   useEffect(() => {
-    const fullTitle = title ? `${title}${suffix}` : 'John Castro Sanabria - Full Stack Developer';
+    const fullTitle = title ? `${title}${suffix}` : 'John Castro Sanabria - Ingeniero de software full-stack';
     document.title = fullTitle;
 
     // Actualizar meta tag og:title

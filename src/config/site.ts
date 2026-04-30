@@ -1,22 +1,22 @@
 export const siteConfig = {
   author: 'John Castro Sanabria',
-  role: 'Full Stack Developer | .NET & React',
+  role: 'Ingeniero de software full-stack | .NET, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
   roleLocalized: {
-    es: 'Full Stack Developer | .NET & React',
-    en: 'Full Stack Developer | .NET & React',
+    es: 'Ingeniero de software full-stack | .NET, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
+    en: 'Full-stack software engineer | .NET, React, TypeScript and SQL | Azure DevOps | AZ-900 and MS-900 certified',
   },
   email: 'castrosanabriajohn@gmail.com',
   headline:
-    'Desarrollador Full Stack especializado en .NET, React y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
+    'Ingeniero de software full-stack especializado en .NET, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
   headlineLocalized: {
-    es: 'Desarrollador Full Stack especializado en .NET, React y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
-    en: 'Full Stack Developer specialized in .NET, React and clean architecture. I build scalable and maintainable solutions.',
+    es: 'Ingeniero de software full-stack especializado en .NET, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
+    en: 'Full-stack software engineer specialized in .NET, React, TypeScript, SQL and clean architecture. I build scalable and maintainable solutions.',
   },
   description:
-    'Portafolio profesional de John Castro Sanabria. Full Stack Developer con experiencia en .NET Core, React, SQL Server, Azure y arquitectura limpia. Especializado en APIs REST, microservicios y aplicaciones web modernas.',
+    'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
   descriptionLocalized: {
-    es: 'Portafolio profesional de John Castro Sanabria. Full Stack Developer con experiencia en .NET Core, React, SQL Server, Azure y arquitectura limpia. Especializado en APIs REST, microservicios y aplicaciones web modernas.',
-    en: 'Professional portfolio of John Castro Sanabria. Full Stack Developer with experience in .NET Core, React, SQL Server, Azure and clean architecture. Specialized in REST APIs, microservices and modern web applications.',
+    es: 'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
+    en: 'Professional portfolio of John Castro Sanabria. Full-stack software engineer with experience in .NET, React, TypeScript, SQL, Azure DevOps and clean architecture. AZ-900 and MS-900 certified.',
   },
   ctaPrimary: 'Ver proyectos',
   ctaPrimaryLocalized: {
@@ -62,10 +62,14 @@ export const siteConfig = {
     '.NET',
     'React',
     'Full Stack',
+    'TypeScript',
     'Clean Architecture',
     'API REST',
     'SQL Server',
     'Azure',
+    'Azure DevOps',
+    'AZ-900',
+    'MS-900',
     'JavaScript',
     'C#',
     'Web Development',
