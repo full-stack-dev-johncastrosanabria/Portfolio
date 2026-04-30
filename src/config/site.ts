@@ -28,6 +28,16 @@ export const siteConfig = {
     es: 'Leer blog técnico',
     en: 'Read technical blog',
   },
+  ctaYouTubeLocalized: {
+    es: 'Mi canal de YouTube',
+    en: 'My YouTube channel',
+  },
+  ctaGitHubLocalized: {
+    es: 'Mi GitHub',
+    en: 'My GitHub',
+  },
+  youtubeUrl: 'https://www.youtube.com/@JohnCastroTechLabs',
+  githubProfileUrl: 'https://github.com/full-stack-dev-johncastrosanabria/',
   socialLinks: [
     {
       label: {

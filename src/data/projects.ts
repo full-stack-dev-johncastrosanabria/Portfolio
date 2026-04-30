@@ -89,6 +89,7 @@ export const projects: Project[] = [
       ],
     },
     technologies: ['Spring Boot', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
+    liveDemo: 'https://youtu.be/i_TPjHsoOHE',
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/BusinessAI-Analytics',
     featured: true,
   },

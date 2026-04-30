@@ -35,6 +35,22 @@ export function HomePage() {
               <Link className="button button-secondary" to="/blog">
                 {localizedValue(siteConfig.ctaSecondaryLocalized, language)}
               </Link>
+              <a
+                className="button button-secondary"
+                href={siteConfig.youtubeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {localizedValue(siteConfig.ctaYouTubeLocalized, language)}
+              </a>
+              <a
+                className="button button-secondary"
+                href={siteConfig.githubProfileUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {localizedValue(siteConfig.ctaGitHubLocalized, language)}
+              </a>
             </div>
           </div>
 
