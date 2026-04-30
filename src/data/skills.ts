@@ -2,12 +2,15 @@ import type { ProfileStat, SkillGroup } from '@/types';
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: 'Backend .NET',
-    description: {
-      es: 'Diseño e implementación de APIs y servicios orientados a mantenibilidad, seguridad y escalabilidad.',
-      en: 'Design and implementation of APIs and services focused on maintainability, security and scalability.',
+    title: {
+      es: 'Backend empresarial',
+      en: 'Enterprise backend',
     },
-    items: ['C#', '.NET', 'ASP.NET Core', 'REST APIs', 'JWT', 'Dependency Injection'],
+    description: {
+      es: 'Diseño de APIs, servicios y microservicios con foco en arquitectura limpia, seguridad, mantenibilidad e integración.',
+      en: 'API, service and microservice design focused on clean architecture, security, maintainability and integration.',
+    },
+    items: ['C#', 'ASP.NET Core', 'Java', 'Spring Boot', 'REST APIs', 'JWT', 'Entity Framework Core', 'MediatR'],
   },
   {
     title: {
@@ -19,31 +22,31 @@ export const skillGroups: SkillGroup[] = [
       en: 'Best practices for building clean enterprise solutions that are easier to evolve.',
     },
     items: {
-      es: ['Clean Architecture', 'DDD', 'Patrones de diseño', 'Microservicios', 'SOLID', 'Testing mindset'],
-      en: ['Clean Architecture', 'DDD', 'Design patterns', 'Microservices', 'SOLID', 'Testing mindset'],
+      es: ['Clean Architecture', 'Microservicios', 'CQRS', 'SOLID', 'Patrones de diseño', 'Testing mindset'],
+      en: ['Clean Architecture', 'Microservices', 'CQRS', 'SOLID', 'Design patterns', 'Testing mindset'],
     },
   },
   {
     title: {
-      es: 'Frontend y experiencia',
-      en: 'Frontend and user experience',
+      es: 'Frontend y mobile',
+      en: 'Frontend and mobile',
     },
     description: {
-      es: 'Capacidad para construir interfaces modernas y conectar la UI con servicios backend de forma ordenada.',
-      en: 'Ability to build modern interfaces and connect the UI with backend services in an organized way.',
+      es: 'Construcción de interfaces web y móviles modernas conectadas a APIs, con enfoque responsive, accesible y productivo.',
+      en: 'Modern web and mobile interface development connected to APIs, with a responsive, accessible and productive approach.',
     },
-    items: ['React', 'JavaScript', 'TypeScript', 'Vue', 'Blazor', 'Responsive UI'],
+    items: ['React', 'TypeScript', 'React Native', 'Expo', 'React Query', 'Vue', 'i18next', 'Responsive UI'],
   },
   {
     title: {
-      es: 'Datos, nube y DevOps',
-      en: 'Data, cloud and DevOps',
+      es: 'Cloud, datos e IA',
+      en: 'Cloud, data and AI',
     },
     description: {
-      es: 'Experiencia desplegando, integrando y automatizando software sobre stack Microsoft.',
-      en: 'Experience deploying, integrating and automating software on the Microsoft stack.',
+      es: 'Experiencia integrando datos, automatización, despliegues y soluciones Microsoft Cloud con visión técnica y consultiva.',
+      en: 'Experience integrating data, automation, deployments and Microsoft Cloud solutions with a technical and consultative perspective.',
     },
-    items: ['SQL Server', 'Oracle', 'Azure', 'Azure DevOps', 'CI/CD', 'Git'],
+    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'Oracle', 'MySQL', 'FastAPI', 'AI/LSTM', 'CI/CD'],
   },
 ];
 
@@ -69,19 +72,19 @@ export const profileStats: ProfileStat[] = [
       en: 'Hybrid profile',
     },
     detail: {
-      es: 'Capacidad para entregar tanto lógica de negocio como interfaces modernas.',
-      en: 'Ability to deliver both business logic and modern interfaces.',
+      es: 'Capacidad para entregar backend, frontend, mobile y conversaciones técnicas de negocio.',
+      en: 'Ability to deliver backend, frontend, mobile and technical business conversations.',
     },
   },
   {
-    value: 'Azure DevOps',
+    value: 'Cloud + AI',
     label: {
-      es: 'Entrega continua',
-      en: 'Continuous delivery',
+      es: 'Microsoft Cloud e IA',
+      en: 'Microsoft Cloud and AI',
     },
     detail: {
-      es: 'Automatización de despliegues y trazabilidad del ciclo de vida del software.',
-      en: 'Deployment automation and traceability across the software delivery lifecycle.',
+      es: 'Azure, DevOps, Fabric, Power Platform e IA aplicada a soluciones empresariales.',
+      en: 'Azure, DevOps, Fabric, Power Platform and AI applied to enterprise solutions.',
     },
   },
 ];

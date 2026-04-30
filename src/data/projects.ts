@@ -1,6 +1,29 @@
 import type { Project } from '@/types';
 
-export const projects: Project[] = [
+const projectPriority = [
+  'nova-expediente-novacomp',
+  'business-ai-analytics',
+  'reactivities',
+  'portfolio',
+  'clean-api',
+  'basic-business-app',
+  'etickets',
+  'spring-demo',
+  'meals-to-go',
+  'expo-amplify-demo',
+  'admin-dashboard',
+  'propflow',
+  'microsoft-landing',
+  'vue-project',
+  'flask-product-api',
+  'personas-solution',
+  'webapi-matricula',
+  'wcf-tarjetas',
+  'smartgym-api',
+  'criadero-pastores',
+];
+
+const projectItems: Project[] = [
   {
     id: 'portfolio',
     title: 'Portafolio John Castro Sanabria',
@@ -13,7 +36,7 @@ export const projects: Project[] = [
       'Diseño responsive enfocado en marca personal técnica',
       'Secciones de proyectos, experiencia, habilidades y blog',
     ],
-    technologies: ['React', 'Vite', 'Tailwind CSS', 'GitHub Pages', 'GitHub Actions'],
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'i18next', 'GitHub Pages'],
     liveDemo: 'https://full-stack-dev-johncastrosanabria.github.io/Portfolio/',
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/Portfolio',
     featured: true,
@@ -46,7 +69,7 @@ export const projects: Project[] = [
         'Published on App Store and Google Play with production release support',
       ],
     },
-    technologies: ['React Native', 'TypeScript', 'React Query', 'Expo', 'iOS', 'Android'],
+    technologies: ['React Native', 'TypeScript', 'React Query', 'Expo', 'iOS', 'Android', 'App Store', 'Google Play'],
     links: [
       {
         label: {
@@ -88,7 +111,7 @@ export const projects: Project[] = [
         'MySQL persistence and separated modules for products, customers, sales, analytics and documents',
       ],
     },
-    technologies: ['Spring Boot', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
+    technologies: ['Spring Boot', 'Spring Cloud Gateway', 'FastAPI', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
     liveDemo: 'https://youtu.be/i_TPjHsoOHE',
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/BusinessAI-Analytics',
     featured: true,
@@ -105,7 +128,7 @@ export const projects: Project[] = [
       'Separación clara entre backend, frontend y capa de datos',
       'Base sólida para patrones modernos como CQRS y MediatR',
     ],
-    technologies: ['.NET', 'React', 'TypeScript', 'Entity Framework', 'SignalR', 'JWT'],
+    technologies: ['ASP.NET Core', 'React', 'TypeScript', 'Entity Framework Core', 'SignalR', 'JWT', 'MediatR'],
     githubUrl: 'https://github.com/castrosanabriajohn/Reactivities',
     featured: true,
   },
@@ -121,7 +144,7 @@ export const projects: Project[] = [
       'Flujo de compra y carrito para entradas',
       'Panel administrativo para operación del catálogo',
     ],
-    technologies: ['ASP.NET Core MVC', 'Entity Framework', 'SQL Server', 'Bootstrap', 'C#'],
+    technologies: ['ASP.NET Core MVC', 'Entity Framework Core', 'SQL Server', 'Bootstrap', 'C#'],
     githubUrl: 'https://github.com/castrosanabriajohn/eTickets',
     featured: true,
   },
@@ -137,7 +160,7 @@ export const projects: Project[] = [
       'Experiencia responsive para desktop y móvil',
       'Publicación rápida en Netlify',
     ],
-    technologies: ['React', 'CSS', 'Responsive UI', 'Netlify'],
+    technologies: ['React', 'CSS', 'Responsive UI', 'Netlify', 'Landing Page'],
     liveDemo: 'https://bocetoms.netlify.app/',
   },
   {
@@ -152,7 +175,7 @@ export const projects: Project[] = [
       'Estructura preparada para gráficos, tablas y navegación interna',
       'Demo pública desplegada en Netlify',
     ],
-    technologies: ['React', 'JavaScript', 'CSS', 'Netlify', 'Dashboard UI'],
+    technologies: ['React', 'JavaScript', 'CSS', 'Netlify', 'Dashboard UI', 'Data Visualization'],
     liveDemo: 'https://johns-admin-dashboard-react.netlify.app/',
     githubUrl: 'https://github.com/castrosanabriajohn/admin-dashboard',
   },
@@ -168,7 +191,7 @@ export const projects: Project[] = [
       'Validaciones y manejo ordenado de errores',
       'Documentación lista para inspección con Swagger/OpenAPI',
     ],
-    technologies: ['.NET', 'Clean Architecture', 'REST API', 'Swagger', 'C#'],
+    technologies: ['ASP.NET Core', 'Clean Architecture', 'REST API', 'Swagger', 'C#', 'SOLID'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/InterviewCleanApi',
   },
   {
@@ -183,7 +206,7 @@ export const projects: Project[] = [
       'Estructura preparada para testing y evolución',
       'Patrones de inyección de dependencias y servicios',
     ],
-    technologies: ['.NET', 'Clean Architecture', 'C#', 'SOLID', 'Entity Framework'],
+    technologies: ['ASP.NET Core', 'Clean Architecture', 'C#', 'SOLID', 'Entity Framework Core'],
     githubUrl: 'https://github.com/castrosanabriajohn/BasicBusinessAppV1',
   },
   {
@@ -198,7 +221,7 @@ export const projects: Project[] = [
       'Interfaz limpia con jerarquía visual fuerte',
       'Base lista para integración con formularios o CRM',
     ],
-    technologies: ['React', 'Tailwind CSS', 'Vite', 'Responsive UI'],
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive UI'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PropFlow',
   },
   {
@@ -213,7 +236,7 @@ export const projects: Project[] = [
       'Presentación de contenido comercial y contacto',
       'Demo desplegada en Netlify',
     ],
-    technologies: ['React', 'JavaScript', 'CSS', 'Netlify'],
+    technologies: ['React', 'JavaScript', 'CSS', 'Netlify', 'Responsive UI'],
     liveDemo: 'https://canesbarvae.netlify.app/',
     githubUrl: 'https://github.com/castrosanabriajohn/criadero-pastores',
   },
@@ -229,7 +252,7 @@ export const projects: Project[] = [
       'Persistencia de favoritos y datos de usuario',
       'Integración con servicios móviles y mapas',
     ],
-    technologies: ['React Native', 'Expo', 'Firebase', 'Google Maps API', 'Redux'],
+    technologies: ['React Native', 'Expo', 'Firebase', 'Google Maps API', 'Redux', 'Mobile UI'],
     githubUrl: 'https://github.com/castrosanabriajohn/MealsToGo',
   },
   {
@@ -244,7 +267,7 @@ export const projects: Project[] = [
       'Enfoque en autenticación y backend cloud',
       'Proyecto útil para validar arquitectura mobile + cloud',
     ],
-    technologies: ['React Native', 'Expo', 'AWS Amplify', 'GraphQL', 'Cloud'],
+    technologies: ['React Native', 'Expo', 'AWS Amplify', 'GraphQL', 'Cloud', 'Authentication'],
     githubUrl: 'https://github.com/castrosanabriajohn/expo-amplify-demo',
   },
   {
@@ -259,7 +282,7 @@ export const projects: Project[] = [
       'Validación y manejo de errores',
       'Base adecuada para servicios Java modernos',
     ],
-    technologies: ['Spring Boot', 'Java', 'REST API', 'Maven', 'Backend'],
+    technologies: ['Spring Boot', 'Java', 'REST API', 'Maven', 'Backend', 'Layered Architecture'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/spring-demo',
   },
   {
@@ -274,7 +297,7 @@ export const projects: Project[] = [
       'Práctica de patrones frontend modernos',
       'Base educativa para escalar a aplicaciones SPA',
     ],
-    technologies: ['Vue', 'JavaScript', 'Vue Router', 'Vite', 'Frontend'],
+    technologies: ['Vue', 'JavaScript', 'Vue Router', 'Vite', 'Frontend', 'SPA'],
     githubUrl: 'https://github.com/castrosanabriajohn/vue-project-section10',
   },
   {
@@ -289,7 +312,7 @@ export const projects: Project[] = [
       'Backend universitario con estructura CRUD',
       'Aplicación práctica de lógica de negocio en PHP',
     ],
-    technologies: ['PHP', 'MySQL', 'Backend', 'CRUD', 'University Project'],
+    technologies: ['PHP', 'MySQL', 'Backend', 'CRUD', 'Academic Project'],
     githubUrl: 'https://github.com/castrosanabriajohn/smartgym',
   },
   {
@@ -304,7 +327,7 @@ export const projects: Project[] = [
       'Estructura basada en .NET y MVC/Web API',
       'Persistencia de datos con SQL Server',
     ],
-    technologies: ['.NET MVC', 'C#', 'SQL Server', 'Entity Framework', 'Web API'],
+    technologies: ['ASP.NET MVC', 'C#', 'SQL Server', 'Entity Framework', 'Web API'],
     githubUrl: 'https://github.com/castrosanabriajohn/WebAPIMatricula_3C2023',
   },
   {
@@ -334,7 +357,7 @@ export const projects: Project[] = [
       'Estructura preparada para extender reglas de negocio',
       'Proyecto útil para demostrar fundamentos backend',
     ],
-    technologies: ['.NET', 'C#', 'CRUD', 'Backend', 'SQL'],
+    technologies: ['.NET', 'C#', 'CRUD', 'Backend', 'SQL', 'Layered Architecture'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PersonasSolution',
   },
   {
@@ -349,7 +372,11 @@ export const projects: Project[] = [
       'Base simple para pruebas, integración o prototipos',
       'Demuestra versatilidad fuera del stack .NET',
     ],
-    technologies: ['Python', 'Flask', 'REST API', 'Backend', 'Products'],
+    technologies: ['Python', 'Flask', 'REST API', 'Backend', 'CRUD'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/FlaskApiProdcuct',
   },
 ];
+
+export const projects: Project[] = [...projectItems].sort(
+  (current, next) => projectPriority.indexOf(current.id) - projectPriority.indexOf(next.id),
+);
