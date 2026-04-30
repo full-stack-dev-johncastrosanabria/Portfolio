@@ -525,21 +525,26 @@ img {
 .hero-button,
 .button-youtube {
   position: relative;
-  min-height: 62px;
-  min-width: 190px;
+  min-height: 68px;
+  min-width: 205px;
   justify-content: flex-start;
-  gap: 1rem;
-  padding: 0.55rem 1.35rem 0.55rem 0.55rem;
+  gap: 1.05rem;
+  padding: 0.58rem 1.55rem 0.58rem 0.58rem;
   border-radius: 999px;
   color: #ffffff;
-  font-size: 1.08rem;
+  font-size: 1.16rem;
   font-weight: 900;
   letter-spacing: 0;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.42);
+  overflow: hidden;
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.22),
+    0 8px 16px rgba(0, 0, 0, 0.45);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.58),
-    inset 0 -10px 24px rgba(0, 0, 0, 0.32),
-    0 14px 28px rgba(2, 6, 23, 0.24);
+    inset 0 2px 0 rgba(255, 255, 255, 0.68),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    inset 0 -14px 28px rgba(0, 0, 0, 0.38),
+    0 2px 0 rgba(255, 255, 255, 0.08),
+    0 18px 34px rgba(2, 6, 23, 0.32);
 }
 
 .hero-button::before,
@@ -553,24 +558,45 @@ img {
   pointer-events: none;
 }
 
+.hero-button::after,
+.button-youtube::after,
+.button-github::after {
+  content: '';
+  position: absolute;
+  inset: 7px 12px auto 72px;
+  height: 44%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
+  pointer-events: none;
+  opacity: 0.72;
+}
+
 .hero-button-primary {
-  border: 1px solid rgba(34, 211, 238, 0.82);
+  border: 1px solid rgba(103, 232, 249, 0.92);
   background:
-    radial-gradient(circle at 16% 26%, rgba(255, 255, 255, 0.32), transparent 28%),
-    linear-gradient(135deg, #38c8ff 0%, #0879e8 62%, #0452b3 100%);
+    radial-gradient(circle at 16% 24%, rgba(255, 255, 255, 0.38), transparent 26%),
+    linear-gradient(180deg, rgba(83, 215, 255, 0.98) 0%, rgba(4, 132, 237, 0.98) 56%, rgba(3, 72, 173, 0.98) 100%);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.65),
-    inset 0 -11px 24px rgba(0, 74, 155, 0.46),
-    0 0 0 1px rgba(34, 211, 238, 0.18),
-    0 14px 30px rgba(14, 165, 233, 0.34);
+    inset 0 2px 0 rgba(255, 255, 255, 0.72),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 0 -15px 30px rgba(0, 52, 142, 0.52),
+    0 0 0 2px rgba(34, 211, 238, 0.24),
+    0 0 34px rgba(34, 211, 238, 0.22),
+    0 20px 38px rgba(14, 165, 233, 0.38);
 }
 
 .hero-button-secondary {
-  border: 1px solid rgba(148, 183, 214, 0.52);
+  border: 1px solid rgba(168, 201, 232, 0.62);
   background:
-    radial-gradient(circle at 16% 26%, rgba(255, 255, 255, 0.18), transparent 28%),
-    linear-gradient(180deg, rgba(15, 37, 63, 0.98), rgba(3, 13, 29, 0.98));
+    radial-gradient(circle at 16% 24%, rgba(255, 255, 255, 0.2), transparent 26%),
+    linear-gradient(180deg, rgba(20, 46, 77, 0.99) 0%, rgba(7, 22, 45, 0.99) 58%, rgba(2, 8, 21, 0.99) 100%);
   color: #ffffff;
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.36),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.13),
+    inset 0 -14px 28px rgba(0, 0, 0, 0.42),
+    0 0 0 2px rgba(148, 183, 214, 0.12),
+    0 18px 34px rgba(2, 6, 23, 0.32);
 }
 
 .hero-button:hover,
@@ -583,9 +609,12 @@ img {
   color: #ffffff;
   border-color: rgba(103, 232, 249, 0.94);
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.7),
-    inset 0 -11px 24px rgba(0, 74, 155, 0.5),
-    0 18px 34px rgba(14, 165, 233, 0.42);
+    inset 0 2px 0 rgba(255, 255, 255, 0.78),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.26),
+    inset 0 -15px 30px rgba(0, 52, 142, 0.58),
+    0 0 0 2px rgba(34, 211, 238, 0.3),
+    0 0 40px rgba(34, 211, 238, 0.3),
+    0 24px 44px rgba(14, 165, 233, 0.46);
 }
 
 .hero-button-secondary:hover {
@@ -595,9 +624,11 @@ img {
   border-color: rgba(199, 224, 244, 0.74);
   color: #ffffff;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    inset 0 -10px 24px rgba(0, 0, 0, 0.38),
-    0 16px 30px rgba(2, 6, 23, 0.28);
+    inset 0 2px 0 rgba(255, 255, 255, 0.42),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    inset 0 -14px 28px rgba(0, 0, 0, 0.48),
+    0 0 0 2px rgba(148, 183, 214, 0.18),
+    0 22px 40px rgba(2, 6, 23, 0.36);
 }
 
 .hero-button-icon,
@@ -605,40 +636,56 @@ img {
   position: relative;
   display: inline-grid;
   place-items: center;
-  width: 3rem;
-  height: 3rem;
+  width: 3.45rem;
+  height: 3.45rem;
   border-radius: 999px;
   flex-shrink: 0;
   color: #ffffff;
   background:
-    radial-gradient(circle at 35% 24%, rgba(255, 255, 255, 0.28), transparent 34%),
-    linear-gradient(180deg, rgba(33, 58, 91, 0.92), rgba(2, 9, 20, 0.82));
+    radial-gradient(circle at 34% 22%, rgba(255, 255, 255, 0.34), transparent 33%),
+    linear-gradient(180deg, rgba(37, 68, 106, 0.96), rgba(4, 13, 29, 0.94));
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.35),
-    inset 0 -7px 16px rgba(0, 0, 0, 0.28),
-    0 9px 18px rgba(0, 0, 0, 0.24);
+    inset 0 2px 0 rgba(255, 255, 255, 0.42),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.16),
+    inset 0 -10px 18px rgba(0, 0, 0, 0.36),
+    0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+.hero-button-icon::after,
+.button-icon::after {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  pointer-events: none;
 }
 
 .hero-button-icon svg,
 .button-icon svg {
-  width: 1.58rem;
-  height: 1.58rem;
+  width: 1.72rem;
+  height: 1.72rem;
   fill: currentColor;
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.42));
 }
 
 .button-youtube {
-  min-width: 290px;
-  min-height: 62px;
-  padding: 0.55rem 1.45rem 0.55rem 0.55rem;
-  border: 1px solid rgba(255, 80, 80, 0.72);
+  min-width: 320px;
+  min-height: 68px;
+  padding: 0.58rem 1.65rem 0.58rem 0.58rem;
+  border: 1px solid rgba(255, 92, 92, 0.86);
   background:
-    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.2), transparent 24%),
-    linear-gradient(180deg, rgba(246, 32, 32, 0.98), rgba(120, 0, 0, 0.94));
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.24), transparent 25%),
+    linear-gradient(180deg, rgba(255, 41, 41, 0.98) 0%, rgba(190, 8, 8, 0.98) 52%, rgba(104, 0, 0, 0.96) 100%);
   color: #ffffff;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.58),
-    inset 0 -10px 24px rgba(54, 0, 0, 0.42),
-    0 14px 30px rgba(239, 68, 68, 0.28);
+    inset 0 2px 0 rgba(255, 255, 255, 0.64),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+    inset 0 -15px 30px rgba(54, 0, 0, 0.54),
+    0 0 0 2px rgba(239, 68, 68, 0.16),
+    0 0 36px rgba(239, 68, 68, 0.22),
+    0 20px 38px rgba(239, 68, 68, 0.3);
 }
 
 .button-youtube:hover {
@@ -648,31 +695,39 @@ img {
   border-color: #ff5555;
   color: #ffffff;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.62),
-    inset 0 -10px 24px rgba(54, 0, 0, 0.48),
-    0 18px 36px rgba(239, 68, 68, 0.34);
+    inset 0 2px 0 rgba(255, 255, 255, 0.7),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    inset 0 -15px 30px rgba(54, 0, 0, 0.6),
+    0 0 0 2px rgba(239, 68, 68, 0.2),
+    0 0 42px rgba(239, 68, 68, 0.3),
+    0 24px 44px rgba(239, 68, 68, 0.38);
 }
 
 .button-github {
   position: relative;
-  min-width: 290px;
-  min-height: 62px;
+  min-width: 320px;
+  min-height: 68px;
   justify-content: flex-start;
-  gap: 1rem;
-  padding: 0.55rem 1.45rem 0.55rem 0.55rem;
+  gap: 1.05rem;
+  padding: 0.58rem 1.65rem 0.58rem 0.58rem;
   border-radius: 999px;
-  border: 1px solid rgba(197, 216, 230, 0.58);
+  border: 1px solid rgba(197, 216, 230, 0.64);
   background:
-    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.16), transparent 24%),
-    linear-gradient(180deg, rgba(35, 39, 42, 0.98), rgba(4, 7, 9, 0.98));
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.18), transparent 25%),
+    linear-gradient(180deg, rgba(42, 46, 49, 0.99) 0%, rgba(15, 17, 19, 0.99) 54%, rgba(2, 5, 8, 0.99) 100%);
   color: #ffffff;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.34),
-    inset 0 -10px 24px rgba(0, 0, 0, 0.46),
-    0 14px 30px rgba(2, 6, 23, 0.28);
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
-  font-size: 1.08rem;
+    inset 0 2px 0 rgba(255, 255, 255, 0.36),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.6),
+    0 0 0 2px rgba(203, 213, 225, 0.1),
+    0 20px 38px rgba(2, 6, 23, 0.34);
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.26),
+    0 8px 16px rgba(0, 0, 0, 0.48);
+  font-size: 1.16rem;
   font-weight: 900;
+  overflow: hidden;
 }
 
 .button-github:hover {
@@ -682,34 +737,38 @@ img {
   border-color: #dbeafe;
   color: #ffffff;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.38),
-    inset 0 -10px 24px rgba(0, 0, 0, 0.52),
-    0 18px 34px rgba(2, 6, 23, 0.34);
+    inset 0 2px 0 rgba(255, 255, 255, 0.42),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.14),
+    inset 0 -15px 30px rgba(0, 0, 0, 0.66),
+    0 0 0 2px rgba(203, 213, 225, 0.14),
+    0 24px 44px rgba(2, 6, 23, 0.42);
 }
 
 .button-icon-youtube {
   background: #ffffff;
   color: #dc2626;
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
   box-shadow:
-    inset 0 -6px 12px rgba(220, 38, 38, 0.08),
-    0 10px 18px rgba(127, 29, 29, 0.24);
+    inset 0 2px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -8px 16px rgba(220, 38, 38, 0.1),
+    0 10px 22px rgba(127, 29, 29, 0.3);
 }
 
 .button-icon-github {
   background: #ffffff;
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 3.6rem;
+  height: 3.6rem;
   box-shadow:
-    inset 0 -6px 12px rgba(0, 0, 0, 0.06),
-    0 10px 18px rgba(0, 0, 0, 0.24);
+    inset 0 2px 0 rgba(255, 255, 255, 0.9),
+    inset 0 -8px 16px rgba(0, 0, 0, 0.08),
+    0 10px 22px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
 
 .button-icon-github img {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
 }
 
