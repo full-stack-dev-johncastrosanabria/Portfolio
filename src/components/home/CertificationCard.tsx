@@ -11,13 +11,29 @@ export function CertificationCard({ certification, language }: CertificationCard
   return (
     <article className={certification.featured ? 'cert-card cert-card-featured' : 'cert-card'}>
       {certification.image ? (
-        <div className="cert-media">
+        <button
+          className="cert-media"
+          type="button"
+          aria-haspopup="dialog"
+          aria-label={`${language === 'en' ? 'View certificate' : 'Ver certificado'}: ${localizedValue(certification.title, language)}`}
+          onClick={() => {
+            window.dispatchEvent(
+              new CustomEvent('open-certificate-modal', {
+                detail: {
+                  image: publicAsset(certification.image || ''),
+                  title: localizedValue(certification.title, language),
+                },
+              }),
+            );
+          }}
+        >
           <img
             src={publicAsset(certification.image)}
             alt={localizedValue(certification.title, language)}
             loading="lazy"
           />
-        </div>
+          <span>{language === 'en' ? 'View certificate' : 'Ver certificado'}</span>
+        </button>
       ) : null}
 
       <div className="cert-content">

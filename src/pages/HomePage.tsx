@@ -7,6 +7,8 @@ import { profileStats, skillGroups } from '@/data/skills';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { ExperienceTimeline } from '@/components/experience/ExperienceTimeline';
 import { CertificationCard } from '@/components/home/CertificationCard';
+import { CertificateModal } from '@/components/home/CertificateModal';
+import { HeroIcon } from '@/components/home/HeroIcon';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { SkillGroupCard } from '@/components/home/SkillGroupCard';
 import { StatCard } from '@/components/home/StatCard';
@@ -31,14 +33,25 @@ export function HomePage() {
             <p className="hero-copy">{localizedValue(siteConfig.headlineLocalized, language)}</p>
 
             <div className="hero-actions">
-              <a className="button" href="#proyectos">
-                {localizedValue(siteConfig.ctaPrimaryLocalized, language)}
+              <a className="button hero-button hero-button-primary" href="#proyectos">
+                <span className="hero-button-icon" aria-hidden="true">
+                  <HeroIcon name="folder" />
+                </span>
+                <span>{localizedValue(siteConfig.ctaPrimaryLocalized, language)}</span>
               </a>
-              <Link className="button button-secondary" to="/blog">
-                {localizedValue(siteConfig.ctaSecondaryLocalized, language)}
+              <Link className="button hero-button hero-button-secondary" to="/blog">
+                <span className="hero-button-icon" aria-hidden="true">
+                  <HeroIcon name="document" />
+                </span>
+                <span>{localizedValue(siteConfig.ctaSecondaryLocalized, language)}</span>
               </Link>
               <details className="resume-download">
-                <summary className="button button-secondary">{t('hero.resumeButton')}</summary>
+                <summary className="button hero-button hero-button-secondary">
+                  <span className="hero-button-icon" aria-hidden="true">
+                    <HeroIcon name="download" />
+                  </span>
+                  <span>{t('hero.resumeButton')}</span>
+                </summary>
                 <div className="resume-options" aria-label={t('hero.resumeQuestion')}>
                   <span>{t('hero.resumeQuestion')}</span>
                   <a
@@ -64,7 +77,9 @@ export function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="button-icon button-icon-youtube" aria-hidden="true">▶</span>
+                <span className="button-icon button-icon-youtube" aria-hidden="true">
+                  <HeroIcon name="youtube" />
+                </span>
                 <span className="button-label">{localizedValue(siteConfig.ctaYouTubeLocalized, language)}</span>
               </a>
               <a
@@ -74,7 +89,7 @@ export function HomePage() {
                 rel="noopener noreferrer"
               >
                 <span className="button-icon button-icon-github" aria-hidden="true">
-                  <img src={publicAsset('github-mark.svg')} alt="" />
+                  <HeroIcon name="github" />
                 </span>
                 <span className="button-label">{localizedValue(siteConfig.ctaGitHubLocalized, language)}</span>
               </a>
@@ -191,6 +206,7 @@ export function HomePage() {
           </Link>
         </div>
       </section>
+      <CertificateModal />
     </>
   );
 }

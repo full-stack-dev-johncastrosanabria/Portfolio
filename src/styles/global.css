@@ -478,9 +478,14 @@ img {
   gap: 0.75rem;
 }
 
+.hero-actions {
+  gap: 0.85rem;
+  align-items: center;
+}
+
 .hero-social-actions {
-  margin-top: 0.65rem;
-  gap: 0.45rem;
+  margin-top: 1.15rem;
+  gap: 0.85rem;
   align-items: center;
 }
 
@@ -517,93 +522,194 @@ img {
   color: var(--primary);
 }
 
+.hero-button,
 .button-youtube {
-  min-width: 0;
-  min-height: 32px;
-  padding: 0.36rem 0.58rem;
-  border: 1px solid rgba(255, 80, 80, 0.72);
+  position: relative;
+  min-height: 62px;
+  min-width: 190px;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.55rem 1.35rem 0.55rem 0.55rem;
+  border-radius: 999px;
+  color: #ffffff;
+  font-size: 1.08rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.32),
+    0 14px 28px rgba(2, 6, 23, 0.24);
+}
+
+.hero-button::before,
+.button-youtube::before,
+.button-github::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+.hero-button-primary {
+  border: 1px solid rgba(34, 211, 238, 0.82);
   background:
-    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.2), transparent 24%),
-    linear-gradient(180deg, rgba(238, 38, 38, 0.96), rgba(127, 0, 0, 0.92));
+    radial-gradient(circle at 16% 26%, rgba(255, 255, 255, 0.32), transparent 28%),
+    linear-gradient(135deg, #38c8ff 0%, #0879e8 62%, #0452b3 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -11px 24px rgba(0, 74, 155, 0.46),
+    0 0 0 1px rgba(34, 211, 238, 0.18),
+    0 14px 30px rgba(14, 165, 233, 0.34);
+}
+
+.hero-button-secondary {
+  border: 1px solid rgba(148, 183, 214, 0.52);
+  background:
+    radial-gradient(circle at 16% 26%, rgba(255, 255, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, rgba(15, 37, 63, 0.98), rgba(3, 13, 29, 0.98));
+  color: #ffffff;
+}
+
+.hero-button:hover,
+.button-youtube:hover,
+.button-github:hover {
+  transform: translateY(-2px);
+}
+
+.hero-button-primary:hover {
+  color: #ffffff;
+  border-color: rgba(103, 232, 249, 0.94);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -11px 24px rgba(0, 74, 155, 0.5),
+    0 18px 34px rgba(14, 165, 233, 0.42);
+}
+
+.hero-button-secondary:hover {
+  background:
+    radial-gradient(circle at 16% 26%, rgba(255, 255, 255, 0.22), transparent 28%),
+    linear-gradient(180deg, rgba(25, 51, 82, 0.98), rgba(4, 18, 40, 0.98));
+  border-color: rgba(199, 224, 244, 0.74);
   color: #ffffff;
   box-shadow:
-    inset 0 1px 5px rgba(255, 255, 255, 0.2),
-    inset 0 -4px 9px rgba(54, 0, 0, 0.22),
-    0 5px 12px rgba(239, 68, 68, 0.14);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
-  font-size: 0.78rem;
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.38),
+    0 16px 30px rgba(2, 6, 23, 0.28);
+}
+
+.hero-button-icon,
+.button-icon {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 35% 24%, rgba(255, 255, 255, 0.28), transparent 34%),
+    linear-gradient(180deg, rgba(33, 58, 91, 0.92), rgba(2, 9, 20, 0.82));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -7px 16px rgba(0, 0, 0, 0.28),
+    0 9px 18px rgba(0, 0, 0, 0.24);
+}
+
+.hero-button-icon svg,
+.button-icon svg {
+  width: 1.58rem;
+  height: 1.58rem;
+  fill: currentColor;
+}
+
+.button-youtube {
+  min-width: 290px;
+  min-height: 62px;
+  padding: 0.55rem 1.45rem 0.55rem 0.55rem;
+  border: 1px solid rgba(255, 80, 80, 0.72);
+  background:
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.2), transparent 24%),
+    linear-gradient(180deg, rgba(246, 32, 32, 0.98), rgba(120, 0, 0, 0.94));
+  color: #ffffff;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -10px 24px rgba(54, 0, 0, 0.42),
+    0 14px 30px rgba(239, 68, 68, 0.28);
 }
 
 .button-youtube:hover {
   background:
-    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.24), transparent 24%),
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.24), transparent 24%),
     linear-gradient(180deg, rgba(248, 48, 48, 1), rgba(145, 0, 0, 0.94));
   border-color: #ff5555;
   color: #ffffff;
   box-shadow:
-    inset 0 1px 5px rgba(255, 255, 255, 0.22),
-    inset 0 -4px 9px rgba(54, 0, 0, 0.28),
-    0 7px 15px rgba(239, 68, 68, 0.2);
+    inset 0 1px 0 rgba(255, 255, 255, 0.62),
+    inset 0 -10px 24px rgba(54, 0, 0, 0.48),
+    0 18px 36px rgba(239, 68, 68, 0.34);
 }
 
 .button-github {
-  min-width: 0;
-  min-height: 32px;
-  padding: 0.36rem 0.58rem;
+  position: relative;
+  min-width: 290px;
+  min-height: 62px;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.55rem 1.45rem 0.55rem 0.55rem;
+  border-radius: 999px;
   border: 1px solid rgba(197, 216, 230, 0.58);
   background:
-    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.12), transparent 24%),
-    linear-gradient(180deg, rgba(34, 38, 42, 0.96), rgba(4, 7, 9, 0.96));
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(35, 39, 42, 0.98), rgba(4, 7, 9, 0.98));
   color: #ffffff;
   box-shadow:
-    inset 0 1px 5px rgba(255, 255, 255, 0.14),
-    inset 0 -4px 9px rgba(0, 0, 0, 0.32),
-    0 5px 12px rgba(14, 165, 233, 0.1);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font-size: 0.78rem;
+    inset 0 1px 0 rgba(255, 255, 255, 0.34),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.46),
+    0 14px 30px rgba(2, 6, 23, 0.28);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  font-size: 1.08rem;
+  font-weight: 900;
 }
 
 .button-github:hover {
   background:
-    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.15), transparent 24%),
+    radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.18), transparent 24%),
     linear-gradient(180deg, rgba(49, 54, 59, 1), rgba(2, 6, 10, 1));
   border-color: #dbeafe;
   color: #ffffff;
   box-shadow:
-    inset 0 1px 5px rgba(255, 255, 255, 0.18),
-    inset 0 -4px 9px rgba(0, 0, 0, 0.38),
-    0 7px 15px rgba(14, 165, 233, 0.16);
-}
-
-.button-icon {
-  display: inline-grid;
-  place-items: center;
-  width: 1.12rem;
-  height: 1.12rem;
-  border-radius: 999px;
-  font-size: 0.5rem;
-  font-weight: 900;
-  line-height: 1;
-  flex-shrink: 0;
+    inset 0 1px 0 rgba(255, 255, 255, 0.38),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.52),
+    0 18px 34px rgba(2, 6, 23, 0.34);
 }
 
 .button-icon-youtube {
   background: #ffffff;
   color: #dc2626;
-  box-shadow: 0 3px 8px rgba(127, 29, 29, 0.18);
-  font-size: 0.5rem;
-  padding-left: 0.06rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  box-shadow:
+    inset 0 -6px 12px rgba(220, 38, 38, 0.08),
+    0 10px 18px rgba(127, 29, 29, 0.24);
 }
 
 .button-icon-github {
   background: #ffffff;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  width: 3.2rem;
+  height: 3.2rem;
+  box-shadow:
+    inset 0 -6px 12px rgba(0, 0, 0, 0.06),
+    0 10px 18px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
 
 .button-icon-github img {
-  width: 0.72rem;
-  height: 0.72rem;
+  width: 1.8rem;
+  height: 1.8rem;
   object-fit: contain;
 }
 
@@ -616,9 +722,9 @@ img {
 :root[data-theme='light'] .button-youtube {
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.22),
-    inset 0 -4px 9px rgba(54, 0, 0, 0.2),
-    0 5px 12px rgba(220, 38, 38, 0.14);
+    inset 0 1px 0 rgba(255, 255, 255, 0.58),
+    inset 0 -10px 24px rgba(54, 0, 0, 0.38),
+    0 14px 30px rgba(220, 38, 38, 0.22);
 }
 
 :root[data-theme='light'] .button-youtube:hover {
@@ -628,9 +734,9 @@ img {
 :root[data-theme='light'] .button-github {
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.16),
-    inset 0 -4px 9px rgba(0, 0, 0, 0.3),
-    0 5px 12px rgba(14, 116, 144, 0.12);
+    inset 0 1px 0 rgba(255, 255, 255, 0.34),
+    inset 0 -10px 24px rgba(0, 0, 0, 0.44),
+    0 14px 30px rgba(15, 23, 42, 0.2);
 }
 
 .resume-download {
@@ -1038,12 +1144,16 @@ img {
 }
 
 .cert-media {
+  appearance: none;
+  cursor: zoom-in;
   align-self: stretch;
   min-height: 150px;
+  padding: 0;
   border-radius: calc(var(--radius) - 8px);
   border: 1px solid var(--border);
   background: rgba(2, 6, 23, 0.28);
   overflow: hidden;
+  position: relative;
 }
 
 .cert-media img {
@@ -1051,6 +1161,33 @@ img {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.cert-media span {
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.65rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(2, 6, 23, 0.78);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: 160ms ease;
+}
+
+.cert-media:hover img {
+  transform: scale(1.03);
+  filter: brightness(0.92);
+}
+
+.cert-media:hover span,
+.cert-media:focus-visible span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .cert-content {
@@ -1133,5 +1270,106 @@ img {
 
   .cert-meta {
     grid-template-columns: 1fr;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.cert-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgba(2, 6, 23, 0.82);
+  backdrop-filter: blur(14px);
+}
+
+.cert-modal {
+  width: min(1120px, 100%);
+  max-height: min(90vh, 860px);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 22px;
+  background: var(--surface-strong);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+}
+
+.cert-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-modal-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.cert-modal-header button {
+  width: 2.35rem;
+  height: 2.35rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.72);
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.cert-modal-header button:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.cert-modal-media {
+  overflow: auto;
+  padding: 1rem;
+  background: rgba(2, 6, 23, 0.42);
+}
+
+.cert-modal-media img {
+  width: 100%;
+  height: auto;
+  max-height: calc(90vh - 6.5rem);
+  object-fit: contain;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 640px) {
+  .hero-actions,
+  .hero-social-actions {
+    gap: 0.65rem;
+  }
+
+  .hero-button,
+  .button-youtube,
+  .button-github {
+    width: 100%;
+    min-width: 0;
+    min-height: 56px;
+    font-size: 1rem;
+  }
+
+  .button-icon,
+  .button-icon-youtube,
+  .button-icon-github,
+  .hero-button-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .cert-modal-backdrop {
+    padding: 0.65rem;
   }
 }
