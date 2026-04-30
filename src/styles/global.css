@@ -479,9 +479,9 @@ img {
 }
 
 .hero-social-actions {
-  margin-top: 0.75rem;
-  gap: 0.55rem;
-  align-items: stretch;
+  margin-top: 0.65rem;
+  gap: 0.45rem;
+  align-items: center;
 }
 
 .button {
@@ -519,8 +519,8 @@ img {
 
 .button-youtube {
   min-width: 0;
-  min-height: 38px;
-  padding: 0.5rem 0.8rem;
+  min-height: 32px;
+  padding: 0.36rem 0.58rem;
   border: 1px solid rgba(255, 80, 80, 0.72);
   background:
     radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.2), transparent 24%),
@@ -528,10 +528,10 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 1px 5px rgba(255, 255, 255, 0.2),
-    inset 0 -6px 12px rgba(54, 0, 0, 0.24),
-    0 8px 18px rgba(239, 68, 68, 0.16);
+    inset 0 -4px 9px rgba(54, 0, 0, 0.22),
+    0 5px 12px rgba(239, 68, 68, 0.14);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
 }
 
 .button-youtube:hover {
@@ -542,14 +542,14 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 1px 5px rgba(255, 255, 255, 0.22),
-    inset 0 -6px 12px rgba(54, 0, 0, 0.3),
-    0 10px 22px rgba(239, 68, 68, 0.22);
+    inset 0 -4px 9px rgba(54, 0, 0, 0.28),
+    0 7px 15px rgba(239, 68, 68, 0.2);
 }
 
 .button-github {
   min-width: 0;
-  min-height: 38px;
-  padding: 0.5rem 0.8rem;
+  min-height: 32px;
+  padding: 0.36rem 0.58rem;
   border: 1px solid rgba(197, 216, 230, 0.58);
   background:
     radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.12), transparent 24%),
@@ -557,10 +557,10 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 1px 5px rgba(255, 255, 255, 0.14),
-    inset 0 -6px 12px rgba(0, 0, 0, 0.34),
-    0 8px 18px rgba(14, 165, 233, 0.12);
+    inset 0 -4px 9px rgba(0, 0, 0, 0.32),
+    0 5px 12px rgba(14, 165, 233, 0.1);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
-  font-size: 0.88rem;
+  font-size: 0.78rem;
 }
 
 .button-github:hover {
@@ -571,17 +571,17 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 1px 5px rgba(255, 255, 255, 0.18),
-    inset 0 -6px 12px rgba(0, 0, 0, 0.4),
-    0 10px 22px rgba(14, 165, 233, 0.18);
+    inset 0 -4px 9px rgba(0, 0, 0, 0.38),
+    0 7px 15px rgba(14, 165, 233, 0.16);
 }
 
 .button-icon {
   display: inline-grid;
   place-items: center;
-  width: 1.45rem;
-  height: 1.45rem;
+  width: 1.12rem;
+  height: 1.12rem;
   border-radius: 999px;
-  font-size: 0.62rem;
+  font-size: 0.5rem;
   font-weight: 900;
   line-height: 1;
   flex-shrink: 0;
@@ -590,20 +590,20 @@ img {
 .button-icon-youtube {
   background: #ffffff;
   color: #dc2626;
-  box-shadow: 0 5px 12px rgba(127, 29, 29, 0.2);
-  font-size: 0.66rem;
-  padding-left: 0.08rem;
+  box-shadow: 0 3px 8px rgba(127, 29, 29, 0.18);
+  font-size: 0.5rem;
+  padding-left: 0.06rem;
 }
 
 .button-icon-github {
   background: #ffffff;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
 .button-icon-github img {
-  width: 0.92rem;
-  height: 0.92rem;
+  width: 0.72rem;
+  height: 0.72rem;
   object-fit: contain;
 }
 
@@ -617,8 +617,8 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 2px 7px rgba(255, 255, 255, 0.22),
-    inset 0 -6px 12px rgba(54, 0, 0, 0.22),
-    0 8px 18px rgba(220, 38, 38, 0.16);
+    inset 0 -4px 9px rgba(54, 0, 0, 0.2),
+    0 5px 12px rgba(220, 38, 38, 0.14);
 }
 
 :root[data-theme='light'] .button-youtube:hover {
@@ -629,8 +629,56 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 2px 7px rgba(255, 255, 255, 0.16),
-    inset 0 -6px 12px rgba(0, 0, 0, 0.32),
-    0 8px 18px rgba(14, 116, 144, 0.14);
+    inset 0 -4px 9px rgba(0, 0, 0, 0.3),
+    0 5px 12px rgba(14, 116, 144, 0.12);
+}
+
+.resume-download {
+  position: relative;
+  display: inline-block;
+}
+
+.resume-download summary {
+  list-style: none;
+}
+
+.resume-download summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-options {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 0;
+  z-index: 20;
+  display: grid;
+  min-width: 210px;
+  gap: 0.35rem;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface-strong);
+  box-shadow: var(--shadow);
+}
+
+.resume-options span {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.resume-options a {
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.resume-options a:hover {
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--primary);
 }
 
 .project-links {
@@ -921,7 +969,7 @@ img {
 
   .button-youtube,
   .button-github {
-    width: 100%;
+    width: auto;
   }
 }
 

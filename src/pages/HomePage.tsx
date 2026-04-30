@@ -37,6 +37,24 @@ export function HomePage() {
               <Link className="button button-secondary" to="/blog">
                 {localizedValue(siteConfig.ctaSecondaryLocalized, language)}
               </Link>
+              <details className="resume-download">
+                <summary className="button button-secondary">{t('hero.resumeButton')}</summary>
+                <div className="resume-options" aria-label={t('hero.resumeQuestion')}>
+                  <span>{t('hero.resumeQuestion')}</span>
+                  <a
+                    href={publicAsset(siteConfig.resumeDownloads.es)}
+                    download="John_Castro_Sanabria_CV_ES.pdf"
+                  >
+                    {t('hero.resumeSpanish')}
+                  </a>
+                  <a
+                    href={publicAsset(siteConfig.resumeDownloads.en)}
+                    download="John_Castro_Sanabria_CV_EN.pdf"
+                  >
+                    {t('hero.resumeEnglish')}
+                  </a>
+                </div>
+              </details>
             </div>
 
             <div className="hero-social-actions" aria-label="Canales profesionales">

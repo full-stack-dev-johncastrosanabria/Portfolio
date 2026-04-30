@@ -26,6 +26,10 @@ const resources = {
           'SQL Server, Oracle e integraciones',
           'CI/CD, Azure DevOps y fundamentos Microsoft Cloud',
         ],
+        resumeButton: 'Descargar CV',
+        resumeQuestion: 'Elige idioma',
+        resumeSpanish: 'Español',
+        resumeEnglish: 'Inglés',
       },
       sections: {
         stackEyebrow: 'Stack principal',
@@ -101,6 +105,10 @@ const resources = {
           'SQL Server, Oracle and integrations',
           'CI/CD, Azure DevOps and Microsoft Cloud fundamentals',
         ],
+        resumeButton: 'Download resume',
+        resumeQuestion: 'Choose language',
+        resumeSpanish: 'Spanish',
+        resumeEnglish: 'English',
       },
       sections: {
         stackEyebrow: 'Core stack',

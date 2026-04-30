@@ -65,6 +65,7 @@ export const certifications: Certification[] = [
       en: 'Pre-sales and sales cycle',
     },
     hours: '8 h',
+    image: 'certifications/commercial-skills.svg',
   },
   {
     id: 'data-science',
@@ -82,5 +83,6 @@ export const certifications: Certification[] = [
       en: 'Data Science',
     },
     hours: '181 h',
+    image: 'certifications/data-science.svg',
   },
 ];
