@@ -479,8 +479,8 @@ img {
 }
 
 .hero-social-actions {
-  margin-top: 0.85rem;
-  gap: 1rem;
+  margin-top: 0.9rem;
+  gap: 0.75rem;
   align-items: stretch;
 }
 
@@ -518,70 +518,66 @@ img {
 }
 
 .button-youtube {
-  width: min(100%, 330px);
-  min-height: 58px;
-  padding: 0.95rem 1.65rem;
-  border: 2px solid rgba(255, 66, 66, 0.86);
+  min-width: 190px;
+  min-height: 48px;
+  padding: 0.72rem 1.1rem;
+  border: 1px solid rgba(255, 80, 80, 0.72);
   background:
-    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.16), transparent 26%),
-    linear-gradient(180deg, rgba(255, 31, 31, 0.98), rgba(125, 0, 0, 0.95));
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.2), transparent 24%),
+    linear-gradient(180deg, rgba(238, 38, 38, 0.96), rgba(127, 0, 0, 0.92));
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.2),
-    inset 0 -12px 26px rgba(54, 0, 0, 0.32),
-    0 0 0 1px rgba(255, 20, 20, 0.18),
-    0 18px 42px rgba(239, 68, 68, 0.24);
+    inset 0 1px 5px rgba(255, 255, 255, 0.2),
+    inset 0 -8px 18px rgba(54, 0, 0, 0.28),
+    0 10px 24px rgba(239, 68, 68, 0.18);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
 }
 
 .button-youtube:hover {
   background:
-    radial-gradient(circle at 28% 24%, rgba(255, 255, 255, 0.2), transparent 26%),
-    linear-gradient(180deg, rgba(255, 45, 45, 1), rgba(145, 0, 0, 0.96));
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.24), transparent 24%),
+    linear-gradient(180deg, rgba(248, 48, 48, 1), rgba(145, 0, 0, 0.94));
   border-color: #ff5555;
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.22),
-    inset 0 -12px 26px rgba(54, 0, 0, 0.34),
-    0 0 0 1px rgba(255, 20, 20, 0.22),
-    0 22px 52px rgba(239, 68, 68, 0.32);
+    inset 0 1px 5px rgba(255, 255, 255, 0.22),
+    inset 0 -8px 18px rgba(54, 0, 0, 0.32),
+    0 14px 30px rgba(239, 68, 68, 0.24);
 }
 
 .button-github {
-  width: min(100%, 330px);
-  min-height: 58px;
-  padding: 0.95rem 1.65rem;
-  border: 2px solid rgba(197, 216, 230, 0.82);
+  min-width: 190px;
+  min-height: 48px;
+  padding: 0.72rem 1.1rem;
+  border: 1px solid rgba(197, 216, 230, 0.58);
   background:
-    radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.12), transparent 26%),
-    linear-gradient(180deg, rgba(39, 43, 47, 0.98), rgba(4, 7, 9, 0.98));
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(34, 38, 42, 0.96), rgba(4, 7, 9, 0.96));
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.16),
-    inset 0 -12px 26px rgba(0, 0, 0, 0.42),
-    0 0 0 1px rgba(186, 230, 253, 0.12),
-    0 18px 42px rgba(14, 165, 233, 0.18);
+    inset 0 1px 5px rgba(255, 255, 255, 0.14),
+    inset 0 -8px 18px rgba(0, 0, 0, 0.38),
+    0 10px 24px rgba(14, 165, 233, 0.14);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
 }
 
 .button-github:hover {
   background:
-    radial-gradient(circle at 28% 22%, rgba(255, 255, 255, 0.15), transparent 26%),
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.15), transparent 24%),
     linear-gradient(180deg, rgba(49, 54, 59, 1), rgba(2, 6, 10, 1));
   border-color: #dbeafe;
   color: #ffffff;
   box-shadow:
-    inset 0 2px 7px rgba(255, 255, 255, 0.18),
-    inset 0 -12px 26px rgba(0, 0, 0, 0.44),
-    0 0 0 1px rgba(186, 230, 253, 0.16),
-    0 22px 52px rgba(14, 165, 233, 0.24);
+    inset 0 1px 5px rgba(255, 255, 255, 0.18),
+    inset 0 -8px 18px rgba(0, 0, 0, 0.42),
+    0 14px 30px rgba(14, 165, 233, 0.2);
 }
 
 .button-icon {
   display: inline-grid;
   place-items: center;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 1.95rem;
+  height: 1.95rem;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 900;
@@ -593,7 +589,7 @@ img {
   background: #ffffff;
   color: #dc2626;
   box-shadow: 0 8px 18px rgba(127, 29, 29, 0.24);
-  font-size: 0.95rem;
+  font-size: 0.82rem;
   padding-left: 0.1rem;
 }
 
@@ -604,8 +600,8 @@ img {
 }
 
 .button-icon-github img {
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.12rem;
+  height: 1.12rem;
   object-fit: contain;
 }
 
@@ -619,8 +615,8 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 2px 7px rgba(255, 255, 255, 0.22),
-    inset 0 -12px 26px rgba(54, 0, 0, 0.28),
-    0 16px 34px rgba(220, 38, 38, 0.2);
+    inset 0 -8px 18px rgba(54, 0, 0, 0.24),
+    0 10px 24px rgba(220, 38, 38, 0.18);
 }
 
 :root[data-theme='light'] .button-youtube:hover {
@@ -631,8 +627,8 @@ img {
   color: #ffffff;
   box-shadow:
     inset 0 2px 7px rgba(255, 255, 255, 0.16),
-    inset 0 -12px 26px rgba(0, 0, 0, 0.38),
-    0 16px 34px rgba(14, 116, 144, 0.18);
+    inset 0 -8px 18px rgba(0, 0, 0, 0.34),
+    0 10px 24px rgba(14, 116, 144, 0.16);
 }
 
 .project-links {
