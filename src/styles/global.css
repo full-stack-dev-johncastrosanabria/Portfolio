@@ -340,10 +340,15 @@ img {
 }
 
 .hero-actions,
+.hero-social-actions,
 .tag-group {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.hero-social-actions {
+  margin-top: 0.85rem;
 }
 
 .button {
@@ -376,6 +381,65 @@ img {
   background: rgba(56, 189, 248, 0.08);
   border-color: var(--primary);
   color: var(--primary);
+}
+
+.button-youtube {
+  background: rgba(255, 0, 0, 0.11);
+  border-color: rgba(255, 0, 0, 0.34);
+  color: #fecaca;
+}
+
+.button-youtube:hover {
+  background: rgba(255, 0, 0, 0.18);
+  border-color: #ef4444;
+  color: #ffffff;
+  box-shadow: 0 14px 30px rgba(239, 68, 68, 0.2);
+}
+
+.button-github {
+  background: rgba(148, 163, 184, 0.12);
+  border-color: rgba(148, 163, 184, 0.32);
+  color: var(--text);
+}
+
+.button-github:hover {
+  background: rgba(148, 163, 184, 0.18);
+  border-color: var(--text-muted);
+  color: var(--text);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+}
+
+.button-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+:root[data-theme='light'] .button-youtube {
+  background: rgba(220, 38, 38, 0.1);
+  border-color: rgba(220, 38, 38, 0.28);
+  color: #b91c1c;
+}
+
+:root[data-theme='light'] .button-youtube:hover {
+  background: rgba(220, 38, 38, 0.16);
+  color: #7f1d1d;
+}
+
+:root[data-theme='light'] .button-github {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(15, 23, 42, 0.18);
+  color: #0f172a;
+}
+
+:root[data-theme='light'] .button-icon {
+  background: rgba(255, 255, 255, 0.55);
 }
 
 .project-links {

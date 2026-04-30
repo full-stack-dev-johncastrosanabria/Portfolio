@@ -20,21 +20,21 @@ export const siteConfig = {
   },
   ctaPrimary: 'Ver proyectos',
   ctaPrimaryLocalized: {
-    es: 'Ver proyectos',
+    es: 'Proyectos',
     en: 'View projects',
   },
   ctaSecondary: 'Leer blog técnico',
   ctaSecondaryLocalized: {
-    es: 'Leer blog técnico',
-    en: 'Read technical blog',
+    es: 'Blog técnico',
+    en: 'Technical blog',
   },
   ctaYouTubeLocalized: {
-    es: 'Mi canal de YouTube',
-    en: 'My YouTube channel',
+    es: 'YouTube',
+    en: 'YouTube',
   },
   ctaGitHubLocalized: {
-    es: 'Mi GitHub',
-    en: 'My GitHub',
+    es: 'GitHub',
+    en: 'GitHub',
   },
   youtubeUrl: 'https://www.youtube.com/@JohnCastroTechLabs',
   githubProfileUrl: 'https://github.com/full-stack-dev-johncastrosanabria/',

@@ -35,20 +35,25 @@ export function HomePage() {
               <Link className="button button-secondary" to="/blog">
                 {localizedValue(siteConfig.ctaSecondaryLocalized, language)}
               </Link>
+            </div>
+
+            <div className="hero-social-actions" aria-label="Canales profesionales">
               <a
-                className="button button-secondary"
+                className="button button-youtube"
                 href={siteConfig.youtubeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <span className="button-icon" aria-hidden="true">▶</span>
                 {localizedValue(siteConfig.ctaYouTubeLocalized, language)}
               </a>
               <a
-                className="button button-secondary"
+                className="button button-github"
                 href={siteConfig.githubProfileUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <span className="button-icon" aria-hidden="true">GH</span>
                 {localizedValue(siteConfig.ctaGitHubLocalized, language)}
               </a>
             </div>
