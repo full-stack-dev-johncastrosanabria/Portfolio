@@ -528,14 +528,18 @@ img {
 }
 
 .hero-actions {
-  gap: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
   align-items: center;
   animation: fade-slide-up 780ms cubic-bezier(0.16, 1, 0.3, 1) 410ms both;
 }
 
 .hero-social-actions {
-  margin-top: 1.15rem;
-  gap: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1.1rem;
+  gap: 0.95rem;
   align-items: center;
   animation: fade-slide-up 780ms cubic-bezier(0.16, 1, 0.3, 1) 520ms both;
 }
@@ -620,14 +624,15 @@ img {
 .hero-button,
 .button-youtube {
   position: relative;
-  min-height: 68px;
-  min-width: 205px;
+  width: 100%;
+  min-height: 64px;
+  min-width: 0;
   justify-content: flex-start;
-  gap: 1.05rem;
-  padding: 0.58rem 1.55rem 0.58rem 0.58rem;
+  gap: 0.8rem;
+  padding: 0.52rem 1.05rem 0.52rem 0.52rem;
   border-radius: 999px;
   color: #ffffff;
-  font-size: 1.16rem;
+  font-size: clamp(0.96rem, 1.35vw, 1.13rem);
   font-weight: 900;
   letter-spacing: 0;
   overflow: hidden;
@@ -741,8 +746,8 @@ img {
   position: relative;
   display: inline-grid;
   place-items: center;
-  width: 3.45rem;
-  height: 3.45rem;
+  width: 3.25rem;
+  height: 3.25rem;
   border-radius: 999px;
   flex-shrink: 0;
   color: #ffffff;
@@ -769,16 +774,17 @@ img {
 
 .hero-button-icon svg,
 .button-icon svg {
-  width: 1.72rem;
-  height: 1.72rem;
+  width: 1.58rem;
+  height: 1.58rem;
   fill: currentColor;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.42));
 }
 
 .button-youtube {
-  min-width: 320px;
+  min-width: 0;
   min-height: 68px;
-  padding: 0.58rem 1.65rem 0.58rem 0.58rem;
+  justify-content: flex-start;
+  padding: 0.58rem 1.55rem 0.58rem 0.58rem;
   border: 1px solid rgba(255, 92, 92, 0.86);
   background:
     radial-gradient(circle at 17% 24%, rgba(255, 255, 255, 0.24), transparent 25%),
@@ -811,7 +817,8 @@ img {
 
 .button-github {
   position: relative;
-  min-width: 320px;
+  width: 100%;
+  min-width: 0;
   min-height: 68px;
   justify-content: flex-start;
   gap: 1.05rem;
@@ -831,7 +838,7 @@ img {
   text-shadow:
     0 2px 0 rgba(0, 0, 0, 0.26),
     0 8px 16px rgba(0, 0, 0, 0.48);
-  font-size: 1.16rem;
+  font-size: clamp(1.02rem, 1.5vw, 1.16rem);
   font-weight: 900;
   overflow: hidden;
   animation: glossy-pulse-dark 5.8s ease-in-out 1.5s infinite;
@@ -854,8 +861,8 @@ img {
 .button-icon-youtube {
   background: #ffffff;
   color: #dc2626;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3.45rem;
+  height: 3.45rem;
   box-shadow:
     inset 0 2px 0 rgba(255, 255, 255, 0.9),
     inset 0 -8px 16px rgba(220, 38, 38, 0.1),
@@ -864,8 +871,8 @@ img {
 
 .button-icon-github {
   background: #ffffff;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 3.45rem;
+  height: 3.45rem;
   box-shadow:
     inset 0 2px 0 rgba(255, 255, 255, 0.9),
     inset 0 -8px 16px rgba(0, 0, 0, 0.08),
@@ -907,7 +914,8 @@ img {
 
 .resume-download {
   position: relative;
-  display: inline-block;
+  display: block;
+  min-width: 0;
 }
 
 .resume-download summary {
@@ -1499,6 +1507,18 @@ img {
 }
 
 @media (max-width: 980px) {
+  .hero-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .resume-download {
+    grid-column: 1 / -1;
+  }
+
+  .hero-social-actions {
+    grid-template-columns: 1fr;
+  }
+
   .hero-grid,
   .card-grid,
   .blog-grid,
@@ -1529,6 +1549,11 @@ img {
     width: min(var(--container), calc(100% - 1.25rem));
   }
 
+  .hero-actions,
+  .hero-social-actions {
+    grid-template-columns: 1fr;
+  }
+
   .hero-card,
   .project-card,
   .blog-card,
@@ -1549,7 +1574,7 @@ img {
 
   .button-youtube,
   .button-github {
-    width: auto;
+    width: 100%;
   }
 }
 
