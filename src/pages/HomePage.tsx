@@ -44,7 +44,7 @@ export function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="button-icon" aria-hidden="true">▶</span>
+                <span className="button-icon button-icon-youtube" aria-hidden="true">▶</span>
                 {localizedValue(siteConfig.ctaYouTubeLocalized, language)}
               </a>
               <a
@@ -53,7 +53,7 @@ export function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="button-icon" aria-hidden="true">GH</span>
+                <span className="button-icon button-icon-github" aria-hidden="true">GH</span>
                 {localizedValue(siteConfig.ctaGitHubLocalized, language)}
               </a>
             </div>

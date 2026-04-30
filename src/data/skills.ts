@@ -10,7 +10,7 @@ export const skillGroups: SkillGroup[] = [
       es: 'Diseño de APIs, servicios y microservicios con foco en arquitectura limpia, seguridad, mantenibilidad e integración.',
       en: 'API, service and microservice design focused on clean architecture, security, maintainability and integration.',
     },
-    items: ['C#', 'ASP.NET Core', 'Java', 'Spring Boot', 'REST APIs', 'JWT', 'Entity Framework Core', 'MediatR'],
+    items: ['C#', 'ASP.NET Core', 'Java', 'Spring Boot', 'Python', 'REST APIs', 'JWT', 'Entity Framework Core', 'MediatR'],
   },
   {
     title: {
@@ -46,7 +46,7 @@ export const skillGroups: SkillGroup[] = [
       es: 'Experiencia integrando datos, automatización, despliegues y soluciones Microsoft Cloud con visión técnica y consultiva.',
       en: 'Experience integrating data, automation, deployments and Microsoft Cloud solutions with a technical and consultative perspective.',
     },
-    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'Oracle', 'MySQL', 'FastAPI', 'AI/LSTM', 'CI/CD'],
+    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'Oracle', 'MySQL', 'Python', 'FastAPI', 'AI/LSTM', 'CI/CD'],
   },
 ];
 

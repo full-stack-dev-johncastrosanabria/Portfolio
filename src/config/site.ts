@@ -29,12 +29,12 @@ export const siteConfig = {
     en: 'Technical blog',
   },
   ctaYouTubeLocalized: {
-    es: 'YouTube',
-    en: 'YouTube',
+    es: 'Mi canal de YouTube',
+    en: 'My YouTube channel',
   },
   ctaGitHubLocalized: {
-    es: 'GitHub',
-    en: 'GitHub',
+    es: 'Mi GitHub',
+    en: 'My GitHub',
   },
   youtubeUrl: 'https://www.youtube.com/@JohnCastroTechLabs',
   githubProfileUrl: 'https://github.com/full-stack-dev-johncastrosanabria/',
