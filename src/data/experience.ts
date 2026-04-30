@@ -76,10 +76,10 @@ export const experience: ExperienceItem[] = [
   {
     company: 'Novacomp S.A.',
     role: 'Pre-Sales Engineer | Microsoft Cloud & AI Solutions',
-    period: 'Aug 2025 - Feb 2026',
-    startDate: '2025-08-01',
+    period: 'Oct 2025 - Feb 2026',
+    startDate: '2025-10-01',
     endDate: '2026-02-28',
-    duration: '7 months',
+    duration: '5 months',
     summary: {
       es: 'Rol híbrido entre desarrollo de negocio, preventa técnica y consultoría comercial para soluciones Microsoft Cloud, con foco en Azure, DevOps, Fabric, Purview, Power Platform, Microsoft 365 e IA aplicada al negocio.',
       en: 'Hybrid role across business development, technical pre-sales and commercial consulting for Microsoft Cloud solutions, focused on Azure, DevOps, Fabric, Purview, Power Platform, Microsoft 365 and business AI.',

@@ -13,7 +13,7 @@ import { publicAsset } from '@/lib/assets';
 import { localizedValue } from '@/lib/localized';
 
 export function HomePage() {
-  useDocumentTitle('Portafolio | Full Stack .NET Developer');
+  useDocumentTitle('Portafolio | Ingeniero de software full-stack');
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage || i18n.language;
   const heroBullets = t('hero.bullets', { returnObjects: true }) as string[];
@@ -45,7 +45,7 @@ export function HomePage() {
                 rel="noopener noreferrer"
               >
                 <span className="button-icon button-icon-youtube" aria-hidden="true">▶</span>
-                {localizedValue(siteConfig.ctaYouTubeLocalized, language)}
+                <span className="button-label">{localizedValue(siteConfig.ctaYouTubeLocalized, language)}</span>
               </a>
               <a
                 className="button button-github"
@@ -53,8 +53,10 @@ export function HomePage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="button-icon button-icon-github" aria-hidden="true">GH</span>
-                {localizedValue(siteConfig.ctaGitHubLocalized, language)}
+                <span className="button-icon button-icon-github" aria-hidden="true">
+                  <img src={publicAsset('github-mark.svg')} alt="" />
+                </span>
+                <span className="button-label">{localizedValue(siteConfig.ctaGitHubLocalized, language)}</span>
               </a>
             </div>
           </div>

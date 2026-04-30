@@ -481,6 +481,7 @@ img {
 .hero-social-actions {
   margin-top: 0.85rem;
   gap: 1rem;
+  align-items: stretch;
 }
 
 .button {
@@ -495,6 +496,7 @@ img {
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
   color: #03111f;
   font-weight: 800;
+  white-space: nowrap;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -516,6 +518,7 @@ img {
 }
 
 .button-youtube {
+  width: min(100%, 330px);
   min-height: 58px;
   padding: 0.95rem 1.65rem;
   border: 2px solid rgba(255, 66, 66, 0.86);
@@ -545,6 +548,7 @@ img {
 }
 
 .button-github {
+  width: min(100%, 330px);
   min-height: 58px;
   padding: 0.95rem 1.65rem;
   border: 2px solid rgba(197, 216, 230, 0.82);
@@ -595,9 +599,20 @@ img {
 
 .button-icon-github {
   background: #ffffff;
-  color: #050505;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.26);
-  letter-spacing: -0.04em;
+  overflow: hidden;
+}
+
+.button-icon-github img {
+  width: 1.35rem;
+  height: 1.35rem;
+  object-fit: contain;
+}
+
+.button-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 :root[data-theme='light'] .button-youtube {
@@ -904,6 +919,11 @@ img {
 
   .hero-profile-copy {
     padding: 1.15rem;
+  }
+
+  .button-youtube,
+  .button-github {
+    width: 100%;
   }
 }
 

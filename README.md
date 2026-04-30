@@ -152,7 +152,7 @@ netlify deploy --prod --dir=dist
 
 ### Información Personal
 
-Edita `src/config/site.js`:
+Edita `src/config/site.ts`:
 
 ```javascript
 export const siteConfig = {
@@ -174,7 +174,7 @@ export const siteConfig = {
 
 ### Proyectos
 
-Edita `src/data/projects.js`:
+Edita `src/data/projects.ts`:
 
 ```javascript
 {
@@ -192,7 +192,7 @@ Edita `src/data/projects.js`:
 
 ### Blog
 
-Edita `src/data/posts.js`:
+Edita `src/data/posts.ts`:
 
 ```javascript
 {
@@ -210,11 +210,11 @@ Edita `src/data/posts.js`:
 
 ### Experiencia
 
-Edita `src/data/experience.js` para agregar tu experiencia laboral.
+Edita `src/data/experience.ts` para agregar tu experiencia laboral.
 
 ### Skills
 
-Edita `src/data/skills.js` para listar tus habilidades técnicas.
+Edita `src/data/skills.ts` para listar tus habilidades técnicas.
 
 ### Temas y Estilos
 
@@ -439,7 +439,7 @@ El proyecto es completamente responsive:
 ```
 src/
 ├── app/
-│   └── router.jsx          # Configuración de rutas
+│   └── router.tsx          # Configuración de rutas
 ├── components/
 │   ├── blog/               # Componentes del blog
 │   ├── common/             # Componentes reutilizables
@@ -448,27 +448,27 @@ src/
 │   ├── layout/             # Layout principal
 │   └── projects/           # Componentes de proyectos
 ├── config/
-│   └── site.js             # Configuración del sitio
+│   └── site.ts             # Configuración del sitio
 ├── data/
-│   ├── experience.js       # Datos de experiencia
-│   ├── posts.js            # Artículos del blog
-│   ├── projects.js         # Proyectos destacados
-│   └── skills.js           # Habilidades técnicas
+│   ├── experience.ts       # Datos de experiencia
+│   ├── posts.ts            # Artículos del blog
+│   ├── projects.ts         # Proyectos destacados
+│   └── skills.ts           # Habilidades técnicas
 ├── hooks/
-│   ├── useBlogPosts.js     # Hook para posts
-│   └── useDocumentTitle.js # Hooks de SEO
+│   ├── useBlogPosts.ts     # Hook para posts
+│   └── useDocumentTitle.ts # Hooks de SEO
 ├── lib/
-│   ├── firebase.js         # Configuración Firebase
-│   ├── seo.js              # Utilidades SEO
-│   └── utils.js            # Utilidades generales
+│   ├── firebase.ts         # Configuración Firebase
+│   ├── seo.ts              # Utilidades SEO
+│   └── utils.ts            # Utilidades generales
 ├── pages/
-│   ├── BlogPage.jsx        # Página del blog
-│   ├── HomePage.jsx        # Página de inicio
-│   ├── NotFoundPage.jsx    # Página 404
-│   └── PostDetailPage.jsx  # Detalle de artículo
+│   ├── BlogPage.tsx        # Página del blog
+│   ├── HomePage.tsx        # Página de inicio
+│   ├── NotFoundPage.tsx    # Página 404
+│   └── PostDetailPage.tsx  # Detalle de artículo
 ├── styles/
 │   └── global.css          # Estilos globales
-└── main.jsx                # Punto de entrada
+└── main.tsx                # Punto de entrada
 ```
 
 ---

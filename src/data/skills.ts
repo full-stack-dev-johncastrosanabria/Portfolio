@@ -53,16 +53,16 @@ export const skillGroups: SkillGroup[] = [
 export const profileStats: ProfileStat[] = [
   {
     value: {
-      es: '3+ años',
-      en: '3+ years',
+      es: 'Casi 4 años',
+      en: 'Nearly 4 years',
     },
     label: {
-      es: 'Experiencia en desarrollo',
-      en: 'Development experience',
+      es: 'Experiencia combinada',
+      en: 'Combined experience',
     },
     detail: {
-      es: 'Construyendo backend, APIs y soluciones full stack para entornos empresariales.',
-      en: 'Building backend, APIs and full stack solutions for enterprise environments.',
+      es: 'Casi 4 años de experiencia combinando desarrollo full-stack, Azure DevOps, soluciones Microsoft Cloud y preventa técnica.',
+      en: 'Nearly 4 years of combined experience in full-stack software engineering, Azure DevOps, Microsoft Cloud solutions, and technical pre-sales.',
     },
   },
   {
