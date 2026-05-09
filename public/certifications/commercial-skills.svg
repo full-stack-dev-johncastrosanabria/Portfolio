@@ -1,22 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
-  <title id="title">Certificado de participacion en desarrollo de habilidades comerciales</title>
-  <desc id="desc">Representacion visual profesional del certificado emitido por RD Consultores y Novacomp.</desc>
-  <rect width="1200" height="760" rx="28" fill="#f8f3e6"/>
-  <rect x="34" y="34" width="1132" height="692" rx="18" fill="none" stroke="#c79642" stroke-width="8"/>
-  <rect x="64" y="64" width="1072" height="632" rx="8" fill="none" stroke="#d8b36d" stroke-width="2" stroke-dasharray="10 10"/>
-  <text x="118" y="128" fill="#243044" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="800">RD Consultores</text>
-  <text x="118" y="176" fill="#b7832f" font-family="Inter, Arial, sans-serif" font-size="34">&amp; Asociados</text>
-  <text x="874" y="142" fill="#24436e" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="800">NOVACOMP</text>
-  <text x="936" y="180" fill="#6b7280" font-family="Inter, Arial, sans-serif" font-size="20" letter-spacing="8">IT NEARSHORING</text>
-  <line x1="300" y1="234" x2="900" y2="234" stroke="#c79642" stroke-width="3"/>
-  <text x="600" y="290" text-anchor="middle" fill="#243044" font-family="Georgia, serif" font-size="62" letter-spacing="6">CERTIFICADO</text>
-  <text x="600" y="338" text-anchor="middle" fill="#64748b" font-family="Inter, Arial, sans-serif" font-size="28">de participación otorgado a</text>
-  <text x="600" y="430" text-anchor="middle" fill="#a66d23" font-family="Georgia, serif" font-size="58">John Castro Sanabria</text>
-  <text x="600" y="508" text-anchor="middle" fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="35" font-weight="800">Desarrollo de Habilidades Comerciales</text>
-  <text x="600" y="555" text-anchor="middle" fill="#59606c" font-family="Inter, Arial, sans-serif" font-size="29" font-style="italic">Optimización del ciclo de ventas con base en PNL</text>
-  <text x="600" y="622" text-anchor="middle" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="26">Costa Rica · Enero 2026 · 8 horas</text>
-  <line x1="258" y1="670" x2="450" y2="670" stroke="#c79642" stroke-width="3"/>
-  <line x1="750" y1="670" x2="942" y2="670" stroke="#c79642" stroke-width="3"/>
-  <text x="354" y="704" text-anchor="middle" fill="#8a6427" font-family="Inter, Arial, sans-serif" font-size="19">Dirección General</text>
-  <text x="846" y="704" text-anchor="middle" fill="#8a6427" font-family="Inter, Arial, sans-serif" font-size="19">Instructor</text>
+  <title id="title">Certificado de desarrollo de habilidades comerciales</title>
+  <desc id="desc">Vista profesional del certificado emitido por RD Consultores y Novacomp.</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffaf1"/>
+      <stop offset="1" stop-color="#f8efe2"/>
+    </linearGradient>
+    <linearGradient id="ribbon" x1="0" x2="1">
+      <stop offset="0" stop-color="#b67825"/>
+      <stop offset="1" stop-color="#253f67"/>
+    </linearGradient>
+    <filter id="softShadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#2b2118" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="760" rx="28" fill="#efe4d1"/>
+  <rect x="52" y="48" width="1096" height="664" rx="24" fill="url(#paper)" filter="url(#softShadow)"/>
+  <rect x="84" y="80" width="1032" height="600" rx="14" fill="none" stroke="#c89545" stroke-width="4"/>
+  <rect x="104" y="100" width="992" height="560" rx="8" fill="none" stroke="#e0c58f" stroke-width="2"/>
+  <rect x="84" y="80" width="1032" height="16" rx="8" fill="url(#ribbon)"/>
+
+  <text x="150" y="154" fill="#263143" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">RD Consultores</text>
+  <text x="152" y="190" fill="#b67825" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="800">&amp; Asociados</text>
+  <text x="890" y="158" text-anchor="middle" fill="#253f67" font-family="Inter, Arial, sans-serif" font-size="45" font-weight="900">NOVACOMP</text>
+  <text x="890" y="190" text-anchor="middle" fill="#6c7280" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="6">IT NEARSHORING</text>
+
+  <line x1="220" y1="238" x2="980" y2="238" stroke="#c89545" stroke-width="3"/>
+  <text x="600" y="308" text-anchor="middle" fill="#263143" font-family="Georgia, 'Times New Roman', serif" font-size="66" font-weight="700" letter-spacing="4">CERTIFICADO</text>
+  <text x="600" y="358" text-anchor="middle" fill="#656f7e" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">de participación otorgado a</text>
+  <text x="600" y="448" text-anchor="middle" fill="#9b6322" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700">John Castro Sanabria</text>
+  <line x1="260" y1="478" x2="940" y2="478" stroke="#c4a875" stroke-width="3"/>
+
+  <text x="600" y="544" text-anchor="middle" fill="#1f2937" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="900">Desarrollo de Habilidades Comerciales</text>
+  <text x="600" y="590" text-anchor="middle" fill="#59606c" font-family="Inter, Arial, sans-serif" font-size="27" font-style="italic">Optimización del ciclo de ventas con base en PNL</text>
+  <text x="600" y="642" text-anchor="middle" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Costa Rica - Enero 2026 - 8 horas</text>
+
+  <line x1="238" y1="668" x2="428" y2="668" stroke="#c89545" stroke-width="3"/>
+  <line x1="772" y1="668" x2="962" y2="668" stroke="#c89545" stroke-width="3"/>
+  <text x="333" y="698" text-anchor="middle" fill="#7c5a25" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Dirección General</text>
+  <text x="867" y="698" text-anchor="middle" fill="#7c5a25" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800">Instructor</text>
 </svg>
