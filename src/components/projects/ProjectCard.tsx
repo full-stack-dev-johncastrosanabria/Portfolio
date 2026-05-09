@@ -132,7 +132,7 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
         <div className="project-links">
           {project.liveDemo && (
             <a
-              className="button button-primary button-demo"
+              className={`button button-primary ${getLiveDemoIcon(liveDemoLabel, project.liveDemo) === 'site' ? 'button-site' : 'button-demo'}`}
               href={project.liveDemo}
               target="_blank"
               rel="noopener noreferrer"

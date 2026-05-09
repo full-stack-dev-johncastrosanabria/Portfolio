@@ -638,6 +638,25 @@ img {
     0 14px 30px rgba(185, 28, 28, 0.34);
 }
 
+.project-links .button-site {
+  border-color: rgba(74, 222, 128, 0.52);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent 42%),
+    linear-gradient(135deg, #22c55e, #15803d);
+  color: #ffffff;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.42),
+    inset 0 -8px 18px rgba(20, 83, 45, 0.34),
+    0 12px 24px rgba(21, 128, 61, 0.24);
+}
+
+.project-links .button-site:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.42),
+    inset 0 -8px 18px rgba(20, 83, 45, 0.34),
+    0 14px 30px rgba(21, 128, 61, 0.34);
+}
+
 .button:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 30px rgba(14, 165, 233, 0.25);
