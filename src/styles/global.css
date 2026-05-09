@@ -528,6 +528,8 @@ img {
 }
 
 .hero-actions {
+  position: relative;
+  z-index: 4;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.8rem;
@@ -536,6 +538,8 @@ img {
 }
 
 .hero-social-actions {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin-top: 1.1rem;
