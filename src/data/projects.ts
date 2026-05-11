@@ -13,14 +13,12 @@ const projectPriority = [
   'expo-amplify-demo',
   'admin-dashboard',
   'propflow',
-  'microsoft-landing',
   'vue-project',
   'flask-product-api',
   'personas-solution',
   'webapi-matricula',
   'wcf-tarjetas',
   'smartgym-api',
-  'criadero-pastores',
 ];
 
 const projectItems: Project[] = [
@@ -112,6 +110,16 @@ const projectItems: Project[] = [
       ],
     },
     technologies: ['Spring Boot', 'Spring Cloud Gateway', 'FastAPI', 'Python', 'React', 'TypeScript', 'MySQL', 'AI', 'LSTM'],
+    links: [
+      {
+        label: {
+          es: 'Ver Sitio',
+          en: 'View Site',
+        },
+        href: 'https://full-stack-dev-johncastrosanabria.github.io/BusinessAI-Analytics/login',
+        primary: true,
+      },
+    ],
     liveDemo: 'https://youtu.be/i_TPjHsoOHE',
     liveDemoLabel: {
       es: 'Ver Demo',
@@ -151,21 +159,6 @@ const projectItems: Project[] = [
     technologies: ['ASP.NET Core MVC', 'Entity Framework Core', 'SQL Server', 'Bootstrap', 'C#'],
     githubUrl: 'https://github.com/castrosanabriajohn/eTickets',
     featured: true,
-  },
-  {
-    id: 'microsoft-landing',
-    title: 'Landing Page Microsoft',
-    category: 'Frontend',
-    description:
-      'Landing page corporativa inspirada en Microsoft, pensada para comunicar una propuesta cloud con una interfaz clara, moderna y orientada a conversión.',
-    highlights: [
-      'Diseño visual orientado a producto tecnológico',
-      'Secciones comerciales para propuesta de valor y servicios',
-      'Experiencia responsive para desktop y móvil',
-      'Publicación rápida en Netlify',
-    ],
-    technologies: ['React', 'CSS', 'Responsive UI', 'Netlify', 'Landing Page'],
-    liveDemo: 'https://bocetoms.netlify.app/',
   },
   {
     id: 'admin-dashboard',
@@ -227,22 +220,6 @@ const projectItems: Project[] = [
     ],
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive UI'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PropFlow',
-  },
-  {
-    id: 'criadero-pastores',
-    title: 'Criadero Pastores - Negocio Familiar',
-    category: 'Frontend',
-    description:
-      'Página en React para un negocio familiar, creada para presentar el criadero, mostrar información clave y ofrecer una presencia digital clara.',
-    highlights: [
-      'Sitio web público para negocio familiar',
-      'Diseño responsive y navegación sencilla',
-      'Presentación de contenido comercial y contacto',
-      'Demo desplegada en Netlify',
-    ],
-    technologies: ['React', 'JavaScript', 'CSS', 'Netlify', 'Responsive UI'],
-    liveDemo: 'https://canesbarvae.netlify.app/',
-    githubUrl: 'https://github.com/castrosanabriajohn/criadero-pastores',
   },
   {
     id: 'meals-to-go',

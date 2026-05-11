@@ -13,7 +13,8 @@ function getInitialTheme(): ThemeMode {
     return savedTheme;
   }
 
-  return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  // Por defecto, inicia en modo oscuro
+  return 'dark';
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
