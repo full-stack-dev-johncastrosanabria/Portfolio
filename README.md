@@ -568,7 +568,7 @@ El blog incluye artículos sobre:
 ### Full Stack
 - **Reactivities** - Red social con .NET 8 y React 19
 - **eTickets** - Plataforma cinematográfica
-- **Criadero Pastores** - E-commerce
+- **BusinessAI Analytics** - Plataforma BI con IA y microservicios Spring Boot
 
 ### Backend
 - **Interview Clean API** - Arquitectura limpia

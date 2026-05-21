@@ -27,7 +27,7 @@ interface BreadcrumbItem {
 export const generateMetaTags = (config: MetaConfig) => {
   const {
     title = 'John Castro Sanabria - Ingeniero de software full-stack',
-    description = 'Ingeniero de software full-stack especializado en .NET, React, TypeScript, SQL y Azure DevOps',
+    description = 'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y Azure DevOps',
     image = '/public/brand-mark.svg',
     url = 'https://portafolio.netlify.app',
     type = 'website',
@@ -75,7 +75,7 @@ export const generateStructuredData = (config: StructuredDataConfig) => {
     email,
     sameAs,
     jobTitle: 'Ingeniero de software full-stack',
-    knowsAbout: ['.NET', 'React', 'TypeScript', 'SQL Server', 'Azure DevOps', 'AZ-900', 'MS-900', 'Clean Architecture'],
+    knowsAbout: ['.NET', 'Java', 'Spring Boot', 'React', 'TypeScript', 'SQL Server', 'Azure DevOps', 'AZ-900', 'MS-900', 'Clean Architecture'],
   };
 };
 

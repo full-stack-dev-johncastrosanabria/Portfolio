@@ -331,14 +331,14 @@ const projectItems: Project[] = [
     title: 'PersonasSolution - Gestión de Personas',
     category: 'Backend',
     description:
-      'Solución backend para gestionar entidades de personas, pensada como base práctica para operaciones CRUD, separación de capas y persistencia.',
+      'Solución en Visual Basic para gestionar entidades de personas, pensada como base práctica para operaciones CRUD, separación de capas y persistencia.',
     highlights: [
       'Modelo de dominio centrado en personas',
       'Operaciones CRUD organizadas',
       'Estructura preparada para extender reglas de negocio',
       'Proyecto útil para demostrar fundamentos backend',
     ],
-    technologies: ['.NET', 'C#', 'CRUD', 'Backend', 'SQL', 'Layered Architecture'],
+    technologies: ['Visual Basic', 'CRUD', 'Backend', 'SQL', 'Layered Architecture'],
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PersonasSolution',
   },
   {

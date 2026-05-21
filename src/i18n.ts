@@ -19,7 +19,7 @@ const resources = {
         profile: 'Perfil',
         profileTitle: 'Backend sólido, frontend moderno y delivery con Azure DevOps',
         profileText:
-          'Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, React, TypeScript, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración. Certificado AZ-900 y MS-900.',
+          'Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, Java, Spring Boot, React, TypeScript, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración. Certificado AZ-900 y MS-900.',
         bullets: [
           'APIs REST y seguridad con JWT',
           'Frontend con React, TypeScript, Vue y Blazor',
@@ -98,7 +98,7 @@ const resources = {
         profile: 'Profile',
         profileTitle: 'Strong backend, modern frontend and Azure DevOps delivery',
         profileText:
-          'Experience building enterprise solutions with C#, ASP.NET Core, React, TypeScript, SQL Server and Azure DevOps, focused on clean architecture, maintainability and integrations. AZ-900 and MS-900 certified.',
+          'Experience building enterprise solutions with C#, ASP.NET Core, Java, Spring Boot, React, TypeScript, SQL Server and Azure DevOps, focused on clean architecture, maintainability and integrations. AZ-900 and MS-900 certified.',
         bullets: [
           'REST APIs and JWT security',
           'Frontend with React, TypeScript, Vue and Blazor',

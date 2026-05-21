@@ -1,22 +1,22 @@
 export const siteConfig = {
   author: 'John Castro Sanabria',
-  role: 'Ingeniero de software full-stack | .NET, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
+  role: 'Ingeniero de software full-stack | .NET, Java, Spring Boot, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
   roleLocalized: {
-    es: 'Ingeniero de software full-stack | .NET, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
-    en: 'Full-stack software engineer | .NET, React, TypeScript and SQL | Azure DevOps | AZ-900 and MS-900 certified',
+    es: 'Ingeniero de software full-stack | .NET, Java, Spring Boot, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
+    en: 'Full-stack software engineer | .NET, Java, Spring Boot, React, TypeScript and SQL | Azure DevOps | AZ-900 and MS-900 certified',
   },
   email: 'castrosanabriajohn@gmail.com',
   headline:
-    'Ingeniero de software full-stack especializado en .NET, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
+    'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
   headlineLocalized: {
-    es: 'Ingeniero de software full-stack especializado en .NET, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
-    en: 'Full-stack software engineer specialized in .NET, React, TypeScript, SQL and clean architecture. I build scalable and maintainable solutions.',
+    es: 'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
+    en: 'Full-stack software engineer specialized in .NET, Java, Spring Boot, React, TypeScript, SQL and clean architecture. I build scalable and maintainable solutions.',
   },
   description:
-    'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
+    'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
   descriptionLocalized: {
-    es: 'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
-    en: 'Professional portfolio of John Castro Sanabria. Full-stack software engineer with experience in .NET, React, TypeScript, SQL, Azure DevOps and clean architecture. AZ-900 and MS-900 certified.',
+    es: 'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
+    en: 'Professional portfolio of John Castro Sanabria. Full-stack software engineer with experience in .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps and clean architecture. AZ-900 and MS-900 certified.',
   },
   ctaPrimary: 'Ver proyectos',
   ctaPrimaryLocalized: {
@@ -64,6 +64,8 @@ export const siteConfig = {
   ],
   keywords: [
     '.NET',
+    'Java',
+    'Spring Boot',
     'React',
     'Full Stack',
     'TypeScript',

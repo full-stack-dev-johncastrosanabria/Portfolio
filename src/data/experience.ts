@@ -43,16 +43,17 @@ export const experience: ExperienceItem[] = [
     endDate: '2025-09-30',
     duration: '2 years 11 months',
     summary: {
-      es: 'Desarrollo de APIs REST empresariales y soluciones full stack para el sector financiero con foco en mantenibilidad, seguridad e integración. Liderazgo técnico en arquitectura limpia y optimización de bases de datos.',
-      en: 'Built enterprise REST APIs and full stack solutions for the financial sector, focused on maintainability, security and integration. Technical leadership in clean architecture and database optimization.',
+      es: 'Desarrollo de APIs REST empresariales y soluciones full stack para el sector financiero con .NET, Java y Spring Boot, con foco en mantenibilidad, seguridad e integración. Liderazgo técnico en arquitectura limpia y optimización de bases de datos.',
+      en: 'Built enterprise REST APIs and full stack solutions for the financial sector with .NET, Java and Spring Boot, focused on maintainability, security and integration. Technical leadership in clean architecture and database optimization.',
     },
     description: {
-      es: 'Como Software Engineer I en Innovative, fui responsable del diseño e implementación de soluciones backend escalables para clientes del sector financiero. Trabajé en la modernización de sistemas legacy, implementación de arquitectura limpia y optimización de performance en bases de datos empresariales. Colaboré con equipos de infraestructura en la automatización de despliegues y monitoreo de aplicaciones en producción.',
-      en: 'As Software Engineer I at Innovative, I designed and implemented scalable backend solutions for financial sector clients. I worked on legacy modernization, clean architecture implementation and performance optimization in enterprise databases. I also collaborated with infrastructure teams on deployment automation and production monitoring.',
+      es: 'Como Software Engineer I en Innovative, fui responsable del diseño e implementación de soluciones backend escalables para clientes del sector financiero con .NET, Java y Spring Boot. Trabajé en la modernización de sistemas legacy, implementación de arquitectura limpia y optimización de performance en bases de datos empresariales. Colaboré con equipos de infraestructura en la automatización de despliegues y monitoreo de aplicaciones en producción.',
+      en: 'As Software Engineer I at Innovative, I designed and implemented scalable backend solutions for financial sector clients with .NET, Java and Spring Boot. I worked on legacy modernization, clean architecture implementation and performance optimization in enterprise databases. I also collaborated with infrastructure teams on deployment automation and production monitoring.',
     },
     achievements: {
       es: [
         'Desarrollé más de 50 APIs REST con ASP.NET Core y C# siguiendo principios SOLID y Clean Architecture.',
+        'Trabajé con Java y Spring Boot en soluciones backend empresariales orientadas a servicios REST e integración.',
         'Implementé patrones de diseño avanzados: CQRS, MediatR, Repository Pattern y Dependency Injection.',
         'Optimicé consultas SQL en SQL Server y Oracle, mejorando performance en 40-60% en operaciones críticas.',
         'Diseñé y ejecuté procedimientos almacenados complejos para reportes y procesamiento de datos.',
@@ -62,6 +63,7 @@ export const experience: ExperienceItem[] = [
       ],
       en: [
         'Developed 50+ REST APIs with ASP.NET Core and C# following SOLID principles and Clean Architecture.',
+        'Worked with Java and Spring Boot on enterprise backend solutions focused on REST services and integration.',
         'Implemented advanced design patterns including CQRS, MediatR, Repository Pattern and Dependency Injection.',
         'Optimized SQL queries in SQL Server and Oracle, improving critical operation performance by 40-60%.',
         'Designed and executed complex stored procedures for reporting and data processing.',
@@ -70,7 +72,7 @@ export const experience: ExperienceItem[] = [
         'Mentored junior developers on architecture and code best practices.',
       ],
     },
-    stack: ['C#', '.NET Core', '.NET Framework', 'ASP.NET Core', 'SQL Server', 'Oracle', 'T-SQL', 'PL/SQL', 'Azure DevOps', 'Git', 'Entity Framework'],
+    stack: ['C#', '.NET Core', '.NET Framework', 'ASP.NET Core', 'Java', 'Spring Boot', 'SQL Server', 'Oracle', 'T-SQL', 'PL/SQL', 'Azure DevOps', 'Git', 'Entity Framework'],
     highlights: ['Clean Architecture', 'Database Optimization', 'CI/CD Pipelines', 'Mentoring'],
   },
   {

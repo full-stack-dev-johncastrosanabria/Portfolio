@@ -61,19 +61,6 @@ export const projectTranslations: Partial<Record<string, ProjectTranslation>> = 
       ],
     },
   },
-  'microsoft-landing': {
-    description: {
-      en: 'Corporate landing page inspired by Microsoft, designed to communicate a cloud proposal through a clear, modern and conversion-oriented interface.',
-    },
-    highlights: {
-      en: [
-        'Visual design focused on a technology product',
-        'Commercial sections for value proposition and services',
-        'Responsive desktop and mobile experience',
-        'Fast publication on Netlify',
-      ],
-    },
-  },
   'admin-dashboard': {
     description: {
       en: 'React admin dashboard for visualizing metrics, data and operational modules with a practical interface for daily management.',
@@ -129,22 +116,6 @@ export const projectTranslations: Partial<Record<string, ProjectTranslation>> = 
         'Sections for benefits, properties and conversion',
         'Clean interface with strong visual hierarchy',
         'Base ready for form or CRM integration',
-      ],
-    },
-  },
-  'criadero-pastores': {
-    title: {
-      en: 'Criadero Pastores - Family Business',
-    },
-    description: {
-      en: 'React website for a family business, created to present the kennel, show key information and provide a clear digital presence.',
-    },
-    highlights: {
-      en: [
-        'Public website for a family business',
-        'Responsive design and simple navigation',
-        'Commercial content and contact presentation',
-        'Demo deployed on Netlify',
       ],
     },
   },
@@ -256,7 +227,7 @@ export const projectTranslations: Partial<Record<string, ProjectTranslation>> = 
       en: 'PersonasSolution - People Management',
     },
     description: {
-      en: 'Backend solution for managing people entities, designed as a practical base for CRUD operations, layer separation and persistence.',
+      en: 'Visual Basic solution for managing people entities, designed as a practical base for CRUD operations, layer separation and persistence.',
     },
     highlights: {
       en: [
