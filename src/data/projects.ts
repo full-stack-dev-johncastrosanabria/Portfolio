@@ -1,6 +1,9 @@
 import type { Project } from '@/types';
 
 const projectPriority = [
+  'novamp-sinpe',
+  'novatoken',
+  'novabank',
   'nova-expediente-novacomp',
   'business-ai-analytics',
   'reactivities',
@@ -22,6 +25,129 @@ const projectPriority = [
 ];
 
 const projectItems: Project[] = [
+  {
+    id: 'novamp-sinpe',
+    title: {
+      es: 'NovaMP SINPE - Plataforma de Pagos Electrónicos',
+      en: 'NovaMP SINPE - Electronic Payments Platform',
+    },
+    category: {
+      es: 'Proyecto profesional fintech',
+      en: 'Professional fintech project',
+    },
+    description: {
+      es: 'Plataforma de medios de pago para entidades conectadas al Sistema Nacional de Pagos Electrónicos SINPE del Banco Central de Costa Rica.',
+      en: 'Payments platform for institutions connected to Costa Rica Central Bank electronic payments network, SINPE.',
+    },
+    highlights: {
+      es: [
+        'Construí módulos de configuración y reportería financiera para operación de entidades certificadas por el BCCR.',
+        'Atendí hotfixes en producción, cuidando disponibilidad 24/7 para más de 10 entidades financieras.',
+        'Participé en funcionalidades relacionadas con movilización electrónica de fondos entre cuentas IBAN.',
+        'Trabajé sobre una solución SaaS con soporte operativo crítico y estándares de conexión BCCR-SINPE.',
+      ],
+      en: [
+        'Built configuration and financial reporting modules for institutions certified by the Central Bank of Costa Rica.',
+        'Handled production hotfixes while supporting 24/7 availability for more than 10 financial institutions.',
+        'Contributed to features related to electronic fund movement between IBAN accounts.',
+        'Worked on a SaaS solution with critical operational support and BCCR-SINPE connection standards.',
+      ],
+    },
+    technologies: ['C#', '.NET', 'React', 'SQL Server', 'Fintech', 'BCCR-SINPE'],
+    links: [
+      {
+        label: {
+          es: 'Ver sitio',
+          en: 'View site',
+        },
+        href: 'https://www.in-novative.com/novamp-sinpe/',
+        primary: true,
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: 'novatoken',
+    title: {
+      es: 'NovaToken - Autenticación de Dos Factores (2FA)',
+      en: 'NovaToken - Two-Factor Authentication (2FA)',
+    },
+    category: {
+      es: 'Proyecto profesional seguridad',
+      en: 'Professional security project',
+    },
+    description: {
+      es: 'Solución SoftToken de segundo factor de autenticación para reforzar seguridad transaccional, OTP y cumplimiento regulatorio financiero.',
+      en: 'SoftToken second-factor authentication solution for transactional security, OTP flows and financial regulatory compliance.',
+    },
+    highlights: {
+      es: [
+        'Desarrollé el BackOffice en React para operación y consulta de evidencias, usuarios y procesos de seguridad.',
+        'Mantuve lógica de tokens OTP con expiración de 60 segundos para canales transaccionales.',
+        'Trabajé en una solución orientada a cumplimiento con reguladores financieros en LATAM.',
+        'Colaboré en flujos de seguridad para robustecer autenticación y reducir riesgo de acceso no autorizado.',
+      ],
+      en: [
+        'Built the React BackOffice for operations and review of evidence, users and security processes.',
+        'Maintained OTP token logic with 60-second expiration for transactional channels.',
+        'Worked on a solution oriented to compliance with financial regulators in LATAM.',
+        'Contributed to security flows that strengthen authentication and reduce unauthorized access risk.',
+      ],
+    },
+    technologies: ['C#', '.NET', 'React', 'SQL Server', '2FA', 'OTP', 'Security'],
+    links: [
+      {
+        label: {
+          es: 'Ver sitio',
+          en: 'View site',
+        },
+        href: 'https://www.in-novative.com/nova-token/',
+        primary: true,
+      },
+    ],
+    featured: true,
+  },
+  {
+    id: 'novabank',
+    title: {
+      es: 'NovaBank - Banca por Internet Omnicanal',
+      en: 'NovaBank - Omnichannel Internet Banking',
+    },
+    category: {
+      es: 'Proyecto profesional banking',
+      en: 'Professional banking project',
+    },
+    description: {
+      es: 'Solución omnicanal de banca digital para Internet Banking y Mobile Banking, con administración centralizada y cumplimiento OWASP Top 10.',
+      en: 'Omnichannel digital banking solution for Internet Banking and Mobile Banking, with centralized administration and OWASP Top 10 compliance.',
+    },
+    highlights: {
+      es: [
+        'Construí módulos de transferencia de fondos e integraciones de core bancario para Coopeguanacaste y Coope San Ramón.',
+        'Implementé funcionalidades backend y frontend sobre flujos de banca por internet para cooperativas.',
+        'Trabajé bajo criterios de seguridad alineados con OWASP Top 10 para canales web y app.',
+        'Participé en integraciones orientadas a centralizar cambios en un repositorio de canales omnicanal.',
+      ],
+      en: [
+        'Built fund transfer modules and core banking integrations for Coopeguanacaste and Coope San Ramon.',
+        'Implemented backend and frontend functionality for cooperative internet banking flows.',
+        'Worked under security criteria aligned with OWASP Top 10 for web and app channels.',
+        'Contributed to integrations designed to centralize changes in an omnichannel repository.',
+      ],
+    },
+    technologies: ['Java', 'Spring Boot', 'Vue.js', 'Banking', 'OWASP Top 10', 'Core Banking'],
+    links: [
+      {
+        label: {
+          es: 'Ver sitio',
+          en: 'View site',
+        },
+        href: 'https://www.in-novative.com/nova-bank/',
+        primary: true,
+      },
+    ],
+    featured: true,
+  },
   {
     id: 'portfolio',
     title: 'Portafolio John Castro Sanabria',

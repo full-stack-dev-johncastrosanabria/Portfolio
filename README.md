@@ -566,6 +566,9 @@ El blog incluye artículos sobre:
 ## 📊 Proyectos Incluidos
 
 ### Full Stack
+- **NovaMP SINPE** - Plataforma profesional de pagos electrónicos BCCR-SINPE
+- **NovaToken** - Autenticación 2FA para sector financiero
+- **NovaBank** - Banca por internet omnicanal para cooperativas
 - **Reactivities** - Red social con .NET 8 y React 19
 - **eTickets** - Plataforma cinematográfica
 - **BusinessAI Analytics** - Plataforma BI con IA y microservicios Spring Boot

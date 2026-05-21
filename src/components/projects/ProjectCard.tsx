@@ -42,6 +42,16 @@ function getLiveDemoIcon(label: string, href: string): ProjectLinkIconName {
   return 'site';
 }
 
+function getProjectLinkClass(label: string, primary?: boolean) {
+  const normalizedLabel = label.toLowerCase();
+
+  if (normalizedLabel.includes('ver sitio') || normalizedLabel.includes('view site')) {
+    return 'button-site';
+  }
+
+  return primary ? 'button-primary' : 'button-secondary';
+}
+
 function ProjectLinkIcon({ name }: { name: ProjectLinkIconName }) {
   if (name === 'app-store') {
     return <img src={publicAsset('app-store-mark.svg')} alt="" aria-hidden="true" />;
@@ -166,7 +176,7 @@ export function ProjectCard({ project, language: languageOverride }: ProjectCard
             return (
               <a
                 key={link.href}
-                className={`button ${link.primary ? 'button-primary' : 'button-secondary'}`}
+                className={`button ${getProjectLinkClass(label, link.primary)}`}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
