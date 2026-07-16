@@ -70,7 +70,7 @@ export const projectTranslations: Partial<Record<string, ProjectTranslation>> = 
         'Admin panel design focused on fast reading',
         'Reusable components for data views',
         'Structure prepared for charts, tables and internal navigation',
-        'Public demo deployed on Netlify',
+        'Public live demo with sample data',
       ],
     },
   },

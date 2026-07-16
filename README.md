@@ -1,6 +1,6 @@
 # Portafolio Full Stack - John Castro Sanabria
 
-Portafolio profesional moderno construido con React 19, Vite y mejores prácticas de 2026. Optimizado para Netlify con arquitectura limpia, SEO mejorado y performance de clase mundial.
+Portafolio profesional moderno construido con React 19, Vite y mejores prácticas de 2026. Desplegado en GitHub Pages con arquitectura limpia, SEO mejorado y performance de clase mundial.
 
 ## 📑 Tabla de Contenidos
 
@@ -11,7 +11,7 @@ Portafolio profesional moderno construido con React 19, Vite y mejores práctica
 - [Build y Despliegue](#build-y-despliegue)
 - [Personalización](#personalización)
 - [Mejores Prácticas](#mejores-prácticas)
-- [Despliegue en Netlify](#despliegue-en-netlify)
+- [Despliegue en GitHub Pages](#despliegue-en-github-pages)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Troubleshooting](#troubleshooting)
 - [Recursos](#recursos)
@@ -102,24 +102,25 @@ yarn build
 yarn preview
 ```
 
-### Despliegue en Netlify
+### Despliegue en GitHub Pages
 
-Este proyecto está configurado para desplegar automáticamente en Netlify:
+Este proyecto se despliega automáticamente en GitHub Pages mediante GitHub Actions:
 
-1. Conecta tu repositorio a Netlify
-2. Netlify detectará automáticamente `netlify.toml`
-3. El build se ejecutará con `yarn build`
-4. Los archivos en `dist/` se servirán
+1. El workflow `.github/workflows/deploy-github-pages.yml` se ejecuta en cada push a `main`
+2. El build corre con `npm run build:github-pages` (usa la base `/Portfolio/` y genera `404.html` como fallback SPA)
+3. Los archivos de `dist/` se publican en la rama `gh-pages`
+4. El sitio queda disponible en `https://full-stack-dev-johncastrosanabria.github.io/Portfolio/`
 
-#### Configuración de Netlify
+#### Configuración de GitHub Pages
 
-- **Build command**: `yarn build`
+- **Build command**: `npm run build:github-pages`
 - **Publish directory**: `dist`
-- **Node version**: 20
+- **Node version**: 22
+- En **Settings > Pages**, la fuente debe apuntar a la rama `gh-pages`
 
-#### Variables de Entorno en Netlify
+#### Variables de Entorno
 
-Ve a "Site settings" > "Build & deploy" > "Environment" y agrega:
+Configúralas como *Secrets* del repositorio (Settings > Secrets and variables > Actions) o en un `.env` local:
 
 ```
 VITE_FIREBASE_API_KEY=tu_api_key
@@ -129,21 +130,19 @@ VITE_FIREBASE_STORAGE_BUCKET=tu_storage_bucket
 VITE_FIREBASE_MESSAGING_SENDER_ID=tu_sender_id
 VITE_FIREBASE_APP_ID=tu_app_id
 VITE_FIREBASE_MEASUREMENT_ID=tu_measurement_id
-VITE_SITE_URL=https://tu-dominio.netlify.app
+VITE_SITE_URL=https://full-stack-dev-johncastrosanabria.github.io/Portfolio
 VITE_ENVIRONMENT=production
 ```
 
 #### Despliegue Manual
 
 ```bash
-# Instalar Netlify CLI
-npm install -g netlify-cli
+# Build para GitHub Pages
+npm run build:github-pages
 
-# Autenticarse
-netlify login
-
-# Desplegar
-netlify deploy --prod --dir=dist
+# Publica el contenido de dist/ en la rama gh-pages,
+# o simplemente haz push a main y deja que el workflow lo despliegue
+git push origin main
 ```
 
 ---
@@ -185,7 +184,7 @@ Edita `src/data/projects.ts`:
   highlights: ['Feature 1', 'Feature 2'],
   technologies: ['React', '.NET', 'SQL Server'],
   link: 'https://github.com/...',
-  liveDemo: 'https://demo.netlify.app', // Opcional
+  liveDemo: 'https://usuario.github.io/proyecto', // Opcional
   featured: true,
 }
 ```
@@ -319,7 +318,7 @@ export function BlogPost({ post }) {
   useMetaTags({
     description: post.excerpt,
     image: post.image,
-    url: `https://portafolio.netlify.app/blog/${post.slug}`,
+    url: `https://full-stack-dev-johncastrosanabria.github.io/Portfolio/blog/${post.slug}`,
   });
   useStructuredData({
     '@context': 'https://schema.org',
@@ -410,16 +409,15 @@ El proyecto incluye:
 - **Image optimization** con formatos modernos
 - **CSS purging** con Tailwind
 - **Minificación** automática en build
-- **Caching headers** configurados en Netlify
+- **Caching headers** aplicados a los assets con hash de Vite
 
 ---
 
 ## 🔐 Seguridad
 
-- Headers de seguridad configurados en `netlify.toml`
-- No hay exposición de secretos
-- HTTPS forzado en Netlify
-- CSP headers recomendados
+- No hay exposición de secretos (las claves se inyectan como Secrets en el build)
+- HTTPS forzado por GitHub Pages
+- CSP y headers de seguridad recomendados a nivel de meta tags
 
 ---
 
@@ -503,15 +501,13 @@ yarn build
 yarn dev
 ```
 
-### Rutas no funcionan en Netlify
+### Rutas no funcionan en GitHub Pages
 
-Ya está configurado en `netlify.toml`:
+El script `build:github-pages` copia `index.html` a `404.html`, de modo que GitHub Pages sirve la SPA en cualquier ruta profunda:
 
-```toml
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+```jsonc
+// package.json
+"build:github-pages": "GITHUB_PAGES=true vite build && cp dist/index.html dist/404.html"
 ```
 
 ### Variables de entorno no funcionan
@@ -524,11 +520,11 @@ Ya está configurado en `netlify.toml`:
 
 ## 📈 Monitoreo
 
-### Netlify Analytics
+### Analítica
 
-1. Ve a "Analytics" en tu sitio
-2. Habilita "Netlify Analytics"
-3. Visualiza visitantes, páginas más visitadas, fuentes de tráfico
+1. Integra Firebase Analytics (ya incluido de forma opcional) o Google Analytics
+2. Configura las variables `VITE_FIREBASE_*` con tu proyecto
+3. Visualiza visitantes, páginas más visitadas y fuentes de tráfico desde el panel correspondiente
 
 ### Core Web Vitals
 
@@ -626,7 +622,7 @@ Este proyecto está bajo la licencia MIT. Ver `LICENSE` para más detalles.
 - [Vite](https://vitejs.dev)
 - [Tailwind CSS](https://tailwindcss.com)
 - [React Router](https://reactrouter.com)
-- [Netlify](https://netlify.com)
+- [GitHub Pages](https://pages.github.com)
 
 ---
 
@@ -652,7 +648,7 @@ Antes de desplegar:
 - [ ] Performance > 90 (Lighthouse)
 - [ ] Variables de entorno configuradas
 - [ ] Repositorio en GitHub
-- [ ] Netlify conectado
+- [ ] GitHub Pages configurado (rama `gh-pages`)
 - [ ] Deploy exitoso
 - [ ] Sitio en vivo
 

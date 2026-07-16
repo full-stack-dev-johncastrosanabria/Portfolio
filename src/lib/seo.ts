@@ -29,7 +29,7 @@ export const generateMetaTags = (config: MetaConfig) => {
     title = 'John Castro Sanabria - Ingeniero de software full-stack',
     description = 'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y Azure DevOps',
     image = '/public/brand-mark.svg',
-    url = 'https://portafolio.netlify.app',
+    url = 'https://full-stack-dev-johncastrosanabria.github.io/Portfolio',
     type = 'website',
   } = config;
 
@@ -60,7 +60,7 @@ export const generateStructuredData = (config: StructuredDataConfig) => {
     name = 'John Castro Sanabria',
     description = 'Ingeniero de software full-stack',
     image = '/public/profile-john.png',
-    url = 'https://portafolio.netlify.app',
+    url = 'https://full-stack-dev-johncastrosanabria.github.io/Portfolio',
     email = 'castrosanabriajohn@gmail.com',
     sameAs = [],
   } = config;

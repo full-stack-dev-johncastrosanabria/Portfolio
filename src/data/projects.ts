@@ -296,9 +296,9 @@ const projectItems: Project[] = [
       'Diseño de panel administrativo con enfoque en lectura rápida',
       'Componentes reutilizables para vistas de datos',
       'Estructura preparada para gráficos, tablas y navegación interna',
-      'Demo pública desplegada en Netlify',
+      'Demo pública en vivo con datos de ejemplo',
     ],
-    technologies: ['React', 'JavaScript', 'CSS', 'Netlify', 'Dashboard UI', 'Data Visualization'],
+    technologies: ['React', 'JavaScript', 'CSS', 'Dashboard UI', 'Data Visualization'],
     liveDemo: 'https://johns-admin-dashboard-react.netlify.app/',
     githubUrl: 'https://github.com/castrosanabriajohn/admin-dashboard',
   },
@@ -345,6 +345,11 @@ const projectItems: Project[] = [
       'Base lista para integración con formularios o CRM',
     ],
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive UI'],
+    liveDemo: 'https://full-stack-dev-johncastrosanabria.github.io/PropFlow/',
+    liveDemoLabel: {
+      es: 'Ver Sitio',
+      en: 'View Site',
+    },
     githubUrl: 'https://github.com/full-stack-dev-johncastrosanabria/PropFlow',
   },
   {
