@@ -14,7 +14,7 @@ export function ExperienceTimeline() {
   return (
     <div className="timeline">
       {chronologicalExperience.map((item) => (
-        <article className="timeline-card" key={`${item.company}-${localizedValue(item.role, 'es')}`}>
+        <article className="timeline-card" key={`${item.company}-${item.startDate}`}>
           <div className="timeline-meta">
             <p className="timeline-period">{localizedValue(item.period, language)}</p>
           </div>
