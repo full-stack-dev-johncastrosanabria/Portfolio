@@ -135,7 +135,7 @@ const projectItems: Project[] = [
         'Contributed to integrations designed to centralize changes in an omnichannel repository.',
       ],
     },
-    technologies: ['Java', 'Spring Boot', 'Vue.js', 'Banking', 'OWASP Top 10', 'Core Banking'],
+    technologies: ['C#', '.NET', 'Blazor', 'Banking', 'OWASP Top 10', 'Core Banking'],
     links: [
       {
         label: {
@@ -246,7 +246,7 @@ const projectItems: Project[] = [
         primary: true,
       },
     ],
-    liveDemo: 'https://youtu.be/i_TPjHsoOHE',
+    liveDemo: 'https://www.youtube.com/watch?v=0iG_YRY6oC8',
     liveDemoLabel: {
       es: 'Ver Demo',
       en: 'View Demo',
