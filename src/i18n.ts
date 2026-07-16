@@ -61,9 +61,9 @@ const resources = {
         playStore: 'Google Play',
       },
       blog: {
-        title: 'Contenido pensado para reforzar tu marca como desarrollador .NET',
+        title: 'Notas de ingeniería sobre .NET, arquitectura y desarrollo full stack',
         description:
-          'Publica artículos breves sobre arquitectura, APIs, frontend y prácticas de entrega para mostrar criterio técnico, no solo herramientas.',
+          'Artículos sobre arquitectura de software, APIs, frontend y prácticas de entrega — aprendizajes y decisiones técnicas de proyectos reales en el sector financiero.',
         search: 'Buscar',
         searchPlaceholder: 'Ej. ASP.NET Core, React, Clean Architecture...',
         tag: 'Etiqueta',
@@ -140,9 +140,9 @@ const resources = {
         playStore: 'Google Play',
       },
       blog: {
-        title: 'Content designed to strengthen your brand as a .NET developer',
+        title: 'Engineering notes on .NET, architecture and full stack development',
         description:
-          'Publish short articles about architecture, APIs, frontend and delivery practices to show technical judgment, not just tools.',
+          'Articles on software architecture, APIs, frontend and delivery practices — lessons and technical decisions from real projects in the financial sector.',
         search: 'Search',
         searchPlaceholder: 'E.g. ASP.NET Core, React, Clean Architecture...',
         tag: 'Tag',
