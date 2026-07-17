@@ -54,6 +54,11 @@ const resources = {
           'Mantén el blog como soporte a tu marca técnica: artículos breves sobre APIs, Clean Architecture, React y DevOps ayudan a reforzar tu perfil frente a reclutadores.',
         blogButton: 'Ir al blog',
       },
+      carousel: {
+        previous: 'Anterior',
+        next: 'Siguiente',
+        goTo: 'Ir al elemento',
+      },
       projectLinks: {
         live: 'Ver sitio',
         code: 'Ver código',
@@ -132,6 +137,11 @@ const resources = {
         blogDescription:
           'The blog supports my technical brand with short articles about APIs, Clean Architecture, React and DevOps practices.',
         blogButton: 'Go to blog',
+      },
+      carousel: {
+        previous: 'Previous',
+        next: 'Next',
+        goTo: 'Go to item',
       },
       projectLinks: {
         live: 'View site',

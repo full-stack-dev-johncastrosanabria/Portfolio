@@ -4,6 +4,7 @@ import { siteConfig } from '@/config/site';
 import { certifications } from '@/data/certifications';
 import { projects } from '@/data/projects';
 import { profileStats, skillGroups } from '@/data/skills';
+import { Carousel } from '@/components/common/Carousel';
 import { SectionTitle } from '@/components/common/SectionTitle';
 import { ExperienceTimeline } from '@/components/experience/ExperienceTimeline';
 import { CertificationCard } from '@/components/home/CertificationCard';
@@ -138,11 +139,16 @@ export function HomePage() {
             description={t('sections.stackDescription')}
           />
 
-          <div className="skills-grid">
+          <Carousel
+            label={t('sections.stackTitle')}
+            prevLabel={t('carousel.previous')}
+            nextLabel={t('carousel.next')}
+            goToLabel={t('carousel.goTo')}
+          >
             {skillGroups.map((group) => (
               <SkillGroupCard key={localizedValue(group.title, 'es')} {...group} language={language} />
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 
@@ -154,7 +160,12 @@ export function HomePage() {
             description={t('sections.certificationsDescription')}
           />
 
-          <div className="certifications-grid">
+          <Carousel
+            label={t('sections.certificationsTitle')}
+            prevLabel={t('carousel.previous')}
+            nextLabel={t('carousel.next')}
+            goToLabel={t('carousel.goTo')}
+          >
             {certifications.map((certification) => (
               <CertificationCard
                 key={certification.id}
@@ -162,7 +173,7 @@ export function HomePage() {
                 language={language}
               />
             ))}
-          </div>
+          </Carousel>
         </div>
       </section>
 
