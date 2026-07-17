@@ -4,7 +4,7 @@ interface HeroIconProps {
 
 export function HeroIcon({ name }: HeroIconProps) {
   if (name === 'github') {
-    return <img src={`${import.meta.env.BASE_URL}github-mark.svg`} alt="" />;
+    return <img src={`${import.meta.env.BASE_URL}github-mark.svg`} alt="" aria-hidden="true" />;
   }
 
   if (name === 'youtube') {

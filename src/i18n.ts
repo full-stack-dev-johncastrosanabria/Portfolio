@@ -85,7 +85,8 @@ const resources = {
         firebaseFallback: 'No se pudo conectar con Firebase. Se cargaron artículos locales.',
       },
       notFound: {
-        description: 'La página que buscas no existe.',
+        description:
+          'Esta ruta no responde — un 404 en toda regla. Volvamos a terreno conocido.',
         button: 'Volver al inicio',
       },
     },
@@ -169,7 +170,8 @@ const resources = {
         firebaseFallback: 'Could not connect to Firebase. Local articles were loaded.',
       },
       notFound: {
-        description: 'The page you are looking for does not exist.',
+        description:
+          "This route isn't responding — a clean 404. Let's get you back to solid ground.",
         button: 'Back home',
       },
     },
