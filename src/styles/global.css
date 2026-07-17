@@ -1824,6 +1824,124 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 0.35rem 0.15rem 1rem;
+  border-radius: var(--radius);
+  outline: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-track:focus-visible {
+  box-shadow: 0 0 0 2px var(--primary);
+}
+
+.carousel-track.carousel-dragging {
+  scroll-snap-type: none;
+  cursor: grabbing;
+  user-select: none;
+}
+
+.carousel-slide {
+  flex: 0 0 calc(50% - 0.5rem);
+  min-width: 0;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+.carousel-slide > * {
+  flex: 1;
+  min-width: 0;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.35rem;
+}
+
+.carousel-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, color 180ms ease;
+}
+
+.carousel-arrow svg {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.carousel-arrow:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.carousel-arrow:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.carousel-dots {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.carousel-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  padding: 0;
+  border-radius: 999px;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  transition: transform 180ms ease, background-color 180ms ease, width 180ms ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.25);
+}
+
+.carousel-dot:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.carousel-dot-active {
+  width: 1.4rem;
+  background: var(--primary);
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex: 0 0 100%;
+  }
+}
+
 .stat-card,
 .skill-card,
 .cert-card {
