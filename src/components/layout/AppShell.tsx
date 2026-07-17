@@ -6,6 +6,7 @@ import { Footer } from '@/components/layout/Footer';
 export function AppShell() {
   return (
     <div className="app-shell">
+      <div className="scroll-progress" aria-hidden="true" />
       <AnimatedBackground />
       <Header />
       <main className="main-content">

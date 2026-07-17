@@ -9,6 +9,7 @@ import { SectionTitle } from '@/components/common/SectionTitle';
 import { ExperienceTimeline } from '@/components/experience/ExperienceTimeline';
 import { CertificationCard } from '@/components/home/CertificationCard';
 import { CertificateModal } from '@/components/home/CertificateModal';
+import { HeroCanvas } from '@/components/home/HeroCanvas';
 import { HeroIcon } from '@/components/home/HeroIcon';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { SkillGroupCard } from '@/components/home/SkillGroupCard';
@@ -26,6 +27,7 @@ export function HomePage() {
   return (
     <>
       <section className="hero-section">
+        <HeroCanvas />
         <div className="container hero-grid">
           <div>
             <p className="section-eyebrow">{t('hero.eyebrow')}</p>
@@ -40,7 +42,7 @@ export function HomePage() {
                 </span>
                 <span>{localizedValue(siteConfig.ctaPrimaryLocalized, language)}</span>
               </a>
-              <Link className="button hero-button hero-button-secondary" to="/blog">
+              <Link className="button hero-button hero-button-secondary" to="/blog" viewTransition>
                 <span className="hero-button-icon" aria-hidden="true">
                   <HeroIcon name="document" />
                 </span>
@@ -212,7 +214,7 @@ export function HomePage() {
             <p className="section-description">{t('sections.blogDescription')}</p>
           </div>
 
-          <Link className="button" to="/blog">
+          <Link className="button" to="/blog" viewTransition>
             {t('sections.blogButton')}
           </Link>
         </div>

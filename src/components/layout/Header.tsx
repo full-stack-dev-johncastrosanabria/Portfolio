@@ -24,7 +24,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container nav-wrapper">
-        <NavLink className="brand" to="/">
+        <NavLink className="brand" to="/" viewTransition>
           <span className="brand-mark brand-avatar">
             <img src={publicAsset('profile-john.png')} alt="Foto de John Castro" />
           </span>
@@ -41,6 +41,7 @@ export function Header() {
             <NavLink
               key={item.to}
               to={item.to}
+              viewTransition
               className={({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link')}
             >
               {item.label}
