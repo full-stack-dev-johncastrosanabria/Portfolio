@@ -1,6 +1,8 @@
 # Portafolio Full Stack - John Castro Sanabria
 
-Portafolio profesional moderno construido con React 19, Vite y mejores prácticas de 2026. Desplegado en GitHub Pages con arquitectura limpia, SEO mejorado y performance de clase mundial.
+Portafolio profesional de John Castro Sanabria, construido con React, TypeScript y Vite. Incluye proyectos, demos, blog técnico y enlaces profesionales.
+
+[Ver el portafolio publicado](https://full-stack-dev-johncastrosanabria.github.io/Portfolio/)
 
 ## 📑 Tabla de Contenidos
 
