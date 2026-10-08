@@ -325,10 +325,9 @@ const projectItems: Project[] = [
       'Diseño de panel administrativo con enfoque en lectura rápida',
       'Componentes reutilizables para vistas de datos',
       'Estructura preparada para gráficos, tablas y navegación interna',
-      'Demo pública en vivo con datos de ejemplo',
+      'Visualización de métricas con datos de ejemplo',
     ],
     technologies: ['React', 'JavaScript', 'CSS', 'Dashboard UI', 'Data Visualization'],
-    liveDemo: 'https://johns-admin-dashboard-react.netlify.app/',
     githubUrl: 'https://github.com/castrosanabriajohn/admin-dashboard',
   },
   {
