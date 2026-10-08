@@ -1,22 +1,22 @@
 export const siteConfig = {
   author: 'John Castro Sanabria',
-  role: 'Ingeniero de software full-stack | .NET, Java, Spring Boot, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
+  role: 'Ingeniero de software full-stack | Fintech & Agentic AI',
   roleLocalized: {
-    es: 'Ingeniero de software full-stack | .NET, Java, Spring Boot, React, TypeScript y SQL | Azure DevOps | Certificado AZ-900 y MS-900',
-    en: 'Full-stack software engineer | .NET, Java, Spring Boot, React, TypeScript and SQL | Azure DevOps | AZ-900 and MS-900 certified',
+    es: 'Ingeniero de software full-stack | Fintech & Agentic AI',
+    en: 'Full-stack software engineer | Fintech & Agentic AI',
   },
   email: 'castrosanabriajohn@gmail.com',
   headline:
-    'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
+    'Construyo sistemas financieros confiables e integro IA aplicada: .NET, Java, React, Angular y Python, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
   headlineLocalized: {
-    es: 'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y arquitectura limpia. Construyo soluciones escalables y mantenibles.',
-    en: 'Full-stack software engineer specialized in .NET, Java, Spring Boot, React, TypeScript, SQL and clean architecture. I build scalable and maintainable solutions.',
+    es: 'Construyo sistemas financieros confiables e integro IA aplicada: .NET, Java, React, Angular y Python, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
+    en: 'I build reliable financial systems and integrate applied AI: .NET, Java, React, Angular and Python, with clean architecture, automated testing and verifiable delivery.',
   },
   description:
-    'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
+    'John Castro Sanabria: ingeniero de software full-stack con 4 años de experiencia combinada en fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
   descriptionLocalized: {
-    es: 'Portafolio profesional de John Castro Sanabria. Ingeniero de software full-stack con experiencia en .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps y arquitectura limpia. Certificado AZ-900 y MS-900.',
-    en: 'Professional portfolio of John Castro Sanabria. Full-stack software engineer with experience in .NET, Java, Spring Boot, React, TypeScript, SQL, Azure DevOps and clean architecture. AZ-900 and MS-900 certified.',
+    es: 'John Castro Sanabria: ingeniero de software full-stack con 4 años de experiencia combinada en fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
+    en: 'John Castro Sanabria: full-stack software engineer with 4 years of combined experience in fintech, Microsoft Cloud and applied AI. .NET, React, Angular, Java, Python, SQL and Agentic AI projects with LangGraph, RAG and MCP.',
   },
   ctaPrimary: 'Ver proyectos',
   ctaPrimaryLocalized: {
@@ -61,6 +61,11 @@ export const siteConfig = {
       href: 'https://www.linkedin.com/in/john-castro-sanabria/',
       icon: 'linkedin',
     },
+    {
+      label: 'X',
+      href: 'https://x.com/JohnCS97',
+      icon: 'x',
+    },
   ],
   keywords: [
     '.NET',
@@ -79,5 +84,12 @@ export const siteConfig = {
     'JavaScript',
     'C#',
     'Web Development',
+    'Angular',
+    'Python',
+    'Agentic AI',
+    'LangGraph',
+    'RAG',
+    'MCP',
+    'Fintech',
   ],
 };

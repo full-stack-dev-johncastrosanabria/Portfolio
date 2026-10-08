@@ -2597,7 +2597,20 @@ select:focus-visible,
   }
 }
 
-/* --- Overdrive: scroll-driven progress signal --------------------------- */
+.professional-photo { margin: 28px 0 0; max-width: 480px; }
+.professional-photo a { display: block; }
+.professional-photo img { display: block; width: 100%; height: auto; max-height: 480px; object-fit: contain; object-position: left; border-radius: 6px; }
+.professional-photo figcaption { margin-top: 10px; font-size: 0.85rem; color: var(--text-muted); }
+.formation-photo { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 48px; align-items: center; padding-top: 32px; border-top: 1px solid var(--border); margin-top: 32px; }
+.formation-photo .professional-photo { margin-top: 0; }
+.formation-details { display: grid; gap: 32px; }
+.formation-details h3 { margin: 0; font-size: 1.35rem; line-height: 1.45; }
+@media (max-width: 680px) {
+  .formation-photo { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .formation-details h3 { font-size: 1.15rem; }
+}
+
+/* Transform-only progress: no easing, including reduced-motion mode. */
 .scroll-progress {
   position: fixed;
   inset: 0 0 auto 0;
@@ -2608,22 +2621,8 @@ select:focus-visible,
   box-shadow: 0 0 12px rgba(var(--hero-node), 0.6);
   z-index: 60;
   pointer-events: none;
-}
-
-@supports (animation-timeline: scroll()) {
-  .scroll-progress {
-    animation: scroll-progress-grow linear both;
-    animation-timeline: scroll(root block);
-  }
-}
-
-@keyframes scroll-progress-grow {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
+  will-change: transform;
+  transition: none;
 }
 
 /* --- Overdrive: cinematic View Transitions for route changes ------------ */
@@ -2648,11 +2647,5 @@ select:focus-visible,
   from {
     opacity: 0;
     transform: translateY(12px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .scroll-progress {
-    display: none;
   }
 }

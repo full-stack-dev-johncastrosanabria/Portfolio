@@ -1,6 +1,9 @@
 import type { Project } from '@/types';
+import { professionalProfile } from '@/data/professionalProfile';
 
 const projectPriority = [
+  'docker-coding-agent',
+  'ai-nova',
   'novamp-sinpe',
   'novatoken',
   'novabank',
@@ -25,6 +28,32 @@ const projectPriority = [
 ];
 
 const projectItems: Project[] = [
+  {
+    id: 'docker-coding-agent',
+    title: professionalProfile.projects[1].name,
+    category: { es: 'Ingeniería Agentic AI', en: 'Agentic AI engineering' },
+    description: professionalProfile.projects[1].description,
+    highlights: {
+      es: ['Tareas de programación acotadas en Docker Sandboxes', 'Backends Claude y Codex, verificación y reportes de ejecución', 'Alcance y limitaciones de V1 documentados'],
+      en: ['Bounded coding tasks in Docker Sandboxes', 'Claude and Codex backends, verification and execution reports', 'Documented V1 scope and limitations'],
+    },
+    technologies: ['Docker Sandboxes', 'Claude', 'Codex', 'Python', 'Agentic AI'],
+    githubUrl: professionalProfile.projects[1].href,
+    featured: true,
+  },
+  {
+    id: 'ai-nova',
+    title: professionalProfile.projects[0].name,
+    category: { es: 'Proyecto colaborativo AI NOVA', en: 'Collaborative AI NOVA project' },
+    description: professionalProfile.projects[0].description,
+    highlights: {
+      es: ['Agentes de producto, arquitectura, desarrollo, seguridad, testing y revisión', 'Flujo controlado con guardrails y observabilidad', 'Integración de herramientas y recuperación de contexto con RAG y MCP'],
+      en: ['Product, architecture, development, security, testing and review agents', 'Controlled workflow with guardrails and observability', 'Tool integration and context retrieval with RAG and MCP'],
+    },
+    technologies: ['LangGraph', 'RAG', 'MCP', 'Langfuse', 'Ollama', 'FastAPI', 'React'],
+    links: [{ label: { es: 'Ver perfil y actividad', en: 'View profile and activity' }, href: professionalProfile.projects[0].href }],
+    featured: true,
+  },
   {
     id: 'novamp-sinpe',
     title: {
@@ -135,7 +164,7 @@ const projectItems: Project[] = [
         'Contributed to integrations designed to centralize changes in an omnichannel repository.',
       ],
     },
-    technologies: ['C#', '.NET', 'Blazor', 'Banking', 'OWASP Top 10', 'Core Banking'],
+    technologies: ['C#', '.NET', 'React', 'PostgreSQL', 'Banking', 'OWASP Top 10', 'Core Banking'],
     links: [
       {
         label: {

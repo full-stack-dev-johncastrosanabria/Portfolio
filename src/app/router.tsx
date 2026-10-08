@@ -4,6 +4,7 @@ import { HomePage } from '@/pages/HomePage';
 import { BlogPage } from '@/pages/BlogPage';
 import { PostDetailPage } from '@/pages/PostDetailPage';
 import { NotFoundPage } from '@/pages/NotFoundPage';
+import { ResumePage } from '@/pages/ResumePage';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, '') || '/';
 
@@ -14,6 +15,7 @@ export const router = createBrowserRouter(
       element: <AppShell />,
       errorElement: <NotFoundPage />,
       children: [
+        { path: 'cv', element: <ResumePage /> },
         {
           index: true,
           element: <HomePage />,
