@@ -1,6 +1,6 @@
 # Checklist de presencia profesional
 
-Revisión: 7 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, portafolio, LinkedIn, GitHub, X y confirmaciones del usuario. Los perfiles breves enlazan al portafolio; no necesitan repetir toda la trayectoria.
+Revisión: 8 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, portafolio, LinkedIn, GitHub, X y confirmaciones del usuario. Los perfiles breves enlazan al portafolio; no necesitan repetir toda la trayectoria.
 
 ## Identidad y enfoque
 
@@ -60,4 +60,11 @@ Revisión: 7 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, po
 
 No activado: GitHub Pages es estático y no debe exponer secretos SMTP/Gmail. Requiere un backend/proveedor aprobado con secretos del servidor, límites de envío, deduplicación y privacidad mínima. No se instaló seguimiento identificable ni se enviaron mensajes de prueba.
 
-La publicación y los archivos descargables se verifican contra el despliegue posterior a la fusión de la PR; su evidencia se entrega con el cierre de publicación.
+## Publicación verificada
+
+- [x] PR #5 fusionada: `8e75d4066a7f52003e74719dc79f07666fce8619`; verificación automática y SonarCloud aprobados.
+- [x] Despliegue de GitHub Pages #37799567366 finalizado correctamente; HTML, PDF ES/EN y las cuatro fotos coinciden con el build y los archivos locales mediante SHA-256.
+- [x] Producción: rueda de 18000 px avanza una sola tarjeta (566 px) en tecnologías y credenciales; snap restaurado y bucle por teclado comprobado.
+- [x] Configuración de ejemplo apunta a GitHub Pages. El dashboard conserva descripción, tecnologías y repositorio; su enlace de demo externa fue retirado conforme a la limpieza solicitada.
+
+La traducción del titular secundario inglés indicada arriba sigue pendiente; no se incluye como resultado verificado.
