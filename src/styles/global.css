@@ -1988,14 +1988,29 @@ img {
 
 .carousel-dot {
   position: relative;
-  width: 0.55rem;
+  width: 1.4rem;
   height: 0.55rem;
   padding: 0;
   border-radius: 999px;
   border: none;
-  background: var(--border);
+  background: transparent;
   cursor: pointer;
-  transition: transform 180ms ease, background-color 180ms ease, width 180ms ease;
+  transition: transform 180ms ease;
+}
+
+/* Fixed slots keep pagination stable while the visual indicator expands. */
+.carousel-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: inherit;
+  background: var(--border);
+  transform: translate(-50%, -50%) scaleX(1);
+  transition: transform 180ms ease, background-color 180ms ease;
+  pointer-events: none;
 }
 
 /* Expand the tap area to >=44px without changing the visual dot size. */
@@ -2014,8 +2029,8 @@ img {
   outline-offset: 6px;
 }
 
-.carousel-dot-active {
-  width: 1.4rem;
+.carousel-dot-active::after {
+  transform: translate(-50%, -50%) scaleX(calc(1.4 / 0.55));
   background: var(--primary);
 }
 
