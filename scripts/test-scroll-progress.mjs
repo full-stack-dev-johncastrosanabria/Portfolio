@@ -9,6 +9,7 @@ const { trackScrollProgress } = await import(`data:text/javascript;base64,${Buff
 let height = 2000;
 let measurements = 0;
 let callback;
+let observedTarget;
 let disconnected = false;
 let id = 0;
 const frames = new Map();
@@ -29,12 +30,13 @@ globalThis.document = {
 };
 globalThis.ResizeObserver = class {
   constructor(fn) { callback = fn; }
-  observe() {}
+  observe(target) { observedTarget = target; }
   disconnect() { disconnected = true; }
 };
 function flush() { const work = [...frames.values()]; frames.clear(); work.forEach((fn) => fn()); }
 const bar = { style: {} };
 const stop = trackScrollProgress(bar);
+assert.equal(observedTarget, globalThis.document.body, 'body size changes must invalidate the scroll range');
 flush();
 assert.equal(bar.style.transform, 'scaleX(0)');
 view.scrollY = 500;

@@ -35,6 +35,6 @@ navigate = createCarouselWheelNavigator();
 assert.equal(navigate(wheel(20), 0, 400), 0);
 assert.equal(navigate(wheel(20), 400, 400), 0, 'separate small gestures do not accumulate');
 assert.equal(navigate(wheel(0), 450, 400), 0);
-assert.equal(navigate(wheel(NaN), 500, 400), 0);
+assert.equal(navigate(wheel(Number.NaN), 500, 400), 0);
 assert.equal(navigate(wheel(Infinity), 550, 400), 0);
 console.log('PASS: bounded wheel navigation, momentum, cooldown, reversal, trackpad, horizontal wheel and delta modes');

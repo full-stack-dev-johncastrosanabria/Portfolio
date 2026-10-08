@@ -2,7 +2,7 @@ import type { ProfessionalPhoto as Photo } from '@/types';
 import { publicAsset } from '@/lib/assets';
 import { localizedValue } from '@/lib/localized';
 
-export function ProfessionalPhoto({ photo, language }: { photo: Photo; language: string }) {
+export function ProfessionalPhoto({ photo, language }: Readonly<{ photo: Photo; language: string }>) {
   const caption = localizedValue(photo.caption, language);
   return (
     <figure className="professional-photo">
