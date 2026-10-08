@@ -14,6 +14,9 @@ import { HeroIcon } from '@/components/home/HeroIcon';
 import { ProjectCard } from '@/components/projects/ProjectCard';
 import { SkillGroupCard } from '@/components/home/SkillGroupCard';
 import { StatCard } from '@/components/home/StatCard';
+import { ProfessionalPhoto } from '@/components/common/ProfessionalPhoto';
+import { professionalPhotos } from '@/data/professionalPhotos';
+import { professionalProfile } from '@/data/professionalProfile';
 import { useDocumentTitle } from '@/hooks/useDocumentTitle';
 import { publicAsset } from '@/lib/assets';
 import { localizedValue } from '@/lib/localized';
@@ -57,6 +60,7 @@ export function HomePage() {
                 </summary>
                 <div className="resume-options" aria-label={t('hero.resumeQuestion')}>
                   <span>{t('hero.resumeQuestion')}</span>
+                  <Link to="/cv" viewTransition>{language === 'en' ? 'View CV' : 'Ver CV'}</Link>
                   <a
                     href={publicAsset(siteConfig.resumeDownloads.es)}
                     download="John_Castro_Sanabria_CV_ES.pdf"
@@ -176,6 +180,17 @@ export function HomePage() {
               />
             ))}
           </Carousel>
+          <div className="formation-photo">
+            <ProfessionalPhoto photo={professionalPhotos.graduation} language={language} />
+            <div className="formation-details">
+              {professionalProfile.education.map((item) => (
+                <div key={item.institution}>
+                  <p className="section-eyebrow">{item.institution} · {item.period}</p>
+                  <h3>{localizedValue(item.degree, language)}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

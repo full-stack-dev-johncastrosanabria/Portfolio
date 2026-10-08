@@ -10,7 +10,11 @@
     "build:github-pages": "GITHUB_PAGES=true vite build && cp dist/index.html dist/404.html",
     "preview": "vite preview",
     "lint": "eslint .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "generate:resumes": "node scripts/generate-resumes.mjs",
+    "test:scroll": "node scripts/test-scroll-progress.mjs",
+    "test:carousel": "node scripts/test-carousel-wheel.mjs",
+    "test:profile": "node scripts/test-professional-profile.mjs"
   },
   "dependencies": {
     "firebase": "^11.8.1",

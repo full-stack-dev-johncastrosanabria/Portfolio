@@ -35,7 +35,7 @@ export const skillGroups: SkillGroup[] = [
       es: 'Construcción de interfaces web y móviles modernas conectadas a APIs, con enfoque responsive, accesible y productivo.',
       en: 'Modern web and mobile interface development connected to APIs, with a responsive, accessible and productive approach.',
     },
-    items: ['React', 'TypeScript', 'React Native', 'Expo', 'React Query', 'Vue', 'i18next', 'Responsive UI'],
+    items: ['React', 'Angular', 'Blazor', 'TypeScript', 'React Native', 'Expo', 'React Query', 'Vue', 'i18next', 'Responsive UI'],
   },
   {
     title: {
@@ -46,45 +46,53 @@ export const skillGroups: SkillGroup[] = [
       es: 'Experiencia integrando datos, automatización, despliegues y soluciones Microsoft Cloud con visión técnica y consultiva.',
       en: 'Experience integrating data, automation, deployments and Microsoft Cloud solutions with a technical and consultative perspective.',
     },
-    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'Oracle', 'MySQL', 'Python', 'FastAPI', 'AI/LSTM', 'CI/CD'],
+    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'PostgreSQL', 'Oracle', 'MySQL', 'MongoDB', 'Python', 'FastAPI', 'AI/LSTM', 'GitHub Actions', 'Docker', 'CI/CD'],
+  },
+  {
+    title: { es: 'Agentic AI e IA aplicada', en: 'Agentic AI and applied AI' },
+    description: {
+      es: 'Proyectos de ingeniería multiagente, integración de herramientas, RAG, observabilidad y ejecución controlada con verificación.',
+      en: 'Projects in multi-agent engineering, tool integration, RAG, observability and controlled execution with verification.',
+    },
+    items: ['LangGraph', 'RAG', 'MCP', 'Langfuse', 'Ollama', 'FastAPI', 'React', 'Docker Sandboxes', 'Claude', 'Codex'],
   },
 ];
 
 export const profileStats: ProfileStat[] = [
   {
     value: {
-      es: 'Casi 4 años',
-      en: 'Nearly 4 years',
+      es: '4 años',
+      en: '4 years',
     },
     label: {
       es: 'Experiencia combinada',
       en: 'Combined experience',
     },
     detail: {
-      es: 'Casi 4 años de experiencia combinando desarrollo full-stack, Azure DevOps, soluciones Microsoft Cloud y preventa técnica.',
-      en: 'Nearly 4 years of combined experience in full-stack software engineering, Azure DevOps, Microsoft Cloud solutions, and technical pre-sales.',
+      es: 'Experiencia combinada en ingeniería full-stack, fintech regulado, Microsoft Cloud y preventa técnica.',
+      en: 'Combined experience in full-stack engineering, regulated fintech, Microsoft Cloud and technical pre-sales.',
     },
   },
   {
-    value: '.NET + React',
+    value: { es: '3 días → 6 h', en: '3 days → 6 h' },
     label: {
-      es: 'Perfil híbrido',
-      en: 'Hybrid profile',
+      es: 'Regresión automatizada',
+      en: 'Automated regression',
     },
     detail: {
-      es: 'Capacidad para entregar backend, frontend, mobile y conversaciones técnicas de negocio.',
-      en: 'Ability to deliver backend, frontend, mobile and technical business conversations.',
+      es: '22 suites E2E de rutas críticas; 11 defectos detectados antes de producción en 4 releases.',
+      en: '22 critical-path E2E suites; 11 defects caught before production across 4 releases.',
     },
   },
   {
-    value: 'Cloud + AI',
+    value: 'Agentic AI',
     label: {
-      es: 'Microsoft Cloud e IA',
-      en: 'Microsoft Cloud and AI',
+      es: 'Ingeniería aplicada',
+      en: 'Applied engineering',
     },
     detail: {
-      es: 'Azure, DevOps, Fabric, Power Platform e IA aplicada a soluciones empresariales.',
-      en: 'Azure, DevOps, Fabric, Power Platform and AI applied to enterprise solutions.',
+      es: 'LangGraph, RAG y MCP en proyectos multiagente, con guardrails, observabilidad y verificación.',
+      en: 'LangGraph, RAG and MCP in multi-agent projects with guardrails, observability and verification.',
     },
   },
 ];

@@ -9,6 +9,7 @@ import {
   type PointerEvent,
   type ReactNode,
 } from 'react';
+import { CAROUSEL_TRANSITION_MS, createCarouselWheelNavigator } from '@/lib/carouselWheel';
 
 interface CarouselProps {
   label: string;
@@ -24,7 +25,7 @@ const COPIES = 3;
 export function Carousel({
   label,
   children,
-  autoPlayInterval = 4500,
+  autoPlayInterval = 9000,
   prevLabel = 'Anterior',
   nextLabel = 'Siguiente',
   goToLabel = 'Ir al elemento',
@@ -33,13 +34,28 @@ export function Carousel({
   const count = slides.length;
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const [interacting, setInteracting] = useState(false);
+  const paused = hovered || focused || interacting;
   const dragState = useRef<{ startX: number; startScroll: number; dragging: boolean }>({
     startX: 0,
     startScroll: 0,
     dragging: false,
   });
   const settleTimer = useRef<number>(0);
+  const animationFrame = useRef<number>(0);
+
+  const cancelAnimation = useCallback(() => {
+    window.cancelAnimationFrame(animationFrame.current);
+    animationFrame.current = 0;
+    if (trackRef.current) trackRef.current.style.scrollSnapType = '';
+  }, []);
+
+  useEffect(() => () => {
+    cancelAnimation();
+    window.clearTimeout(settleTimer.current);
+  }, [cancelAnimation]);
 
   const prefersReducedMotion =
     typeof window !== 'undefined' &&
@@ -56,9 +72,8 @@ export function Carousel({
   }, []);
 
   const setWidth = useCallback(() => {
-    const track = trackRef.current;
-    return track ? track.scrollWidth / COPIES : 0;
-  }, []);
+    return slideStep() * count;
+  }, [count, slideStep]);
 
   // Start in the middle copy so both directions can loop.
   useEffect(() => {
@@ -71,16 +86,16 @@ export function Carousel({
 
   const normalizeLoop = useCallback(() => {
     const track = trackRef.current;
-    if (!track || count === 0) {
+    if (!track || count === 0 || animationFrame.current !== 0) {
       return;
     }
     const width = setWidth();
     if (width === 0) {
       return;
     }
-    if (track.scrollLeft < width * 0.5) {
+    if (track.scrollLeft < width) {
       track.scrollTo({ left: track.scrollLeft + width, behavior: 'instant' as ScrollBehavior });
-    } else if (track.scrollLeft > width * 1.5) {
+    } else if (track.scrollLeft >= width * 2) {
       track.scrollTo({ left: track.scrollLeft - width, behavior: 'instant' as ScrollBehavior });
     }
     // Restore snapping once programmatic smooth scrolling has settled.
@@ -95,14 +110,29 @@ export function Carousel({
       if (!track) {
         return;
       }
+      cancelAnimation();
       if (prefersReducedMotion) {
         track.scrollTo({ left, behavior: 'instant' as ScrollBehavior });
         return;
       }
       track.style.scrollSnapType = 'none';
-      track.scrollTo({ left, behavior: 'smooth' });
+      const startLeft = track.scrollLeft;
+      const startTime = performance.now();
+      const duration = CAROUSEL_TRANSITION_MS;
+      const step = (now: number) => {
+        const progress = Math.min(1, (now - startTime) / duration);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        track.scrollTo({ left: startLeft + (left - startLeft) * eased, behavior: 'instant' as ScrollBehavior });
+        if (progress < 1) {
+          animationFrame.current = window.requestAnimationFrame(step);
+        } else {
+          animationFrame.current = 0;
+          normalizeLoop();
+        }
+      };
+      animationFrame.current = window.requestAnimationFrame(step);
     },
-    [prefersReducedMotion],
+    [cancelAnimation, normalizeLoop, prefersReducedMotion],
   );
 
   const handleScroll = useCallback(() => {
@@ -154,25 +184,27 @@ export function Carousel({
     return () => window.clearInterval(timer);
   }, [autoPlayInterval, count, paused, prefersReducedMotion, scrollBySlides]);
 
-  // Mouse-wheel support: translate vertical wheel into horizontal movement.
+  // Bound mouse/trackpad gestures to one card instead of applying raw deltas.
   useEffect(() => {
     const track = trackRef.current;
-    if (!track) {
+    if (!track || count < 2) {
       return;
     }
+    const navigateWheel = createCarouselWheelNavigator();
     const onWheel = (event: WheelEvent) => {
-      if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) {
-        return;
-      }
+      if (event.ctrlKey || (event.deltaX === 0 && event.deltaY === 0)) return;
       event.preventDefault();
-      track.scrollBy({ left: event.deltaY, behavior: 'auto' });
+      const direction = navigateWheel(event, performance.now(), track.clientWidth);
+      if (direction !== 0) scrollBySlides(direction);
     };
     track.addEventListener('wheel', onWheel, { passive: false });
     return () => track.removeEventListener('wheel', onWheel);
-  }, []);
+  }, [count, scrollBySlides]);
 
   // Pointer drag for mouse; touch uses native scrolling.
   const onPointerDown = (event: PointerEvent<HTMLDivElement>) => {
+    cancelAnimation();
+    setInteracting(true);
     if (event.pointerType !== 'mouse') {
       return;
     }
@@ -194,6 +226,7 @@ export function Carousel({
   };
 
   const endDrag = (event: PointerEvent<HTMLDivElement>) => {
+    setInteracting(false);
     const track = trackRef.current;
     if (!track || !dragState.current.dragging) {
       return;
@@ -227,10 +260,12 @@ export function Carousel({
       role="region"
       aria-roledescription="carousel"
       aria-label={label}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onFocus={() => setPaused(true)}
-      onBlur={() => setPaused(false)}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onFocus={() => setFocused(true)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false);
+      }}
     >
       <div
         className="carousel-track"

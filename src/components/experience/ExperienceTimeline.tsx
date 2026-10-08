@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { experience } from '@/data/experience';
 import { Tag } from '@/components/common/Tag';
 import { localizedValue } from '@/lib/localized';
+import { ProfessionalPhoto } from '@/components/common/ProfessionalPhoto';
 
 const chronologicalExperience = [...experience].sort(
   (a, b) => new Date(b.startDate).getTime() - new Date(a.startDate).getTime(),
@@ -38,6 +39,7 @@ export function ExperienceTimeline() {
                 <Tag key={tech}>{tech}</Tag>
               ))}
             </div>
+            {item.photo && <ProfessionalPhoto photo={item.photo} language={language} />}
           </div>
         </article>
       ))}

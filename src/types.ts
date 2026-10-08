@@ -83,6 +83,14 @@ export interface ExperienceItem {
   achievements: LocalizedStringArray;
   stack: string[];
   highlights: string[];
+  photo?: ProfessionalPhoto;
+}
+
+export interface ProfessionalPhoto {
+  src: string;
+  width: number;
+  height: number;
+  caption: LocalizedString;
 }
 
 export interface WithChildren {

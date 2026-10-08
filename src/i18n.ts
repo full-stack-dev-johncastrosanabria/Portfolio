@@ -17,14 +17,15 @@ const resources = {
       hero: {
         eyebrow: 'Portafolio de ingeniería full-stack',
         profile: 'Perfil',
-        profileTitle: 'Backend sólido, frontend moderno y delivery con Azure DevOps',
+        profileTitle: 'Fintech confiable e IA aplicada',
         profileText:
-          'Experiencia construyendo soluciones empresariales con C#, ASP.NET Core, Java, Spring Boot, React, TypeScript, SQL Server y Azure DevOps, con enfoque en arquitectura limpia, mantenibilidad e integración. Certificado AZ-900 y MS-900.',
+          '4 años de experiencia combinada en software financiero y Microsoft Cloud. Desarrollo full-stack con .NET, Java, React, Angular y SQL; proyectos de Agentic AI con ejecución controlada y observabilidad. Certificado AZ-900 y MS-900.',
         bullets: [
           'APIs REST y seguridad con JWT',
-          'Frontend con React, TypeScript, Vue y Blazor',
+          'Frontend con React, Angular, TypeScript, Vue y Blazor',
           'SQL Server, Oracle e integraciones',
           'CI/CD, Azure DevOps y fundamentos Microsoft Cloud',
+          'LangGraph, RAG y MCP en proyectos multiagente',
         ],
         resumeButton: 'Descargar CV',
         resumeQuestion: 'Elige idioma',
@@ -51,7 +52,7 @@ const resources = {
         blogEyebrow: 'Blog técnico',
         blogTitle: 'Notas sobre .NET, arquitectura y desarrollo full stack',
         blogDescription:
-          'Mantén el blog como soporte a tu marca técnica: artículos breves sobre APIs, Clean Architecture, React y DevOps ayudan a reforzar tu perfil frente a reclutadores.',
+          'Decisiones técnicas y aprendizajes de proyectos reales: APIs, Clean Architecture, frontend, calidad y entrega continua.',
         blogButton: 'Ir al blog',
       },
       carousel: {
@@ -102,14 +103,15 @@ const resources = {
       hero: {
         eyebrow: 'Full-stack engineering portfolio',
         profile: 'Profile',
-        profileTitle: 'Strong backend, modern frontend and Azure DevOps delivery',
+        profileTitle: 'Reliable fintech and applied AI',
         profileText:
-          'Experience building enterprise solutions with C#, ASP.NET Core, Java, Spring Boot, React, TypeScript, SQL Server and Azure DevOps, focused on clean architecture, maintainability and integrations. AZ-900 and MS-900 certified.',
+          '4 years of combined experience in financial software and Microsoft Cloud. Full-stack development with .NET, Java, React, Angular and SQL; Agentic AI projects with controlled execution and observability. AZ-900 and MS-900 certified.',
         bullets: [
           'REST APIs and JWT security',
-          'Frontend with React, TypeScript, Vue and Blazor',
+          'Frontend with React, Angular, TypeScript, Vue and Blazor',
           'SQL Server, Oracle and integrations',
           'CI/CD, Azure DevOps and Microsoft Cloud fundamentals',
+          'LangGraph, RAG and MCP in multi-agent projects',
         ],
         resumeButton: 'Download resume',
         resumeQuestion: 'Choose language',
@@ -136,7 +138,7 @@ const resources = {
         blogEyebrow: 'Technical blog',
         blogTitle: 'Notes about .NET, architecture and full stack development',
         blogDescription:
-          'The blog supports my technical brand with short articles about APIs, Clean Architecture, React and DevOps practices.',
+          'Technical decisions and lessons from real projects: APIs, Clean Architecture, frontend, quality and continuous delivery.',
         blogButton: 'Go to blog',
       },
       carousel: {

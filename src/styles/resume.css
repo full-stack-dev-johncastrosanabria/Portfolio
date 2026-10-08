@@ -1,0 +1,43 @@
+.resume-page { max-width: 960px; padding-block: 48px 80px; }
+.resume-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 32px; }
+.resume-toolbar p { margin: 0; }
+.resume-document { background: var(--surface); border: 1px solid var(--border); padding: 48px; border-radius: 8px; }
+.resume-heading { border-bottom: 2px solid var(--primary); padding-bottom: 24px; }
+.resume-heading h1 { font-size: 32px; line-height: 1.2; margin: 0 0 12px; }
+.resume-title { color: var(--primary); font-weight: 600; }
+.resume-links { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 12px; }
+.resume-document a { text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
+.resume-document section { margin-top: 28px; }
+.resume-document h2 { font-size: 18px; line-height: 1.4; margin-bottom: 14px; color: var(--primary); }
+.resume-document h3 { font-size: 15px; line-height: 1.5; margin: 0; }
+.resume-document p, .resume-document li, .resume-skills { font-size: 14px; line-height: 1.7; }
+.resume-document p { margin: 6px 0; }
+.resume-entry { margin-top: 20px; }
+.resume-entry-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.resume-entry-heading span { font-size: 12px; white-space: nowrap; color: var(--text-muted); }
+.resume-company { font-weight: 500; }
+.resume-document ul { padding-left: 20px; margin: 8px 0; }
+.resume-document li + li { margin-top: 6px; }
+.resume-skills { margin: 0; }
+.resume-skills div + div { margin-top: 8px; }
+.resume-skills dt { font-weight: 600; }
+.resume-skills dd { margin: 0; }
+@media (max-width: 600px) {
+  .resume-page { padding-block: 28px 48px; }
+  .resume-document { padding: 24px 20px; }
+  .resume-heading h1 { font-size: 26px; }
+  .resume-toolbar { align-items: flex-start; flex-wrap: wrap; }
+  .resume-entry-heading { flex-direction: column; gap: 4px; }
+  .resume-entry-heading span { white-space: normal; }
+}
+@media print {
+  @page { size: A4; margin: 15mm; }
+  .site-header, .site-footer, .animated-background, .scroll-progress, .resume-toolbar { display: none !important; }
+  body { background: white !important; color: #20252c !important; }
+  .resume-page { width: 100%; max-width: none; margin: 0; padding: 0; }
+  .resume-document { background: white; border: 0; padding: 0; box-shadow: none; }
+  .resume-document h2, .resume-title { color: #174e76; }
+  .resume-document a { color: inherit; }
+  .resume-entry { break-inside: avoid; }
+  .resume-document h2 { break-after: avoid; }
+}
