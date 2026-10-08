@@ -32,7 +32,7 @@ Revisión: 8 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, po
 - [x] CV: dos páginas A4 en cada idioma, texto seleccionable, enlaces clicables y versión web `/cv`; ambas páginas/idiomas revisadas visualmente.
 - [x] LinkedIn: titular principal y Acerca de actualizados; LangGraph, RAG y MCP añadidos sin borrar aptitudes anteriores (78 aptitudes).
 - [x] GitHub: biografía Fintech & Agentic AI, enlace al portafolio y enlaces sociales; README con correo correcto y proyectos destacados. Contacto verificado tras el commit `c1adf0c8d2be7492bc75fb2a9b2f00570a32d70c`.
-- [x] X: biografía profesional alineada y enlace al portafolio; publicación fijada de PropFlow conservada. No se publicaron nuevos posts ni anuncios de empleo.
+- [x] X: biografía profesional alineada y enlace al portafolio; publicación fijada de PropFlow conservada. Durante este trabajo no publiqué nuevos posts ni anuncios de empleo; la actividad del usuario se preservó.
 - [x] Recomendaciones de publicaciones y destacados disponibles en `audit.md`.
 - [ ] Traducción del titular secundario inglés de LinkedIn: el formulario no confirma su guardado. El titular español publicado es correcto; pendiente de preferencia/acción del usuario, sin afirmar que la traducción está publicada.
 
@@ -66,5 +66,7 @@ No activado: GitHub Pages es estático y no debe exponer secretos SMTP/Gmail. Re
 - [x] Despliegue de GitHub Pages #37799567366 finalizado correctamente; HTML, PDF ES/EN y las cuatro fotos coinciden con el build y los archivos locales mediante SHA-256.
 - [x] Producción: rueda de 18000 px avanza una sola tarjeta (566 px) en tecnologías y credenciales; snap restaurado y bucle por teclado comprobado.
 - [x] Configuración de ejemplo apunta a GitHub Pages. El dashboard conserva descripción, tecnologías y repositorio; su enlace de demo externa fue retirado conforme a la limpieza solicitada.
+- [x] PR #7 fusionada: `1d55f15cb78e68b56528b89136ddd69f0fcb913d`; verify, SonarCloud y despliegue de Pages #37803341976 aprobados. CSS de producción `index-B2kaTrg6.css` coincide con el build local.
+- [x] Comparación visual posterior a PR #7 completada en tecnologías: impulso de rueda de 18000 px, desplazamiento de 565,5 px (una tarjeta) y snap `x mandatory`. Los cinco indicadores mantuvieron idénticos `offsetLeft` y `offsetWidth` al cambiar la selección. Captura: `/private/tmp/portfolio-evidence/carousel-final-production.jpg`.
 
 La traducción del titular secundario inglés indicada arriba sigue pendiente; no se incluye como resultado verificado.

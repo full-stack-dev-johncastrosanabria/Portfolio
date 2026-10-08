@@ -1,6 +1,6 @@
 # Perfil profesional consolidado
 
-Fecha de revisión: 7 de octubre de 2026 (Costa Rica).
+Fecha de revisión: 8 de octubre de 2026 (Costa Rica).
 
 ## Propuesta de valor
 
@@ -76,4 +76,6 @@ No activado. El sitio es estático en GitHub Pages: no debe contener credenciale
 - Ambas páginas de ambos PDFs renderizadas y revisadas: dos páginas A4, sin cortes, correo, fechas y enlaces actualizados.
 - LinkedIn: titular principal y Acerca de ES/EN actualizados; las cuatro etapas de experiencia ES/EN y fechas confirmadas. Aptitudes nuevas verificadas: LangGraph, Retrieval-Augmented Generation (RAG) y Model Context Protocol (MCP); 78 aptitudes sin borrar las anteriores. Educación ULACIT corregida. El formulario de titular inglés no confirma el guardado: no se afirma que la traducción secundaria esté publicada.
 - Carruseles en navegador: intervalo entre avances medido en 8998 ms, transición aproximada de 798 ms. Un impulso de rueda de 18000 px avanzó una tarjeta (565,5 px en la prueba de escritorio), no 18000 px.
-- Publicación del portafolio pendiente; no considerar el objetivo terminado hasta comprobar el sitio desplegado y resolver las discrepancias.
+- Portafolio publicado: PR #5, #6 y #7 fusionadas; último despliegue de Pages verificado #37803341976. HTML, CSS, PDF ES/EN y fotos contrastados con los artefactos locales; el checklist conserva la evidencia de cada revisión.
+- Revisión visual posterior a PR #7: un impulso de rueda de 18000 px avanzó 565,5 px en tecnologías (una tarjeta); snap `x mandatory` restaurado. Los cinco indicadores conservaron exactamente su ancho y posición al cambiar la selección; la animación usa `transform`, sin suprimir el aviso de diseño.
+- Único pendiente de publicación externa: confirmar manualmente el titular secundario inglés en LinkedIn. También se probó entrada con teclado nativo, pero Guardar no cerró el formulario ni mostró confirmación; no se presenta como cambio publicado. El titular principal, Acerca de, experiencia y aptitudes ya están verificados.
