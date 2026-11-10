@@ -600,7 +600,8 @@ img {
   position: relative;
   z-index: 4;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* auto-fit: a label that does not fit wraps to a new row instead of being clipped */
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
   gap: 0.8rem;
   align-items: center;
   animation: fade-slide-up 780ms cubic-bezier(0.16, 1, 0.3, 1) 410ms both;
@@ -2663,4 +2664,20 @@ select:focus-visible,
     opacity: 0;
     transform: translateY(12px);
   }
+}
+
+/* Uniform project cards: titles reserve two lines and tags + links sit at the bottom,
+   so every card in a row starts its text and ends its actions on the same line. */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h3 {
+  min-height: 2lh;
+}
+
+.project-card > .tag-group {
+  margin-top: auto;
+  padding-top: 1rem;
 }

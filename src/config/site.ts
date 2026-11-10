@@ -7,10 +7,10 @@ export const siteConfig = {
   },
   email: 'castrosanabriajohn@gmail.com',
   headline:
-    'Construyo sistemas financieros confiables e integro IA aplicada: .NET, Java, React, Angular y Python, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
+    'Construyo software full-stack con IA: agentes autónomos, RAG y MCP sobre .NET, Java, Python, React y SQL, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
   headlineLocalized: {
-    es: 'Construyo sistemas financieros confiables e integro IA aplicada: .NET, Java, React, Angular y Python, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
-    en: 'I build reliable financial systems and integrate applied AI: .NET, Java, React, Angular and Python, with clean architecture, automated testing and verifiable delivery.',
+    es: 'Construyo software full-stack con IA: agentes autónomos, RAG y MCP sobre .NET, Java, Python, React y SQL, con arquitectura limpia, pruebas automatizadas y entrega verificable.',
+    en: 'I build full-stack software with AI: autonomous agents, RAG and MCP on .NET, Java, Python, React and SQL, with clean architecture, automated testing and verifiable delivery.',
   },
   description:
     'John Castro Sanabria: ingeniero de IA full-stack en Novacomp con 4 años de experiencia combinada en desarrollo full-stack, fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
