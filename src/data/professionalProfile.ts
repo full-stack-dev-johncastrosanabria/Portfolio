@@ -24,7 +24,7 @@ export const professionalProfile = {
     { label: { es: 'Desarrollo', en: 'Development' }, items: 'C#, .NET / ASP.NET Core, Java, Spring Boot, Python, Flask, FastAPI, Node.js / Express, React, Angular, Vue, Blazor, TypeScript, JavaScript, React Native' },
     { label: { es: 'Datos y arquitectura', en: 'Data and architecture' }, items: 'SQL Server, T-SQL, PostgreSQL, Oracle, MySQL, MongoDB, REST APIs, Clean Architecture, JWT, Entity Framework Core' },
     { label: { es: 'Entrega y calidad', en: 'Delivery and quality' }, items: 'Azure DevOps, Azure App Service, GitHub Actions, Docker, Git, xUnit, NUnit, MSTest, Moq, Playwright, Selenium' },
-    { label: { es: 'IA aplicada', en: 'Applied AI' }, items: 'LangGraph, RAG, MCP, Langfuse, Ollama, FastAPI, observability, guardrails, Docker Sandboxes, Claude, Codex' },
+    { label: { es: 'IA aplicada', en: 'Applied AI' }, items: 'LangGraph, RAG, MCP, Langfuse, Ollama, FastAPI, observability, guardrails, Docker Sandboxes, Claude Code, Codex' },
   ],
   experience: [...experience].sort((a, b) => b.startDate.localeCompare(a.startDate)).map((item) => ({
     ...item,

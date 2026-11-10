@@ -204,18 +204,18 @@ export const experience: ExperienceItem[] = [
     achievements: {
       es: [
         'Integro el AI Office de Novacomp y trabajo de cerca con ingenieros, arquitectos, clientes y product owners en solicitudes internas y de clientes.',
-        'Desarrollo software asistido por IA en C#/.NET, Java y Python con Docker, con especificaciones, agentes de programación y revisión humana.',
+        'Desarrollo software asistido por IA en C#/.NET, Java y Python con Docker, con especificaciones, agentes de programación como Claude Code y revisión humana.',
         'Diseño agentes autónomos y soluciones con LLM usando LangGraph, RAG y MCP.',
         'Construyo una plataforma de evaluación técnica con seis agentes de IA para redactar preguntas, calificar respuestas y analizar integridad, sobre .NET 10, SQL Server y React, con Microsoft Agent Framework, modelos Claude y trazas OpenTelemetry.',
       ],
       en: [
         'Member of Novacomp’s AI Office, working closely with engineers, architects, clients and product owners on client and internal requests.',
-        'Build AI-assisted software in C#/.NET, Java and Python with Docker, using specifications, coding agents and human review.',
+        'Build AI-assisted software in C#/.NET, Java and Python with Docker, using specifications, coding agents such as Claude Code and human review.',
         'Design autonomous agents and LLM solutions with LangGraph, RAG and MCP.',
         'Build a technical assessment platform with six AI agents that draft questions, grade answers and analyze integrity, on .NET 10, SQL Server and React, with Microsoft Agent Framework, Claude models and OpenTelemetry traces.',
       ],
     },
-    stack: ['C#', '.NET', 'Java', 'Python', 'Docker', 'LangGraph', 'RAG', 'MCP', 'Microsoft Agent Framework', 'Claude', 'OpenTelemetry', 'SQL Server', 'React'],
+    stack: ['C#', '.NET', 'Java', 'Python', 'Docker', 'LangGraph', 'RAG', 'MCP', 'Microsoft Agent Framework', 'Claude', 'Claude Code', 'OpenTelemetry', 'SQL Server', 'React'],
     highlights: ['AI Office', 'Agentic AI', 'AI-Assisted Development', 'RAG & MCP'],
   },
 ];
