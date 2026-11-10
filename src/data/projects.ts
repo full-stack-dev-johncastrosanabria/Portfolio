@@ -2,6 +2,7 @@ import type { Project } from '@/types';
 import { professionalProfile } from '@/data/professionalProfile';
 
 const projectPriority = [
+  'technical-interviews',
   'docker-coding-agent',
   'ai-nova',
   'novamp-sinpe',
@@ -28,6 +29,39 @@ const projectPriority = [
 ];
 
 const projectItems: Project[] = [
+  {
+    id: 'technical-interviews',
+    title: {
+      es: 'Technical Interviews - Evaluación técnica con agentes de IA',
+      en: 'Technical Interviews - Technical assessment with AI agents',
+    },
+    category: { es: 'Proyecto profesional de Agentic AI', en: 'Professional Agentic AI project' },
+    description: {
+      es: 'Plataforma de evaluación técnica posterior al screening: los candidatos presentan pruebas cronometradas y seis agentes de IA apoyan la redacción de preguntas, la calificación con rúbrica y el análisis de integridad, siempre con revisión humana.',
+      en: 'Post-screening technical assessment platform: candidates take timed tests and six AI agents support question drafting, rubric-based grading and integrity analysis, always with human review.',
+    },
+    highlights: {
+      es: [
+        'Seis agentes de IA con Microsoft Agent Framework y modelos Claude, calibrados con pilotos antes de habilitarse.',
+        'API en ASP.NET Core .NET 10 con EF Core y SQL Server; frontend en React, TypeScript y Vite.',
+        'Trazas OpenTelemetry, control de costo por agente y pruebas automatizadas con xUnit y Playwright.',
+        'Desarrollo guiado por especificaciones (SDD) con agentes de programación y revisión humana.',
+      ],
+      en: [
+        'Six AI agents built with Microsoft Agent Framework and Claude models, calibrated through pilots before being enabled.',
+        'ASP.NET Core .NET 10 API with EF Core and SQL Server; React, TypeScript and Vite frontend.',
+        'OpenTelemetry traces, per-agent cost control and automated tests with xUnit and Playwright.',
+        'Spec-driven development (SDD) with coding agents and human review.',
+      ],
+    },
+    technologies: ['.NET 10', 'ASP.NET Core', 'EF Core', 'SQL Server', 'React', 'TypeScript', 'Microsoft Agent Framework', 'Claude', 'OpenTelemetry', 'Playwright', 'Docker'],
+    liveDemo: 'https://www.youtube.com/watch?v=CTxNYPJxagw',
+    liveDemoLabel: {
+      es: 'Ver demo en YouTube',
+      en: 'Watch demo on YouTube',
+    },
+    featured: true,
+  },
   {
     id: 'docker-coding-agent',
     title: professionalProfile.projects[1].name,

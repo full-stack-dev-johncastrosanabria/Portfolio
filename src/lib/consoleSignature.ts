@@ -8,8 +8,8 @@ export function printConsoleSignature(): void {
   }
   printed = true;
 
-  const title = 'John Castro Sanabria — Full-Stack Software Engineer';
-  const subtitle = 'Fintech · .NET · Java · React · Azure';
+  const title = 'John Castro Sanabria — Full-Stack AI Engineer';
+  const subtitle = 'Agentic AI · .NET · Java · Python · Fintech';
   const invite =
     'Poking around the console? Good instinct. Let’s build something → castrosanabriajohn@gmail.com';
 

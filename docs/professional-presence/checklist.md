@@ -5,7 +5,7 @@ Revisión: 8 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, po
 ## Identidad y enfoque
 
 - [x] John Castro Sanabria / John Benjamín Castro Sanabria: nombre público y nombre completo del CV, respectivamente.
-- [x] Ingeniero de Software Full-Stack, con enfoque Fintech & Agentic AI; objetivo laboral Software Engineer / AI Engineer, sin atribuir un puesto de AI Engineer no ocupado.
+- [x] Ingeniero de Software Full-Stack, con enfoque Fintech & Agentic AI; desde el 10 de noviembre de 2026 el puesto es AI Engineer en Novacomp (confirmado por el usuario); el titular pasa a Ingeniero de IA / AI Engineer.
 - [x] San José, Costa Rica; correo único `castrosanabriajohn@gmail.com`.
 - [x] Experiencia combinada de 4 años; no sumar períodos superpuestos ni afirmar 5 años.
 - [x] Stack consistente: C#/.NET, React, Angular, Java, Python y SQL; IA aplicada con LangGraph, RAG, MCP, FastAPI y herramientas de observabilidad.
@@ -14,7 +14,8 @@ Revisión: 8 de octubre de 2026, Costa Rica. Fuentes integradas: CV EN/ES v6, po
 
 | Etapa | Fechas verificadas | Evidencia compartida |
 | --- | --- | --- |
-| Innovative, Ingeniero de Software | Abril 2026–actualidad | Regresión de 3 días a 6 horas; 22 suites E2E; 11 defectos en 4 releases; APIs LLM/Python |
+| Novacomp, Ingeniero de IA (AI Office) | 10 de noviembre de 2026–actualidad | Desarrollo asistido por IA en C#, Java y Python; agentes autónomos, LangGraph, RAG y MCP; plataforma de evaluación técnica con seis agentes |
+| Innovative, Ingeniero de Software | Abril 2026–10 de noviembre de 2026 | Regresión de 3 días a 6 horas; 22 suites E2E; 11 defectos en 4 releases; APIs LLM/Python |
 | Novacomp, SDR / Ingeniero de Preventa | Octubre 2025–marzo 2026 | Aproximadamente 15 reuniones calificadas por mes; Microsoft Cloud y conversaciones técnico-consultivas |
 | Innovative, Ingeniero de Software | Octubre 2022–septiembre 2025 | NovaMP, NovaToken, NovaBank y JUPEMA; SQL de 47 s a 3,1 s |
 | Innovative, práctica de desarrollo | Mayo–octubre 2022 | App web/móvil para colaboradores, Vue, React Native, .NET Core y SQL Server |
