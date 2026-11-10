@@ -35,7 +35,7 @@ const projectItems: Project[] = [
       es: 'Technical Interviews - Evaluación técnica con agentes de IA',
       en: 'Technical Interviews - Technical assessment with AI agents',
     },
-    category: { es: 'Proyecto profesional de Agentic AI', en: 'Professional Agentic AI project' },
+    category: { es: 'Proyecto de Agentic AI', en: 'Agentic AI project' },
     description: {
       es: 'Plataforma de evaluación técnica posterior al screening: los candidatos presentan pruebas cronometradas y seis agentes de IA apoyan la redacción de preguntas, la calificación con rúbrica y el análisis de integridad, siempre con revisión humana.',
       en: 'Post-screening technical assessment platform: candidates take timed tests and six AI agents support question drafting, rubric-based grading and integrity analysis, always with human review.',

@@ -2665,3 +2665,19 @@ select:focus-visible,
     transform: translateY(12px);
   }
 }
+
+/* Uniform project cards: titles reserve two lines and tags + links sit at the bottom,
+   so every card in a row starts its text and ends its actions on the same line. */
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card h3 {
+  min-height: 2lh;
+}
+
+.project-card > .tag-group {
+  margin-top: auto;
+  padding-top: 1rem;
+}
