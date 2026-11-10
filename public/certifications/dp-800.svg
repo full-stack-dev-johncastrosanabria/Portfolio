@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">DP-800: SQL AI Developer Associate — en progreso</title>
+  <desc id="desc">Certificación de Microsoft en preparación; todavía no ha sido obtenida.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071326"/><stop offset="1" stop-color="#0d2c3c"/></linearGradient>
+    <linearGradient id="ac" x1="0" x2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#4ade80"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="720" rx="28" fill="none" stroke="#5ab4f5" stroke-opacity=".35" stroke-width="2" stroke-dasharray="14 12"/>
+  <rect x="120" y="150" width="70" height="8" rx="4" fill="url(#ac)"/>
+  <text x="210" y="162" fill="#62b6f7" font-family="'JetBrains Mono', Menlo, monospace" font-size="26" letter-spacing="5">MICROSOFT · EN PROGRESO / IN PROGRESS</text>
+  <text x="120" y="330" fill="#e6eaf2" font-family="Sora, Inter, Arial, sans-serif" font-size="150" font-weight="800">DP-800</text>
+  <text x="120" y="420" fill="#c5d2e3" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="600">SQL AI Developer Associate</text>
+  <rect x="120" y="520" width="960" height="18" rx="9" fill="#12314d"/>
+  <rect x="120" y="520" width="380" height="18" rx="9" fill="url(#ac)"/>
+  <text x="120" y="610" fill="#93a4ba" font-family="Inter, Arial, sans-serif" font-size="32">Certificación en preparación · todavía no obtenida</text>
+  <text x="120" y="656" fill="#93a4ba" font-family="Inter, Arial, sans-serif" font-size="32">Certification in preparation · not yet earned</text>
+</svg>

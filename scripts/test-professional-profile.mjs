@@ -29,5 +29,5 @@ for (const language of ['es', 'en']) {
   for (const item of profile.experience) assert.ok(item.achievements[language].length > 0);
 }
 assert.match(profile.education[0].degree.en, /Licentiate.*post-bachelor/);
-assert.match(profile.credentials.en, /DP-800.*in preparation, not an earned certification/);
+assert.match(profile.credentials.en, /DP-800.*in progress, not yet earned/);
 console.log('PASS: bilingual profile, confirmed dates, achievements, chronological order, contact links and credential status');

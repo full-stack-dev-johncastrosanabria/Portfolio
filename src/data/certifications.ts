@@ -50,6 +50,27 @@ export const certifications: Certification[] = [
     featured: true,
   },
   {
+    id: 'dp-800',
+    title: {
+      es: 'Microsoft DP-800: SQL AI Developer Associate',
+      en: 'Microsoft DP-800: SQL AI Developer Associate',
+    },
+    issuer: 'Microsoft',
+    issuedAt: {
+      es: 'Pendiente: en preparación',
+      en: 'Pending: in preparation',
+    },
+    category: {
+      es: 'Datos e IA',
+      en: 'Data and AI',
+    },
+    status: {
+      es: 'En progreso',
+      en: 'In progress',
+    },
+    image: 'certifications/dp-800.svg',
+  },
+  {
     id: 'commercial-skills',
     title: {
       es: 'Desarrollo de habilidades comerciales',
