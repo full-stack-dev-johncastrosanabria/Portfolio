@@ -13,12 +13,12 @@ export const professionalProfile = {
     x: 'https://x.com/JohnCS97',
   },
   title: {
-    es: 'Ingeniero de IA | Fintech & Agentic AI',
-    en: 'AI Engineer | Fintech & Agentic AI',
+    es: 'Ingeniero de IA Full-Stack | Fintech & Agentic AI',
+    en: 'Full-Stack AI Engineer | Fintech & Agentic AI',
   },
   summary: {
-    es: 'Ingeniero de IA en el AI Office de Novacomp, con 4 años de experiencia combinada en desarrollo full-stack, fintech regulado y preventa Microsoft Cloud. Construyo agentes autónomos y soluciones con LangGraph, RAG, MCP, Python y FastAPI, y desarrollo software asistido por IA en C#/.NET, Java y Python. He desarrollado sistemas de pagos, autenticación y banca con C#/.NET, React, Angular y SQL; reduje la regresión de 3 días a 6 horas y una consulta crítica de 47 s a 3,1 s.',
-    en: 'AI Engineer in Novacomp’s AI Office, with 4 years of combined experience in full-stack development, regulated fintech and Microsoft Cloud pre-sales. I build autonomous agents and solutions with LangGraph, RAG, MCP, Python and FastAPI, and AI-assisted software in C#/.NET, Java and Python. I have built payment, authentication and banking systems with C#/.NET, React, Angular and SQL; reduced regression from 3 days to 6 hours and a critical query from 47 s to 3.1 s.',
+    es: 'Ingeniero full-stack y de IA en el AI Office de Novacomp, con 4 años de experiencia combinada en desarrollo full-stack, fintech regulado y preventa Microsoft Cloud. Construyo agentes autónomos y soluciones con LangGraph, RAG, MCP, Python y FastAPI, y desarrollo software asistido por IA en C#/.NET, Java y Python. He desarrollado sistemas de pagos, autenticación y banca con C#/.NET, React, Angular y SQL; reduje la regresión de 3 días a 6 horas y una consulta crítica de 47 s a 3,1 s.',
+    en: 'Full-stack AI Engineer in Novacomp’s AI Office, with 4 years of combined experience in full-stack development, regulated fintech and Microsoft Cloud pre-sales. I build autonomous agents and solutions with LangGraph, RAG, MCP, Python and FastAPI, and AI-assisted software in C#/.NET, Java and Python. I have built payment, authentication and banking systems with C#/.NET, React, Angular and SQL; reduced regression from 3 days to 6 hours and a critical query from 47 s to 3.1 s.',
   },
   skills: [
     { label: { es: 'Desarrollo', en: 'Development' }, items: 'C#, .NET / ASP.NET Core, Java, Spring Boot, Python, Flask, FastAPI, Node.js / Express, React, Angular, Vue, Blazor, TypeScript, JavaScript, React Native' },
