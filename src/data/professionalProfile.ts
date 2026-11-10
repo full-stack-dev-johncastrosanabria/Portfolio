@@ -91,7 +91,7 @@ export const professionalProfile = {
 function selectAchievements(startDate: string, items: string[]) {
   let indices = [0, 2, 3];
   if (startDate.startsWith('2026-11')) indices = [0, 1, 2, 3];
-  else if (startDate.startsWith('2026')) indices = [0, 2, 3, 4];
+  else if (startDate.startsWith('2026')) indices = [0, 2, 3, 5];
   else if (startDate.startsWith('2025')) indices = [0, 1];
   else if (startDate.startsWith('2022-10')) indices = [1, 2, 3, 4, 5];
   return indices.map((index) => items[index]).filter(Boolean);
