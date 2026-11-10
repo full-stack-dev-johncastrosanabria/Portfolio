@@ -79,8 +79,8 @@ export const professionalProfile = {
     },
   ],
   credentials: {
-    es: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — en preparación, no certificación obtenida. También en preparación: certificaciones de Anthropic, Oracle AI y Microsoft AI (Copilot).',
-    en: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — in preparation, not an earned certification. Also in preparation: Anthropic, Oracle AI and Microsoft AI (Copilot) certifications.',
+    es: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — en progreso, aún no obtenida. También en preparación: certificaciones de Anthropic, Oracle AI y Microsoft AI (Copilot).',
+    en: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — in progress, not yet earned. Also in preparation: Anthropic, Oracle AI and Microsoft AI (Copilot) certifications.',
   },
   languages: {
     es: 'Español nativo · Inglés avanzado (TOEIC 935/990)',
