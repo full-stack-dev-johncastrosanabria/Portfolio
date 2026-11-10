@@ -11,7 +11,7 @@ export function HeroIcon({ name }: HeroIconProps) {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5a3 3 0 0 0-2.1 2.1A31 31 0 0 0 2 12a31 31 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 22 12a31 31 0 0 0-.4-4.8Z" />
-        <path d="m10.2 15.4 5-3.4-5-3.4v6.8Z" fill="currentColor" />
+        <path d="m10.2 15.4 5-3.4-5-3.4v6.8Z" fill="#ffffff" />
       </svg>
     );
   }
