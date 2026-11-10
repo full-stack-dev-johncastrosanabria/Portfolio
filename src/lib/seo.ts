@@ -26,8 +26,8 @@ interface BreadcrumbItem {
 
 export const generateMetaTags = (config: MetaConfig) => {
   const {
-    title = 'John Castro Sanabria - Ingeniero de software full-stack',
-    description = 'Ingeniero de software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y Azure DevOps',
+    title = 'John Castro Sanabria - Ingeniero de IA y software full-stack',
+    description = 'Ingeniero de IA y software full-stack especializado en .NET, Java, Spring Boot, React, TypeScript, SQL y Azure DevOps',
     image = '/public/brand-mark.svg',
     url = 'https://full-stack-dev-johncastrosanabria.github.io/Portfolio',
     type = 'website',
@@ -58,7 +58,7 @@ export const generateMetaTags = (config: MetaConfig) => {
 export const generateStructuredData = (config: StructuredDataConfig) => {
   const {
     name = 'John Castro Sanabria',
-    description = 'Ingeniero de software full-stack',
+    description = 'Ingeniero de IA y software full-stack',
     image = '/public/profile-john.png',
     url = 'https://full-stack-dev-johncastrosanabria.github.io/Portfolio',
     email = 'castrosanabriajohn@gmail.com',
@@ -74,7 +74,7 @@ export const generateStructuredData = (config: StructuredDataConfig) => {
     url,
     email,
     sameAs,
-    jobTitle: 'Ingeniero de software full-stack',
+    jobTitle: 'Ingeniero de IA y software full-stack',
     knowsAbout: ['.NET', 'Java', 'Spring Boot', 'React', 'TypeScript', 'SQL Server', 'Azure DevOps', 'AZ-900', 'MS-900', 'Clean Architecture'],
   };
 };

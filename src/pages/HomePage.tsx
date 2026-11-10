@@ -22,7 +22,7 @@ import { publicAsset } from '@/lib/assets';
 import { localizedValue } from '@/lib/localized';
 
 export function HomePage() {
-  useDocumentTitle('Portafolio | Ingeniero de software full-stack');
+  useDocumentTitle('Portafolio | Ingeniero de IA y software full-stack');
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage || i18n.language;
   const heroBullets = t('hero.bullets', { returnObjects: true }) as string[];

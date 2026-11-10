@@ -1,9 +1,9 @@
 export const siteConfig = {
   author: 'John Castro Sanabria',
-  role: 'Ingeniero de software full-stack | Fintech & Agentic AI',
+  role: 'Ingeniero de IA | Fintech & Agentic AI',
   roleLocalized: {
-    es: 'Ingeniero de software full-stack | Fintech & Agentic AI',
-    en: 'Full-stack software engineer | Fintech & Agentic AI',
+    es: 'Ingeniero de IA | Fintech & Agentic AI',
+    en: 'AI Engineer | Fintech & Agentic AI',
   },
   email: 'castrosanabriajohn@gmail.com',
   headline:
@@ -13,10 +13,10 @@ export const siteConfig = {
     en: 'I build reliable financial systems and integrate applied AI: .NET, Java, React, Angular and Python, with clean architecture, automated testing and verifiable delivery.',
   },
   description:
-    'John Castro Sanabria: ingeniero de software full-stack con 4 años de experiencia combinada en fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
+    'John Castro Sanabria: ingeniero de IA en Novacomp con 4 años de experiencia combinada en desarrollo full-stack, fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
   descriptionLocalized: {
-    es: 'John Castro Sanabria: ingeniero de software full-stack con 4 años de experiencia combinada en fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
-    en: 'John Castro Sanabria: full-stack software engineer with 4 years of combined experience in fintech, Microsoft Cloud and applied AI. .NET, React, Angular, Java, Python, SQL and Agentic AI projects with LangGraph, RAG and MCP.',
+    es: 'John Castro Sanabria: ingeniero de IA en Novacomp con 4 años de experiencia combinada en desarrollo full-stack, fintech, Microsoft Cloud e IA aplicada. .NET, React, Angular, Java, Python, SQL y proyectos Agentic AI con LangGraph, RAG y MCP.',
+    en: 'John Castro Sanabria: AI Engineer at Novacomp with 4 years of combined experience in full-stack development, fintech, Microsoft Cloud and applied AI. .NET, React, Angular, Java, Python, SQL and Agentic AI projects with LangGraph, RAG and MCP.',
   },
   ctaPrimary: 'Ver proyectos',
   ctaPrimaryLocalized: {
