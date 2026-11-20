@@ -30,4 +30,8 @@ for (const language of ['es', 'en']) {
 }
 assert.match(profile.education[0].degree.en, /Licentiate.*post-bachelor/);
 assert.match(profile.credentials.en, /DP-800.*in progress, not yet earned/);
+for (const language of ['es', 'en']) {
+  assert.match(profile.credentials[language], /^Oracle Cloud Infrastructure Certified Enterprise AI Professional \(2026\)/);
+  assert.doesNotMatch(profile.credentials[language].split(/También|Also/)[1], /Oracle/);
+}
 console.log('PASS: bilingual profile, confirmed dates, achievements, chronological order, contact links and credential status');

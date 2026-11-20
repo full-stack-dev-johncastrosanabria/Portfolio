@@ -81,6 +81,7 @@ export const siteConfig = {
     'Azure DevOps',
     'AZ-900',
     'MS-900',
+    'OCI Enterprise AI',
     'JavaScript',
     'C#',
     'Web Development',

@@ -16,7 +16,7 @@ type BlogFiltersState = {
 };
 
 export function BlogPage() {
-  useDocumentTitle('Portafolio | Blog técnico .NET');
+  useDocumentTitle('Portafolio | Blog técnico de IA y desarrollo full-stack');
   const { t, i18n } = useTranslation();
   const language = i18n.resolvedLanguage || i18n.language;
 

@@ -8,33 +8,33 @@ import { getLocalizedPost } from '@/lib/localizedPost';
 import { formatDate, slugMatches } from '@/lib/utils';
 import type { ReactElement } from 'react';
 
+// Inline **bold** is the only inline markup the posts use.
+function renderInline(text: string) {
+  return text.split(/\*\*(.+?)\*\*/g).map((part, index) => (index % 2 ? <strong key={index}>{part}</strong> : part));
+}
+
 function renderMarkdownLikeContent(content: string): ReactElement[] {
   return content
     .trim()
     .split('\n')
     .filter(Boolean)
     .map((line, index) => {
-      if (line.startsWith('## ')) {
-        return <h2 key={`${line}-${index}`}>{line.replace('## ', '')}</h2>;
+      const key = `${line}-${index}`;
+      const heading = /^(#{2,4})\s+(.+)$/.exec(line);
+
+      if (heading) {
+        return heading[1] === '##' ? <h2 key={key}>{heading[2]}</h2> : <h3 key={key}>{heading[2]}</h3>;
       }
 
       if (line.startsWith('- ')) {
-        return (
-          <li key={`${line}-${index}`}>
-            {line.replace('- ', '')}
-          </li>
-        );
+        return <li key={key}>{renderInline(line.slice(2))}</li>;
       }
 
       if (/^\d+\.\s/.test(line)) {
-        return (
-          <li key={`${line}-${index}`}>
-            {line.replace(/^\d+\.\s/, '')}
-          </li>
-        );
+        return <li key={key}>{renderInline(line.replace(/^\d+\.\s/, ''))}</li>;
       }
 
-      return <p key={`${line}-${index}`}>{line}</p>;
+      return <p key={key}>{renderInline(line)}</p>;
     });
 }
 
