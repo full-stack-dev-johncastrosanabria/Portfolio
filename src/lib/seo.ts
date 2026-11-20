@@ -75,7 +75,7 @@ export const generateStructuredData = (config: StructuredDataConfig) => {
     email,
     sameAs,
     jobTitle: 'Ingeniero de IA y software full-stack',
-    knowsAbout: ['.NET', 'Java', 'Spring Boot', 'React', 'TypeScript', 'SQL Server', 'Azure DevOps', 'AZ-900', 'MS-900', 'Clean Architecture'],
+    knowsAbout: ['.NET', 'Java', 'Spring Boot', 'React', 'TypeScript', 'SQL Server', 'Azure DevOps', 'OCI Enterprise AI', 'AZ-900', 'MS-900', 'Clean Architecture'],
   };
 };
 

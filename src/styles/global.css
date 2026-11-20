@@ -601,7 +601,7 @@ img {
   z-index: 4;
   display: grid;
   /* auto-fit: a label that does not fit wraps to a new row instead of being clipped */
-  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15.75rem, 1fr));
   gap: 0.8rem;
   align-items: center;
   animation: fade-slide-up 780ms cubic-bezier(0.16, 1, 0.3, 1) 410ms both;
@@ -1043,6 +1043,7 @@ img {
 .resume-download {
   position: relative;
   display: block;
+  grid-column: 1 / -1;
   min-width: 0;
 }
 
@@ -1729,6 +1730,12 @@ img {
   font-size: 1.5rem;
 }
 
+.article-content h3 {
+  margin-top: 1.35rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.15rem;
+}
+
 .article-content p {
   margin: 0.75rem 0;
   color: var(--text);
@@ -1803,10 +1810,6 @@ img {
 @media (max-width: 980px) {
   .hero-actions {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .resume-download {
-    grid-column: 1 / -1;
   }
 
   .resume-options {
@@ -2680,4 +2683,55 @@ select:focus-visible,
 .project-card > .tag-group {
   margin-top: auto;
   padding-top: 1rem;
+}
+
+/* Gentle float shared with the hero profile card. It animates `translate`, so it
+   composes with the reveal and hover `transform` instead of overriding them. */
+@keyframes card-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -6px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .project-card,
+  .blog-card,
+  .timeline-card,
+  .cert-card,
+  .stat-card {
+    animation:
+      card-reveal both,
+      card-float 7s ease-in-out infinite;
+    animation-timeline: view(), auto;
+    animation-range: entry 10% cover 26%, normal;
+  }
+
+  .skill-card {
+    animation:
+      skill-card-rise 680ms cubic-bezier(0.16, 1, 0.3, 1) both,
+      card-float 7s ease-in-out infinite;
+  }
+
+  /* Negative delays put neighbouring cards out of phase so the grid does not bob in unison. */
+  :is(.project-card, .blog-card, .timeline-card, .cert-card, .stat-card):nth-child(3n + 2) {
+    animation-delay: 0s, -2.4s;
+  }
+
+  :is(.project-card, .blog-card, .timeline-card, .cert-card, .stat-card):nth-child(3n) {
+    animation-delay: 0s, -4.8s;
+  }
+
+  /* Skill and certification cards sit one per carousel slide, so stagger by slide. */
+  .carousel-slide:nth-child(3n + 2) > :is(.skill-card, .cert-card) {
+    animation-delay: 0s, -2.4s;
+  }
+
+  .carousel-slide:nth-child(3n) > :is(.skill-card, .cert-card) {
+    animation-delay: 0s, -4.8s;
+  }
 }

@@ -46,7 +46,7 @@ export const skillGroups: SkillGroup[] = [
       es: 'Experiencia integrando datos, automatización, despliegues y soluciones Microsoft Cloud con visión técnica y consultiva.',
       en: 'Experience integrating data, automation, deployments and Microsoft Cloud solutions with a technical and consultative perspective.',
     },
-    items: ['Azure', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'PostgreSQL', 'Oracle', 'MySQL', 'MongoDB', 'Python', 'FastAPI', 'AI/LSTM', 'GitHub Actions', 'Docker', 'CI/CD'],
+    items: ['Azure', 'OCI Enterprise AI', 'Azure DevOps', 'Microsoft Fabric', 'Power Platform', 'SQL Server', 'PostgreSQL', 'Oracle', 'MySQL', 'MongoDB', 'Python', 'FastAPI', 'AI/LSTM', 'GitHub Actions', 'Docker', 'CI/CD'],
   },
   {
     title: { es: 'Agentic AI e IA aplicada', en: 'Agentic AI and applied AI' },

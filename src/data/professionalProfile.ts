@@ -24,7 +24,7 @@ export const professionalProfile = {
     { label: { es: 'Desarrollo', en: 'Development' }, items: 'C#, .NET / ASP.NET Core, Java, Spring Boot, Python, Flask, FastAPI, Node.js / Express, React, Angular, Vue, Blazor, TypeScript, JavaScript, React Native' },
     { label: { es: 'Datos y arquitectura', en: 'Data and architecture' }, items: 'SQL Server, T-SQL, PostgreSQL, Oracle, MySQL, MongoDB, REST APIs, Clean Architecture, JWT, Entity Framework Core' },
     { label: { es: 'Entrega y calidad', en: 'Delivery and quality' }, items: 'Azure DevOps, Azure App Service, GitHub Actions, Docker, Git, xUnit, NUnit, MSTest, Moq, Playwright, Selenium' },
-    { label: { es: 'IA aplicada', en: 'Applied AI' }, items: 'LangGraph, RAG, MCP, Langfuse, Ollama, FastAPI, observability, guardrails, Docker Sandboxes, Claude Code, Codex' },
+    { label: { es: 'IA aplicada', en: 'Applied AI' }, items: 'LangGraph, RAG, MCP, OCI Enterprise AI, Langfuse, Ollama, FastAPI, observability, guardrails, Docker Sandboxes, Claude Code, Codex' },
   ],
   experience: [...experience].sort((a, b) => b.startDate.localeCompare(a.startDate)).map((item) => ({
     ...item,
@@ -79,8 +79,8 @@ export const professionalProfile = {
     },
   ],
   credentials: {
-    es: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — en progreso, aún no obtenida. También en preparación: certificaciones de Anthropic, Oracle AI y Microsoft AI (Copilot).',
-    en: 'Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — in progress, not yet earned. Also in preparation: Anthropic, Oracle AI and Microsoft AI (Copilot) certifications.',
+    es: 'Oracle Cloud Infrastructure Certified Enterprise AI Professional (2026) · Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — en progreso, aún no obtenida. También en preparación: certificaciones de Anthropic y Microsoft AI (Copilot).',
+    en: 'Oracle Cloud Infrastructure Certified Enterprise AI Professional (2026) · Microsoft AZ-900: Azure Fundamentals · Microsoft MS-900: Microsoft 365 Fundamentals · Scrum Foundation Professional Certificate (SFPC). DP-800: SQL AI Developer Associate — in progress, not yet earned. Also in preparation: Anthropic and Microsoft AI (Copilot) certifications.',
   },
   languages: {
     es: 'Español nativo · Inglés avanzado (TOEIC 935/990)',

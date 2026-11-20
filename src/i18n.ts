@@ -19,7 +19,7 @@ const resources = {
         profile: 'Perfil',
         profileTitle: 'Full-stack con IA y agentes',
         profileText:
-          'AI Engineer en el AI Office de Novacomp, con 4 años de experiencia combinada en software financiero y Microsoft Cloud. Desarrollo full-stack con .NET, Java, Python, React, Angular y SQL; agentes de IA con ejecución controlada y observabilidad. Certificado AZ-900 y MS-900.',
+          'AI Engineer en el AI Office de Novacomp, con 4 años de experiencia combinada en software financiero y Microsoft Cloud. Desarrollo full-stack con .NET, Java, Python, React, Angular y SQL; agentes de IA con ejecución controlada y observabilidad. Certificado Oracle OCI Enterprise AI Professional, AZ-900 y MS-900.',
         bullets: [
           'APIs REST y seguridad con JWT',
           'Frontend con React, Angular, TypeScript, Vue y Blazor',
@@ -28,7 +28,7 @@ const resources = {
           'Agentes autónomos con LangGraph, RAG y MCP',
           'Desarrollo asistido por IA con Claude Code y SDD',
         ],
-        resumeButton: 'Descargar CV',
+        resumeButton: 'Ver/descargar CV',
         resumeQuestion: 'Elige idioma',
         resumeSpanish: 'Español',
         resumeEnglish: 'Inglés',
@@ -41,7 +41,7 @@ const resources = {
         certificationsEyebrow: 'Certificaciones',
         certificationsTitle: 'Credenciales profesionales y formación continua',
         certificationsDescription:
-          'Certificaciones Microsoft y formación complementaria que respaldan mi perfil en cloud, Microsoft 365, datos y preventa técnica.',
+          'Certificaciones de Oracle y Microsoft, dos títulos universitarios en ingeniería y formación complementaria que respaldan mi perfil en IA empresarial, cloud, Microsoft 365, datos y preventa técnica.',
         experienceEyebrow: 'Experiencia',
         experienceTitle: 'Trayectoria en orden cronológico',
         experienceDescription:
@@ -106,7 +106,7 @@ const resources = {
         profile: 'Profile',
         profileTitle: 'Full-stack with AI and agents',
         profileText:
-          'AI Engineer in Novacomp’s AI Office, with 4 years of combined experience in financial software and Microsoft Cloud. Full-stack development with .NET, Java, Python, React, Angular and SQL; AI agents with controlled execution and observability. AZ-900 and MS-900 certified.',
+          'AI Engineer in Novacomp’s AI Office, with 4 years of combined experience in financial software and Microsoft Cloud. Full-stack development with .NET, Java, Python, React, Angular and SQL; AI agents with controlled execution and observability. Oracle OCI Enterprise AI Professional, AZ-900 and MS-900 certified.',
         bullets: [
           'REST APIs and JWT security',
           'Frontend with React, Angular, TypeScript, Vue and Blazor',
@@ -115,7 +115,7 @@ const resources = {
           'Autonomous agents with LangGraph, RAG and MCP',
           'AI-assisted development with Claude Code and SDD',
         ],
-        resumeButton: 'Download CV',
+        resumeButton: 'View/download CV',
         resumeQuestion: 'Choose language',
         resumeSpanish: 'Spanish',
         resumeEnglish: 'English',
@@ -128,7 +128,7 @@ const resources = {
         certificationsEyebrow: 'Certifications',
         certificationsTitle: 'Professional credentials and continuous learning',
         certificationsDescription:
-          'Microsoft certifications and complementary training that support my profile across cloud, Microsoft 365, data and technical pre-sales.',
+          'Oracle and Microsoft certifications, two engineering degrees and complementary training that support my profile across enterprise AI, cloud, Microsoft 365, data and technical pre-sales.',
         experienceEyebrow: 'Experience',
         experienceTitle: 'Career path in chronological order',
         experienceDescription:
